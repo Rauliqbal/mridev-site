@@ -1,0 +1,17 @@
+[
+  {
+    "title": "portfolio template",
+    "image": "../assets/images/work1.png",
+    "type": "landing page"
+  },
+  {
+    "title": "portfolio template 2",
+    "image": "../assets/images/work1.png",
+    "type": "landing page"
+  },
+  {
+    "title": "portfolio template 3",
+    "image": "../assets/images/work1.png",
+    "type": "landing page"
+  }
+]
