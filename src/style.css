@@ -7,7 +7,7 @@
     @apply font-poppins;
   }
   .container {
-    @apply px-6 md:px-[6%] xl:px-[4%];
+    @apply px-4 md:px-8 xl:px-[6%];
   }
 }
 
@@ -28,6 +28,10 @@
 
   .box-contact {
     filter: drop-shadow(0px 8px 0px #798AF4);
+  }
+
+  .desc {
+    @apply text-base md:text-lg text-slate-500
   }
 }
 

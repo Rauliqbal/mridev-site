@@ -13,7 +13,7 @@
             <img class="w-full md:w-1/2" src="https://rauliqbal.vercel.app/images/portfolio/lenterahouse-webdev.webp" alt="" />
             <div class="w-full md:w-1/2 py-12 md:py-0 flex flex-col justify-center items-center">
               <h5 class="text-lg uppercase text-blue-500 font-medium">{{data.type}}</h5>
-              <h4 class="text-xl md:text-3xl text-blue-500 font-semibold uppercase mt-2">{{data.title}}</h4>
+              <h4 class="text-xl md:text-2xl lg:text-3xl text-blue-500 font-semibold uppercase mt-2">{{data.title}}</h4>
 
               <button class="btn-primary mt-8">Live demo</button>
             </div>

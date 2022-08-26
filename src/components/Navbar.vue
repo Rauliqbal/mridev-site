@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <nav>
     <input type="checkbox" class="hidden peer" id="active" />
     <label for="active" class="menu-btn z-40"
       ><svg class="" width="33" height="25" viewBox="0 0 33 25" xmlns="http://www.w3.org/2000/svg">
@@ -11,7 +11,7 @@
     <div class="wrapper z-30">
       <ul>
         <li><router-link to="/" class="text-2xl md:text-4xl" href="#">Home</router-link></li>
-        <li><router-link to="/404" class="text-2xl md:text-4xl" href="#">About me</router-link></li>
+        <li><router-link to="/about" class="text-2xl md:text-4xl" href="#">About me</router-link></li>
         <li><router-link to="/404" class="text-2xl md:text-4xl" href="#">Resume</router-link></li>
         <li><router-link to="/404" class="text-2xl md:text-4xl" href="#">Skills</router-link></li>
         <li><router-link to="/404" class="text-2xl md:text-4xl" href="#">Projects</router-link></li>
@@ -31,5 +31,20 @@
         </a>
       </div>
     </div>
-  </div>
+
+    <header class="flex items-center gap-14 top-5 left-[1.4rem] absolute">
+      <router-link to="/"><img src="../assets/images/logo.png" alt="im Rauliqbal a front end developer" /></router-link>
+      <div class="md:flex gap-8 hidden">
+        <a href="https://dribbble.com/Rauliqbal" target="_blank" class="flex items-center gap-2 text-slate-500 hover:text-slate-700 transition duration-200"> <i class="bx bxl-dribbble text-lg"></i> <span class="text-lg">Dribble</span> </a>
+        <a href="https://www.linkedin.com/in/muhamad-raul-iqbal/" target="_blank" class="flex items-center gap-2 text-slate-500 hover:text-slate-700 transition duration-200">
+          <i class="bx bxl-linkedin text-lg"></i>
+          <span class="text-lg">LinkedIn</span>
+        </a>
+        <a href="https://www.instagram.com/raul.iqbl_/" target="_blank" class="flex items-center gap-2 text-slate-500 hover:text-slate-700 transition duration-200">
+          <i class="bx bxl-instagram text-lg"></i> <span class="text-lg">Instagram</span>
+        </a>
+      </div>
+    </header>
+  </nav>
+
 </template>

@@ -1,20 +1,8 @@
 <template>
   <div class="overflow-hidden">
     <Navbar />
-    <header class="flex items-center gap-14 top-5 left-[1.4rem] absolute">
-      <router-link to="/"><img src="../assets/images/logo.png" alt="im Rauliqbal a front end developer" /></router-link>
-      <div class="md:flex gap-8 hidden">
-        <a href="https://dribbble.com/Rauliqbal" target="_blank" class="flex items-center gap-2 text-slate-500 hover:text-slate-700 transition duration-200"> <i class="bx bxl-dribbble text-lg"></i> <span class="text-lg">Dribble</span> </a>
-        <a href="https://www.linkedin.com/in/muhamad-raul-iqbal/" target="_blank" class="flex items-center gap-2 text-slate-500 hover:text-slate-700 transition duration-200">
-          <i class="bx bxl-linkedin text-lg"></i>
-          <span class="text-lg">LinkedIn</span>
-        </a>
-        <a href="https://www.instagram.com/raul.iqbl_/" target="_blank" class="flex items-center gap-2 text-slate-500 hover:text-slate-700 transition duration-200">
-          <i class="bx bxl-instagram text-lg"></i> <span class="text-lg">Instagram</span>
-        </a>
-      </div>
-    </header>
-
+    
+    <!-- start:hero -->
     <div class="container grid grid-cols-1 md:grid-cols-2 items-center h-screen mt-10 md:mt-0">
       <div>
         <div class="flex items-center gap-8">
@@ -53,6 +41,7 @@
         </div>
       </div>
     </div>
+    <!-- end:hero -->
 
     <div class="container invisible md:visible absolute bottom-8">
       <a href="#skills" class="flex items-center group gap-4">
@@ -153,19 +142,20 @@
           </div>
 
           <div class="py-6 px-0 md:px-8">
-            <form class="flex flex-col gap-6">
+            <form class="flex flex-col gap-6" action="https://formspree.io/f/mqkjznjb"
+  method="POST">
               <div class="w-full md:max-w-md flex items-center bg-gray-100 py-3 px-6  rounded-xl ">
-                <input class="w-full bg-gray-100 outline-0" placeholder="name" type="" name="">
+                <input class="w-full bg-gray-100 outline-0" placeholder="name" type="name"  name="name">
                 <i class="bx bx-user text-2xl"></i> 
               </div>
 
                <div class="w-full md:max-w-md flex items-center bg-gray-100 py-3 px-6  rounded-xl">
-                <input class="w-full bg-gray-100 outline-0" placeholder="email" type="" name="">
+                <input class="w-full bg-gray-100 outline-0" placeholder="email" type="email"  name="email">
                 <i class="bx bx-paper-plane text-2xl"></i> 
               </div>
 
                <div class="w-full md:max-w-md flex bg-gray-100 py-3 px-6  rounded-xl">
-                <textarea class="w-full bg-gray-100 outline-0" rows="3" placeholder="message"></textarea>
+                <textarea class="w-full bg-gray-100 outline-0" rows="3" placeholder="message" name="message"></textarea>
                 <i class="bx bx-message-square-detail text-2xl"></i> 
               </div>
               <button class="btn-primary w-full md:w-[170px] mt-4 md:mt-8" type="submit">Send message</button>
