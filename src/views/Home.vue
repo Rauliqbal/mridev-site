@@ -195,7 +195,7 @@
           <div>
              <h3 class="text-3xl md:text-5xl text-white font-semibold max-w-[496px]">You only have one chance to make a first impression.</h3>
              <div class="flex items-center gap-4 md:gap-8  mt-8">
-              <div class="w-4 md:w-12 md:w-24 h-1 bg-secondary"></div>
+              <div class="w-4 md:w-24 h-1 bg-secondary"></div>
               <h2 class="section-title text-base md:text-2xl text-secondary">Let’s make it an amazing one.</h2>
             </div>
          </div>

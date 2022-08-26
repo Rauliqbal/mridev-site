@@ -5,6 +5,7 @@
         :pagination="{
           clickable: true,
         }"
+        :loop="true"
         :modules="modules"
         class="mySwiper"
       >

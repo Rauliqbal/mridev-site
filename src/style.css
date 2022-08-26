@@ -64,7 +64,7 @@
   }
   #active:checked ~ .menu-btn {
     background: #fff;
-    color: #4158d0;
+    
   }
   #active:checked ~ .menu-btn i:before {
     content: "\f00d";
@@ -107,5 +107,18 @@
   }
   .wrapper ul li a:hover {
     color: #4158d0;
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-gradient-to-t from-blue-400 to-violet-400 rounded-full
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-gradient-to-t from-blue-700 to-violet-700
   }
 }
