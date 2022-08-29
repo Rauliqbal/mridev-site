@@ -92,7 +92,9 @@
     </section>
     <!-- end:Skills -->
 
-    <div class="container py-20 mt-[58rem] md:mt-[24rem]">
+    <!-- start:testimonial -->
+    <section class="bg-[#F4F6FF]">
+       <div class="container py-20 mt-[58rem] md:mt-[24rem] ">
       <div class="flex items-center gap-8">
         <div class="w-12 md:w-24 h-1 bg-primary"></div>
         <h2 class="section-title">Testimonials</h2>
@@ -111,7 +113,7 @@
       :modules="modules"
       class="mySwiper mt-8">
       <swiper-slide class="pb-14">
-        <div class="flex bg-white border-2 border-slate-300 hover:shadow-md transition duration-300 py-8 pl-16 pr-8 rounded-2xl relative">
+        <div class="flex bg-white hover:shadow-lg transition duration-300 py-8 pl-16 pr-8 rounded-2xl relative">
           <span class="absolute text-4xl left-4 text-slate-300"><i class='bx bxs-quote-left'></i></span>
           <div>
             <p class="text-sm md:text-base text-slate-500 italic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis perspiciatis quos cupiditate sint consectetur doloribus deleniti, laborum qui voluptates tempora.</p>
@@ -122,7 +124,7 @@
       </swiper-slide>
 
       <swiper-slide class="pb-14">
-        <div class="flex bg-white border-2 border-slate-300 hover:shadow-md transition duration-300 py-8 pl-16 pr-8 rounded-2xl relative">
+        <div class="flex bg-white hover:shadow-lg transition duration-300 py-8 pl-16 pr-8 rounded-2xl relative">
           <span class="absolute text-4xl left-4 text-slate-300"><i class='bx bxs-quote-left'></i></span>
           <div>
             <p class="text-sm md:text-base text-slate-500 italic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis perspiciatis quos cupiditate sint consectetur doloribus deleniti, laborum qui voluptates tempora.</p>
@@ -133,7 +135,7 @@
       </swiper-slide>
 
       <swiper-slide class="pb-14">
-        <div class="flex bg-white border-2 border-slate-300 hover:shadow-md transition duration-300 py-8 pl-16 pr-8 rounded-2xl relative">
+        <div class="flex bg-white hover:shadow-lg transition duration-300 py-8 pl-16 pr-8 rounded-2xl relative">
           <span class="absolute text-4xl left-4 text-slate-300"><i class='bx bxs-quote-left'></i></span>
           <div>
             <p class="text-sm md:text-base text-slate-500 italic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis perspiciatis quos cupiditate sint consectetur doloribus deleniti, laborum qui voluptates tempora.</p>
@@ -144,6 +146,10 @@
       </swiper-slide>
       </swiper>
     </div>
+    </section>
+    <!-- end:testimonial -->
+
+   
 
     <Footer/>
   </div>
