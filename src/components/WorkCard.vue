@@ -9,7 +9,7 @@
         :modules="modules"
         class="mySwiper"
       >
-        <swiper-slide v-for="data in portfolio" :key="data.id">
+        <swiper-slide class="pb-14" v-for="data in portfolio" :key="data.id">
           <div class="flex flex-col md:flex-row bg-white">
             <img class="w-full md:w-1/2" src="https://rauliqbal.vercel.app/images/portfolio/lenterahouse-webdev.webp" alt="" />
             <div class="w-full md:w-1/2 py-12 md:py-0 flex flex-col justify-center items-center">

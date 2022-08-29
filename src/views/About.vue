@@ -1,9 +1,10 @@
 <template>
-  <div>
+  <div class="overflow-x-hiddendden">
     <Navbar/>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 h-screen items-center container overflow-hidden">
-      <div class=" md:order-first order-last overflow-auto max-h-full md:max-h-[70%] py-4 md:py-0">
+    <!-- start:hero -->
+    <div class="grid grid-cols-1 md:grid-cols-2 h-screen items-center container">
+      <div class=" md:order-first order-last py-4 md:py-0">
         <div class="flex items-center gap-8">
           <div class="w-12 md:w-24 h-1 bg-primary"></div>
           <h2 class="section-title">Hello my name is</h2>
@@ -48,16 +49,155 @@
         </div>
       </div>
     </div>
+    <!-- end:hero -->
+
+    <!-- start:Skills -->
+    <section id="skills" class="bg-[#1C2863]">
+      <div class="container py-20">
+        <div class="md:w-1/2">
+          <div class="flex items-center gap-8">
+            <div class="w-12 md:w-24 h-1 bg-secondary"></div>
+            <h2 class="section-title text-secondary">what i do</h2>
+          </div>
+          <h2 class="text-xl md:text-3xl font-semibold text-white mt-2">
+            I enjoy creating delightful, <br />
+            human-centered digital experiences.
+          </h2>
+
+          <h3 class="text-5xl font-semibold text-white mt-20">Think.Make.<br />Solve</h3>
+        </div>
+
+        <div class="flex flex-col md:flex-row items-center md:justify-center gap-8 px-4 absolute right-0 lg:mr-[4%] mt-8 md:mt-4 lg:-mt-8 xl:-mt-24">
+          <div class="flex flex-col justify-center items-center w-full md:max-w-[370px] bg-[#fff] rounded-3xl p-8 md:p-12 shadow hover:shadow-2xl transition-all duration-300 ease-out">
+            <div class="p-6 bg-blue-300 rounded-full w-[200px] h-[200px]">
+              <img src="../assets/images/fe-dev.svg" />
+            </div>
+            <div class="mt-8">
+              <h4 class="text-xl md:text-2xl text-center font-semibold">Front End Developer</h4>
+              <p class="text-center text-slate-500 mt-4">I like to code things from scratch, and enjoy bringing ideas to life in the browser.</p>
+            </div>
+          </div>
+
+          <div class="flex flex-col justify-center items-center w-full md:max-w-[370px] bg-[#fff] rounded-3xl p-8 md:p-12 shadow hover:shadow-2xl transition-all duration-300 ease-out">
+            <div class="p-6 bg-violet-300 rounded-full w-[200px] h-[200px]">
+              <img src="../assets/images/ui-des.svg" />
+            </div>
+            <div class="mt-8">
+              <h4 class="text-xl md:text-2xl text-center font-semibold">UI Designer</h4>
+              <p class="text-center text-slate-500 mt-4">I like to code things from scratch, and enjoy bringing ideas to life in the browser.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end:Skills -->
+
+    <div class="container py-20 mt-[58rem] md:mt-[24rem]">
+      <div class="flex items-center gap-8">
+        <div class="w-12 md:w-24 h-1 bg-primary"></div>
+        <h2 class="section-title">Testimonials</h2>
+      </div>
+      <h2 class="text-xl md:text-3xl font-semibold mt-2">
+            What are they saying.
+      </h2>
+      <swiper
+      :slidesPerView="2"
+      :spaceBetween="30"
+      :breakpoints="swiperOptions.breakpoints"
+      :loop="true"
+      :pagination="{
+        clickable: true,
+      }"   
+      :modules="modules"
+      class="mySwiper mt-8">
+      <swiper-slide class="pb-14">
+        <div class="flex bg-white border-2 border-slate-300 hover:shadow-md transition duration-300 py-8 pl-16 pr-8 rounded-2xl relative">
+          <span class="absolute text-4xl left-4 text-slate-300"><i class='bx bxs-quote-left'></i></span>
+          <div>
+            <p class="text-sm md:text-base text-slate-500 italic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis perspiciatis quos cupiditate sint consectetur doloribus deleniti, laborum qui voluptates tempora.</p>
+            <h5 class="text-lg font-semibold mt-4">Raisha Ramadanti</h5>
+          </div>
+          
+        </div>
+      </swiper-slide>
+
+      <swiper-slide class="pb-14">
+        <div class="flex bg-white border-2 border-slate-300 hover:shadow-md transition duration-300 py-8 pl-16 pr-8 rounded-2xl relative">
+          <span class="absolute text-4xl left-4 text-slate-300"><i class='bx bxs-quote-left'></i></span>
+          <div>
+            <p class="text-sm md:text-base text-slate-500 italic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis perspiciatis quos cupiditate sint consectetur doloribus deleniti, laborum qui voluptates tempora.</p>
+            <h5 class="text-lg font-semibold mt-4">Azura</h5>
+          </div>
+          
+        </div>
+      </swiper-slide>
+
+      <swiper-slide class="pb-14">
+        <div class="flex bg-white border-2 border-slate-300 hover:shadow-md transition duration-300 py-8 pl-16 pr-8 rounded-2xl relative">
+          <span class="absolute text-4xl left-4 text-slate-300"><i class='bx bxs-quote-left'></i></span>
+          <div>
+            <p class="text-sm md:text-base text-slate-500 italic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis perspiciatis quos cupiditate sint consectetur doloribus deleniti, laborum qui voluptates tempora.</p>
+            <h5 class="text-lg font-semibold mt-4">Naura</h5>
+          </div>
+          
+        </div>
+      </swiper-slide>
+
+
+      </swiper>
+    </div>
+
 
   </div>
 </template>
 
 <script>
 import Navbar from '../components/Navbar.vue'
+// Import Swiper Vue.js components
+import { Swiper, SwiperSlide } from "swiper/vue";
+
+// Import Swiper styles
+import "swiper/css";
+
+import "swiper/css/pagination";
+
+import "../style.css";
+
+// import required modules
+import { Pagination } from "swiper";
 
 export default {
-  components: {Navbar}
+  components: {Navbar, Swiper,
+    SwiperSlide,},
+
+  setup() {
+    return {
+      modules: [Pagination],
+    };
+  },
+
+  data () {
+      return { // Retourn the API Dates
+
+        swiperOptions: {
+          breakpoints: {       
+      320: {       
+         slidesPerView: 1,
+         spaceBetween: 10     
+      },          
+      768: {       
+         slidesPerView: 2,       
+         spaceBetween: 50     
+      },   
+  
+      // 1440: {       
+      //    slidesPerView: 3,       
+      //    spaceBetween: 30     
+      // } 
+      }   
+      }
+    }
+  },
 };
 </script>
 
-<style></style>
