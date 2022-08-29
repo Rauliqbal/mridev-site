@@ -12,9 +12,9 @@
       <ul>
         <li><router-link @click="reloadPage" to="/" class="text-2xl md:text-4xl" href="#">Home</router-link></li>
         <li><router-link @click="reloadPage" to="/about" class="text-2xl md:text-4xl" href="#">About me</router-link></li>
-        <li><router-link @click="reloadPage" to="/404" class="text-2xl md:text-4xl" href="#">Resume</router-link></li>
-        <li><router-link @click="reloadPage" to="/404" class="text-2xl md:text-4xl" href="#">Skills</router-link></li>
-        <li><router-link @click="reloadPage" to="/404" class="text-2xl md:text-4xl" href="#">Projects</router-link></li>
+        <li><router-link @click="reloadPage" to="/resume" class="text-2xl md:text-4xl" href="#">Resume</router-link></li>
+        <li><router-link @click="reloadPage" to="/skill" class="text-2xl md:text-4xl" href="#">Skills</router-link></li>
+        <li><router-link @click="reloadPage" to="/project" class="text-2xl md:text-4xl" href="#">Projects</router-link></li>
       </ul>
       <div class="flex gap-4 md:gap-8 absolute bottom-20 left-1/2 -translate-x-1/2">
         <a href="https://dribbble.com/Rauliqbal" target="_blank" class="flex items-center text-sm md:text-lg gap-2 text-white hover:text-slate-700 transition duration-200">

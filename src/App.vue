@@ -1,10 +1,19 @@
-<script setup></script>
+<script>
+  import Footer from './components/Footer.vue'
+
+  export default {
+    components: { Footer, },
+  
+  }
+
+</script>
 
 <template>
   <router-view v-slot="{Component}">
-    <transition name="fade" mode="out-in">
+    <transition name="fade" mode="out-in">      
       <component :is="Component"/>
     </transition>
+    <Footer/>
   </router-view>
 </template>
 
@@ -17,4 +26,5 @@
 .fade-leave-to {
   opacity: 0;
 }
+
 </style>

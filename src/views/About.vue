@@ -1,15 +1,15 @@
 <template>
-  <div class="overflow-x-hiddendden">
+  <div>
     <Navbar/>
 
     <!-- start:hero -->
-    <div class="grid grid-cols-1 md:grid-cols-2 h-screen items-center container">
+    <div class="grid grid-cols-1 md:grid-cols-2 items-center container py-10">
       <div class=" md:order-first order-last py-4 md:py-0">
         <div class="flex items-center gap-8">
           <div class="w-12 md:w-24 h-1 bg-primary"></div>
           <h2 class="section-title">Hello my name is</h2>
         </div>
-        <h1 class="text-4xl md:text-5xl lg:text-[60px font-semibold tracking-wider mt-0 md:mt-6">
+        <h1 class="text-3xl md:text-5xl lg:text-[60px font-semibold tracking-wider mt-0 md:mt-6">
           Muhamad Raul Iqbal
         </h1>
         <p class="desc mt-6">
@@ -142,12 +142,10 @@
           
         </div>
       </swiper-slide>
-
-
       </swiper>
     </div>
 
-
+    <Footer/>
   </div>
 </template>
 

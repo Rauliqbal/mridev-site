@@ -16,7 +16,7 @@
     @apply bg-primary py-3 px-5 text-white font-semibold rounded-lg hover:bg-indigo-600 active:scale-95 transition duration-150;
   }
   .section-title {
-    @apply text-primary font-semibold text-2xl tracking-wider capitalize;
+    @apply text-primary font-semibold text-xl tracking-wider capitalize;
   }
 
   .animation-delay-2000 {
