@@ -13,13 +13,13 @@
           Muhamad Raul Iqbal
         </h1>
         <p class="desc mt-6">
-          I am a <span class="text-blue-500 font-medium">Front End Developer</span> and <span class="text-blue-500 font-medium">UI Designer</span>, I am used to making projects with Vue JS and Tailwind CSS, I use git as version control and github to store my project source code.
+          I am a <span class="text-primary font-medium">Front End Developer</span> and <span class="text-primary font-medium">UI Designer</span>, I am used to making projects with Vue JS and Tailwind CSS, I use git as version control and github to store my project source code.
         </p>
         <p class="desc mt-4">
-          I am a graduate of <span class="text-blue-500 font-medium">Computer Network Engineering Vocational School</span>, have high spirit of motivation in terms of <span class="text-blue-500 font-medium">learning</span>, <span class="text-blue-500 font-medium">seek experience</span> and <span class="text-blue-500 font-medium">seek new things</span>. 
+          I am a graduate of <span class="text-primary font-medium">Computer Network Engineering Vocational School</span>, have high spirit of motivation in terms of <span class="text-primary font-medium">learning</span>, <span class="text-primary font-medium">seek experience</span> and <span class="text-primary font-medium">seek new things</span>. 
         </p>
         <p class="desc mt-4">
-          I am able to work in a team well, honestly, <span class="text-blue-500 font-medium">hardworking </span>  and <span class="text-blue-500 font-medium">responsible</span>. Currently looking for a job as Front End Developer in a company.
+          I am able to work in a team well, honestly, <span class="text-primary font-medium">hardworking </span>  and <span class="text-primary font-medium">responsible</span>. Currently looking for a job as Front End Developer in a company.
         </p>
 
         <a class="btn-primary inline-flex mt-8" href="https://drive.google.com/file/d/146Ebl_VJqstMxv169d6WJn-U5RC5ZOjJ/view" target="_blank">Get my CV</a>
@@ -157,10 +157,8 @@
 
 <script>
 import Navbar from '../components/Navbar.vue'
-// Import Swiper Vue.js components
 import { Swiper, SwiperSlide } from "swiper/vue";
 
-// Import Swiper styles
 import "swiper/css";
 
 import "swiper/css/pagination";
@@ -185,22 +183,22 @@ export default {
 
         swiperOptions: {
           breakpoints: {       
-      320: {       
-         slidesPerView: 1,
-         spaceBetween: 10     
-      },          
-      768: {       
-         slidesPerView: 2,       
-         spaceBetween: 50     
-      },   
+            320: {       
+              slidesPerView: 1,
+              spaceBetween: 10     
+            },          
+            768: {       
+              slidesPerView: 2,       
+              spaceBetween: 50     
+            },   
   
-      // 1440: {       
-      //    slidesPerView: 3,       
-      //    spaceBetween: 30     
-      // } 
-      }   
+          // 1440: {       
+          //    slidesPerView: 3,       
+          //    spaceBetween: 30     
+          // } 
+          }   
+        }
       }
-    }
   },
 };
 </script>

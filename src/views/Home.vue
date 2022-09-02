@@ -14,7 +14,7 @@
           name's Raul. <br />
           I'm a FrontEnd Developer.
         </h1>
-        <button class="btn-primary mt-10">Recent work</button>
+        <router-link to="/portfolio" class="btn-primary mt-10 inline-flex">Recent work</router-link>
       </div>
 
       <div class="mx-auto group max-w-md">
@@ -45,8 +45,8 @@
 
     <div class="container invisible md:visible absolute bottom-8">
       <a href="#skills" class="flex items-center group gap-4">
-        <div class="z-20 w-1 pt-[0.7rem] px-2 h-6 border-2 border-blue-500 rounded-3xl opacity-75 box-content relative">
-          <div class="w-1 h-2 rounded-md bg-blue-500 animate-bounce"></div>
+        <div class="z-20 w-1 pt-[0.7rem] px-2 h-6 border-2 border-primary rounded-3xl opacity-75 box-content relative">
+          <div class="w-1 h-2 rounded-md bg-primary animate-bounce"></div>
           <span class="w-8 h-8 rounded-full bg-transparent p-4 border-2 border-blue-400 absolute opacity-0 group-hover:animate-ping group-hover:opacity-100 top-0 -left-[8px]"></span>
         </div>
 
@@ -127,15 +127,15 @@
 
             <div class="flex flex-col gap-5 mt-6">
               <div href="https://dribbble.com/Rauliqbal" target="_blank" class="flex items-center gap-2 md:gap-4 transition duration-200">
-                <i class="bx text-lg md:text-2xl bx-mail-send text-blue-500"></i>
+                <i class="bx text-lg md:text-2xl bx-mail-send text-primary"></i>
                 <span class="text-[12px] sm:text-base">muhamadrauliqbal.13@gmail.com</span>
               </div>
               <div href="https://www.linkedin.com/in/muhamad-raul-iqbal/" target="_blank" class="flex items-start gap-2 md:gap-4 transition duration-200">
-                <i class="bx text-lg md:text-2xl bx-map-pin text-blue-500"></i>
+                <i class="bx text-lg md:text-2xl bx-map-pin text-primary"></i>
                 <span class="text-[12px] sm:text-base">Perum Telaga Murni no 14 A ,Kec. Cikarang Barat, Kab. Bekasi</span>
               </div>
               <div href="https://www.instagram.com/raul.iqbl_/" target="_blank" class="flex items-center gap-2 md:gap-4 transition duration-200">
-                <i class="bx text-lg md:text-2xl bx-phone text-blue-500"></i>
+                <i class="bx text-lg md:text-2xl bx-phone text-primary"></i>
                 <span class="text-[12px] sm:text-base">+62 896 7310 2977</span>
               </div>
             </div>
@@ -184,7 +184,7 @@
           </div>
         </div>
       </div>
-      <img class="w-full h-[20rem] md:h-auto mt-[-24rem] lg:mt-0" src="../assets/images/bg-image.webp" />
+      <img class="w-full h-[20rem] md:h-auto mt-[-24rem] lg:mt-24" src="../assets/images/bg-image.webp" />
    </section>
    <!-- end:contact -->
 
