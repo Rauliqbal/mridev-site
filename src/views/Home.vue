@@ -44,18 +44,18 @@
     <!-- end:hero -->
 
     <div class="container invisible md:visible absolute bottom-8">
-      <a href="#skills" class="flex items-center group gap-4">
+      <button @click="goto('skills')" class="flex items-center group gap-4">
         <div class="z-20 w-1 pt-[0.7rem] px-2 h-6 border-2 border-primary rounded-3xl opacity-75 box-content relative">
           <div class="w-1 h-2 rounded-md bg-primary animate-bounce"></div>
           <span class="w-8 h-8 rounded-full bg-transparent p-4 border-2 border-blue-400 absolute opacity-0 group-hover:animate-ping group-hover:opacity-100 top-0 -left-[8px]"></span>
         </div>
 
         <span class="text-sm">SCROLL DOWN</span>
-      </a>
+      </button>
     </div>
 
     <!-- start:Skills -->
-    <section id="skills" class="bg-[#1C2863]">
+    <section ref="skills" class="bg-[#1C2863]">
       <div class="container py-20">
         <div class="md:w-1/2">
           <div class="flex items-center gap-8">
@@ -200,6 +200,14 @@ import WorkCard from "../components/WorkCard.vue";
 export default {
   components: { Navbar, WorkCard, },
   
+  methods: {
+    goto(refName) {
+      var element = this.$refs[refName]
+      var top = element.offsetTop;
+
+      window.scrollTo(0, top)
+    }
+  }
   
 };
 </script>

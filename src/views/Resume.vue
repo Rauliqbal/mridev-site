@@ -11,7 +11,7 @@
 
 		<!-- start:resume -->
 		<div class="container py-20">
-			<div class="grid grid-cols-1 md:grid-cols-2">
+			<div class="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-0">
 				<div>
 					<div class="flex items-center gap-8 mb-6">
 						<div class="w-12 h-1 bg-primary"></div>
