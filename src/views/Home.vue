@@ -1,7 +1,7 @@
 <template>
   <div class="overflow-hidden">
     <Navbar />
-    
+
     <!-- start:hero -->
     <div class="container grid grid-cols-1 md:grid-cols-2 items-center h-screen mt-10 md:mt-0">
       <div>
@@ -71,7 +71,7 @@
         </div>
 
         <div class="flex flex-col md:flex-row items-center md:justify-center gap-8 px-4 absolute right-0 lg:mr-[4%] mt-8 md:mt-4 lg:-mt-8 xl:-mt-24">
-          <div class="flex flex-col justify-center items-center w-full md:max-w-[370px] bg-[#fff] rounded-3xl p-8 md:p-12 shadow hover:shadow-2xl transition-all duration-300 ease-out">
+          <div class="flex flex-col justify-center items-center w-full md:max-w-[370px] bg-[#fff] rounded-3xl p-8 md:p-12 shadow hover:shadow-xl hover:-translate-y-4 transition-all duration-300 ease-out">
             <div class="p-6 bg-blue-300 rounded-full w-[200px] h-[200px]">
               <img src="../assets/images/fe-dev.svg" />
             </div>
@@ -81,7 +81,7 @@
             </div>
           </div>
 
-          <div class="flex flex-col justify-center items-center w-full md:max-w-[370px] bg-[#fff] rounded-3xl p-8 md:p-12 shadow hover:shadow-2xl transition-all duration-300 ease-out">
+          <div class="flex flex-col justify-center items-center w-full md:max-w-[370px] bg-[#fff] rounded-3xl p-8 md:p-12 shadow hover:shadow-xl hover:-translate-y-4 transition-all duration-300 ease-out">
             <div class="p-6 bg-violet-300 rounded-full w-[200px] h-[200px]">
               <img src="../assets/images/ui-des.svg" />
             </div>
@@ -99,19 +99,17 @@
     <section class="bg-[#F4F6FF] py-20 mt-[58rem] md:mt-[24rem]">
       <div class="container">
         <div class="flex items-center gap-8">
-            <div class="w-12 md:w-24 h-1 bg-primary"></div>
-            <h2 class="section-title text-primary">what i do</h2>
+          <div class="w-12 md:w-24 h-1 bg-primary"></div>
+          <h2 class="section-title text-primary">what i do</h2>
         </div>
-          <h2 class="text-2xl md:text-4xl font-semibold mt-2">
-           Look at my portfolios.
-          </h2>
-      <WorkCard class="mt-14"/>
+        <h2 class="text-2xl md:text-4xl font-semibold mt-2">Look at my portfolios.</h2>
+        <WorkCard class="mt-14" />
       </div>
     </section>
     <!-- end:Portfolio -->
 
-   <!-- start:contact -->
-   <section class="pt-20 bg-[#F4F6FF] relative">
+    <!-- start:contact -->
+    <section class="pt-20 bg-[#F4F6FF] relative">
       <div class="relative lg:absolute inset-x-0 container py-20">
         <div class="grid grid-cols-1 gap-8 md:grid-cols-2 bg-white px-4 py-8 md:p-20 rounded-3xl box-contact">
           <div>
@@ -119,9 +117,7 @@
               <div class="w-12 md:w-24 h-1 bg-primary"></div>
               <h2 class="section-title text-primary">Say Hello</h2>
             </div>
-            <h2 class="text-2xl md:text-4xl font-semibold mt-2">
-           Let's work together.
-            </h2>
+            <h2 class="text-2xl md:text-4xl font-semibold mt-2">Let's work together.</h2>
 
             <p class="mt-4">Have some project? or maybe just want to discuss your project, I help you as much as I can.</p>
 
@@ -142,72 +138,71 @@
           </div>
 
           <div class="py-6 px-0 md:px-8">
-            <form class="flex flex-col gap-6" action="https://formspree.io/f/mqkjznjb"
-  method="POST">
-              <div class="w-full md:max-w-md flex items-center bg-gray-100 py-3 px-6  rounded-xl ">
-                <input class="w-full bg-gray-100 outline-0" placeholder="name" type="name"  name="name">
-                <i class="bx bx-user text-2xl"></i> 
+            <form class="flex flex-col gap-6" action="https://formspree.io/f/mqkjznjb" method="POST">
+              <div class="w-full md:max-w-md flex items-center bg-gray-100 py-3 px-6 rounded-xl">
+                <input class="w-full bg-gray-100 outline-0" placeholder="name" type="name" name="name" />
+                <i class="bx bx-user text-2xl"></i>
               </div>
 
-               <div class="w-full md:max-w-md flex items-center bg-gray-100 py-3 px-6  rounded-xl">
-                <input class="w-full bg-gray-100 outline-0" placeholder="email" type="email"  name="email">
-                <i class="bx bx-paper-plane text-2xl"></i> 
+              <div class="w-full md:max-w-md flex items-center bg-gray-100 py-3 px-6 rounded-xl">
+                <input class="w-full bg-gray-100 outline-0" placeholder="email" type="email" name="email" />
+                <i class="bx bx-paper-plane text-2xl"></i>
               </div>
 
-               <div class="w-full md:max-w-md flex bg-gray-100 py-3 px-6  rounded-xl">
+              <div class="w-full md:max-w-md flex bg-gray-100 py-3 px-6 rounded-xl">
                 <textarea class="w-full bg-gray-100 outline-0" rows="3" placeholder="message" name="message"></textarea>
-                <i class="bx bx-message-square-detail text-2xl"></i> 
+                <i class="bx bx-message-square-detail text-2xl"></i>
               </div>
               <button class="btn-primary w-full md:w-[170px] mt-4 md:mt-8" type="submit">Send message</button>
             </form>
           </div>
-           <div class="flex justify-evenly col-span-1 md:col-span-2">
+          <div class="flex justify-evenly col-span-1 md:col-span-2">
             <a href="https://dribbble.com/Rauliqbal" target="_blank" class="flex items-center text-slate-500 gap-4 hover:bg-primary hover:text-white py-3 px-3 sm:py-3 sm:px-8 rounded-xl transition duration-200 ease-out">
-              <i class='bx bxl-dribbble text-xl' ></i>
+              <i class="bx bxl-dribbble text-xl"></i>
               <span class="font-semibold text-xl hidden lg:block">Dribble</span>
             </a>
 
             <a href="https://github.com/Rauliqbal" target="_blank" class="flex items-center text-slate-500 gap-4 hover:bg-primary hover:text-white py-3 px-3 sm:py-3 sm:px-8 rounded-xl transition duration-200 ease-out">
-              <i class='bx bxl-github text-xl' ></i>
+              <i class="bx bxl-github text-xl"></i>
               <span class="font-semibold text-xl hidden lg:block">Github</span>
             </a>
 
             <a href="https://www.linkedin.com/in/muhamad-raul-iqbal/" class="flex items-center text-slate-500 gap-4 hover:bg-primary hover:text-white py-3 px-3 sm:py-3 sm:px-8 rounded-xl transition duration-200 ease-out">
-              <i class='bx bxl-linkedin text-xl' ></i>
+              <i class="bx bxl-linkedin text-xl"></i>
               <span class="font-semibold text-xl hidden lg:block">LinkedIn</span>
             </a>
 
-            <a href="https://www.youtube.com/channel/UCklGTRJJjc00lK-qF3L_CRQ" target="_blank" class="flex items-center text-slate-500 gap-4 hover:bg-primary hover:text-white py-3 px-3 sm:py-3 sm:px-8 rounded-xl transition duration-200 ease-out">
-              <i class='bx bxl-youtube text-xl' ></i>
+            <a
+              href="https://www.youtube.com/channel/UCklGTRJJjc00lK-qF3L_CRQ"
+              target="_blank"
+              class="flex items-center text-slate-500 gap-4 hover:bg-primary hover:text-white py-3 px-3 sm:py-3 sm:px-8 rounded-xl transition duration-200 ease-out"
+            >
+              <i class="bx bxl-youtube text-xl"></i>
               <span class="font-semibold text-xl hidden lg:block">Youtube</span>
             </a>
           </div>
         </div>
       </div>
       <img class="w-full h-[20rem] md:h-auto mt-[-24rem] lg:mt-24" src="../assets/images/bg-image.webp" />
-   </section>
-   <!-- end:contact -->
-
-
+    </section>
+    <!-- end:contact -->
   </div>
 </template>
 
 <script>
-
 import Navbar from "../components/Navbar.vue";
 import WorkCard from "../components/WorkCard.vue";
 
 export default {
-  components: { Navbar, WorkCard, },
-  
+  components: { Navbar, WorkCard },
+
   methods: {
     goto(refName) {
-      var element = this.$refs[refName]
+      var element = this.$refs[refName];
       var top = element.offsetTop;
 
-      window.scrollTo(0, top)
-    }
-  }
-  
+      window.scrollTo(0, top);
+    },
+  },
 };
 </script>
