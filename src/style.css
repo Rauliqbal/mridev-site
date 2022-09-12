@@ -66,8 +66,8 @@
     background: #fff;
     
   }
-  #active:checked ~ .menu-btn i:before {
-    content: "\f00d";
+  #active:checked ~ .menu-btn i {
+    @apply text-primary
   }
   .wrapper ul {
     position: absolute;

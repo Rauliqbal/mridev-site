@@ -10,10 +10,10 @@
 		<!-- end:hero -->
 
 		<!-- start:resume -->
-		<div class="container py-20">
+		<section class="container py-20">
 			<div class="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-0">
 				<div>
-					<div class="flex items-center gap-8 mb-6">
+					<div class="flex items-center gap-4 mb-6">
 						<div class="w-12 h-1 bg-primary"></div>
 						<h2 class="section-title">Experience</h2>
 					</div>
@@ -28,7 +28,7 @@
 					</div>
 
 					<div class="mt-12">
-						<div class="flex items-center gap-8 mb-6">
+						<div class="flex items-center gap-4 mb-6">
 							<div class="w-12 h-1 bg-primary"></div>
 							<h2 class="section-title">Education</h2>
 						</div>
@@ -55,7 +55,7 @@
 
 				<!-- Start:Course -->
 				<div>
-					<div class="flex items-center gap-8 mb-6">
+					<div class="flex items-center gap-4 mb-6">
 						<div class="w-12 h-1 bg-primary"></div>
 						<h2 class="section-title">Course</h2>
 					</div>
@@ -100,11 +100,12 @@
 				</div>
 				<!-- End:Course -->
 			</div>
-		</div>
+		</section>
 		<!-- end:resume -->
 
-		<div class="container py-20">
-			<div class="flex items-center gap-8 mb-6">
+		<!-- start: Certificates -->
+		<section class="container py-20">
+			<div class="flex items-center gap-4">
 				<div class="w-12 h-1 bg-primary"></div>
 				<h2 class="section-title">Certificates</h2>
 			</div>
@@ -117,7 +118,7 @@
 						clickable: true,
 					}"
 					:autoplay="{
-						delay: 3500,
+						delay: 4500,
 						disableOnInteraction: false,
 					}"
 					:loop = "true"
@@ -312,7 +313,104 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</section>
+		<!-- End:Certificates -->
+
+		<!-- Start: Skills -->
+		<section class="container py-20">
+			<div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-0">
+				<div class="px-6">
+					<div class="flex items-center gap-4">
+						<div class="w-12 h-1 bg-primary"></div>
+						<h2 class="section-title">Coding Skills</h2>
+					</div>
+					<!-- Coding Skills -->
+					<div class="grid grid-cols-3 md:grid-cols-4 gap-6 mt-4">
+						<div class="flex items-center flex-col gap-2 group">
+							<img class="w-20 mx-auto p-4 border-2 border-slate-200  rounded-xl group-hover:-translate-y-2 group-hover:shadow-lg transition duration-300 ease-out" src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/html5-colored.svg">
+							<span class="text-[12px] text-center uppercase text-slate-500 group-hover:text-primary font-semibold transition duration-300 ease-out">HTML</span>
+						</div>
+
+						<div class="flex items-center flex-col gap-2 group">
+							<img class="w-20 mx-auto p-4 border-2 border-slate-200  rounded-xl group-hover:-translate-y-2 group-hover:shadow-lg transition duration-300 ease-out" src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/css3-colored.svg">
+							<span class="text-[12px] text-center uppercase text-slate-500 group-hover:text-primary font-semibold transition duration-300 ease-out">css</span>
+						</div>
+
+						<div class="flex items-center flex-col gap-2 group">
+							<img class="w-20 mx-auto p-4 border-2 border-slate-200  rounded-xl group-hover:-translate-y-2 group-hover:shadow-lg transition duration-300 ease-out" src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/javascript-colored.svg">
+							<span class="text-[12px] text-center uppercase text-slate-500 group-hover:text-primary font-semibold transition duration-300 ease-out">Javascript</span>
+						</div>
+						<div class="flex items-center flex-col gap-2 group">
+							<img class="w-20 mx-auto p-4 border-2 border-slate-200  rounded-xl group-hover:-translate-y-2 group-hover:shadow-lg transition duration-300 ease-out" src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/sass-colored.svg">
+							<span class="text-[12px] text-center uppercase text-slate-500 group-hover:text-primary font-semibold transition duration-300 ease-out">Sass</span>
+						</div>
+						<div class="flex items-center flex-col gap-2 group">
+							<img class="w-20 mx-auto p-4 border-2 border-slate-200  rounded-xl group-hover:-translate-y-2 group-hover:shadow-lg transition duration-300 ease-out" src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/bootstrap-colored.svg">
+							<span class="text-[12px] text-center uppercase text-slate-500 group-hover:text-primary font-semibold transition duration-300 ease-out">bootstrap 5</span>
+						</div>
+						<div class="flex items-center flex-col gap-2 group">
+							<img class="w-20 mx-auto p-4 border-2 border-slate-200  rounded-xl group-hover:-translate-y-2 group-hover:shadow-lg transition duration-300 ease-out" src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/tailwindcss-colored.svg">
+							<span class="text-[12px] text-center uppercase text-slate-500 group-hover:text-primary font-semibold transition duration-300 ease-out">Tailwind</span>
+						</div>
+						<div class="flex items-center flex-col gap-2 group">
+							<img class="w-20 mx-auto p-4 border-2 border-slate-200  rounded-xl group-hover:-translate-y-2 group-hover:shadow-lg transition duration-300 ease-out" src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/vuejs-colored.svg">
+							<span class="text-[12px] text-center uppercase text-slate-500 group-hover:text-primary font-semibold transition duration-300 ease-out">Vue Js</span>
+						</div>
+						<div class="flex items-center flex-col gap-2 group">
+							<img class="w-20 mx-auto p-4 border-2 border-slate-200  rounded-xl group-hover:-translate-y-2 group-hover:shadow-lg transition duration-300 ease-out" src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/nuxtjs-colored.svg">
+							<span class="text-[12px] text-center uppercase text-slate-500 group-hover:text-primary font-semibold transition duration-300 ease-out">Nuxt Js</span>
+						</div>
+					</div>
+					
+				</div>
+
+				<div class="px-6">
+					<div class="flex items-center gap-4">
+						<div class="w-12 h-1 bg-primary"></div>
+						<h2 class="section-title">Design Skills</h2>
+					</div>
+					<!-- Design Skills -->
+					<div class="grid grid-cols-3 md:grid-cols-4 gap-6 mt-4">
+						<div class="flex items-center flex-col gap-2 group">
+							<img class="w-20 mx-auto p-4 border-2 border-slate-200  rounded-xl group-hover:-translate-y-2 group-hover:shadow-lg transition duration-300 ease-out" src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/figma-colored.svg">
+							<span class="text-[12px] text-center uppercase text-slate-500 group-hover:text-primary font-semibold transition duration-300 ease-out">figma</span>
+						</div>
+
+						<div class="flex items-center flex-col gap-2 group">
+							<img class="w-20 mx-auto p-4 border-2 border-slate-200  rounded-xl group-hover:-translate-y-2 group-hover:shadow-lg transition duration-300 ease-out" src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/css3-colored.svg">
+							<span class="text-[12px] text-center uppercase text-slate-500 group-hover:text-primary font-semibold transition duration-300 ease-out">Wireframe</span>
+						</div>
+
+						<div class="flex items-center flex-col gap-2 group">
+							<img class="w-20 mx-auto p-4 border-2 border-slate-200  rounded-xl group-hover:-translate-y-2 group-hover:shadow-lg transition duration-300 ease-out" src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/javascript-colored.svg">
+							<span class="text-[12px] text-center uppercase text-slate-500 group-hover:text-primary font-semibold transition duration-300 ease-out">Javascript</span>
+						</div>
+						<div class="flex items-center flex-col gap-2 group">
+							<img class="w-20 mx-auto p-4 border-2 border-slate-200  rounded-xl group-hover:-translate-y-2 group-hover:shadow-lg transition duration-300 ease-out" src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/sass-colored.svg">
+							<span class="text-[12px] text-center uppercase text-slate-500 group-hover:text-primary font-semibold transition duration-300 ease-out">Sass</span>
+						</div>
+						<div class="flex items-center flex-col gap-2 group">
+							<img class="w-20 mx-auto p-4 border-2 border-slate-200  rounded-xl group-hover:-translate-y-2 group-hover:shadow-lg transition duration-300 ease-out" src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/bootstrap-colored.svg">
+							<span class="text-[12px] text-center uppercase text-slate-500 group-hover:text-primary font-semibold transition duration-300 ease-out">bootstrap 5</span>
+						</div>
+						<div class="flex items-center flex-col gap-2 group">
+							<img class="w-20 mx-auto p-4 border-2 border-slate-200  rounded-xl group-hover:-translate-y-2 group-hover:shadow-lg transition duration-300 ease-out" src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/tailwindcss-colored.svg">
+							<span class="text-[12px] text-center uppercase text-slate-500 group-hover:text-primary font-semibold transition duration-300 ease-out">Tailwind</span>
+						</div>
+						<div class="flex items-center flex-col gap-2 group">
+							<img class="w-20 mx-auto p-4 border-2 border-slate-200  rounded-xl group-hover:-translate-y-2 group-hover:shadow-lg transition duration-300 ease-out" src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/vuejs-colored.svg">
+							<span class="text-[12px] text-center uppercase text-slate-500 group-hover:text-primary font-semibold transition duration-300 ease-out">Vue Js</span>
+						</div>
+						<div class="flex items-center flex-col gap-2 group">
+							<img class="w-20 mx-auto p-4 border-2 border-slate-200  rounded-xl group-hover:-translate-y-2 group-hover:shadow-lg transition duration-300 ease-out" src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/nuxtjs-colored.svg">
+							<span class="text-[12px] text-center uppercase text-slate-500 group-hover:text-primary font-semibold transition duration-300 ease-out">Nuxt Js</span>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</section>
+		<!-- End: Skills -->
 	</div>
 </template>
 <script>

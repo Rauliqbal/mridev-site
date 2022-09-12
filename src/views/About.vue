@@ -5,7 +5,7 @@
     <!-- start:hero -->
     <div class="grid grid-cols-1 md:grid-cols-2 items-center container py-10">
       <div class=" md:order-first order-last py-4 md:py-0">
-        <div class="flex items-center gap-8">
+        <div class="flex items-center gap-4">
           <div class="w-12 md:w-24 h-1 bg-primary"></div>
           <h2 class="section-title">Hello my name is</h2>
         </div>
@@ -26,7 +26,7 @@
       </div>
 
       <div class=" order-first md:order-last mx-auto group max-w-md pt-24 pb-12">
-        <div class="relative">
+        <div class="relative" v-tilt="{ speed: 500, perspective: 1000, transition: true }">
           <div class="flex items-center justify-center rounded-full bg-gradient-to-b from-blue-400 to-violet-500 w-60 h-60 md:w-[28rem] md:h-[28rem] overflow-hidden">
             <img class="group-hover:-translate-y-5 transition-all duration-300 ease-out" src="../assets/images/ilustration/ilustration-user.svg" alt="" />
           </div>
@@ -36,7 +36,7 @@
           </div>
         </div>
 
-        <div class="relative -top-[27rem] ">
+        <div class="relative -top-[27rem]">
           <span class="animate-floating absolute -left-8 md:left-0 top-44 md:-top-4 bg-white rounded-full shadow-2xl animation-delay-2000">
             <img class="p-3 w-14 md:w-20" src="../assets/images/tailwind-icon.svg" alt="" />
           </span>
@@ -55,7 +55,7 @@
     <section id="skills" class="bg-[#1C2863]">
       <div class="container py-20">
         <div class="md:w-1/2">
-          <div class="flex items-center gap-8">
+          <div class="flex items-center gap-4">
             <div class="w-12 md:w-24 h-1 bg-secondary"></div>
             <h2 class="section-title text-secondary">what i do</h2>
           </div>
@@ -95,7 +95,7 @@
     <!-- start:testimonial -->
     <section class="bg-[#F4F6FF]">
        <div class="container py-20 mt-[58rem] md:mt-[24rem] ">
-      <div class="flex items-center gap-8">
+      <div class="flex items-center gap-4">
         <div class="w-12 md:w-24 h-1 bg-primary"></div>
         <h2 class="section-title">Testimonials</h2>
       </div>
@@ -148,10 +148,6 @@
     </div>
     </section>
     <!-- end:testimonial -->
-
-   
-
-    <Footer/>
   </div>
 </template>
 

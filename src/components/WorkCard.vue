@@ -14,7 +14,7 @@
     class="mySwiper"
   >
     <swiper-slide class="pb-14" v-for="data in portfolio" :key="data.id">
-      <div class="flex flex-col md:flex-row bg-white rounded-xl overflow-hidden">
+      <div class="flex flex-col md:flex-row bg-white rounded-2xl overflow-hidden">
         <img class="w-full md:w-1/2" src="https://rauliqbal.vercel.app/images/portfolio/lenterahouse-webdev.webp" alt="" />
         <div class="w-full md:w-1/2 py-12 md:py-0 flex flex-col justify-center items-center">
           <h5 class="text-lg uppercase text-blue-500 font-medium">{{ data.type }}</h5>

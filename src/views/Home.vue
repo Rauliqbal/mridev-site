@@ -5,7 +5,7 @@
     <!-- start:hero -->
     <div class="container grid grid-cols-1 md:grid-cols-2 items-center h-screen mt-10 md:mt-0">
       <div>
-        <div class="flex items-center gap-8">
+        <div class="flex items-center gap-4">
           <div class="w-12 md:w-24 h-1 bg-primary"></div>
           <h2 class="section-title">Rauliqbal</h2>
         </div>
@@ -58,7 +58,7 @@
     <section ref="skills" class="bg-[#1C2863]">
       <div class="container py-20">
         <div class="md:w-1/2">
-          <div class="flex items-center gap-8">
+          <div class="flex items-center gap-4">
             <div class="w-12 md:w-24 h-1 bg-secondary"></div>
             <h2 class="section-title text-secondary">what i do</h2>
           </div>
@@ -98,7 +98,7 @@
     <!-- start:Portfolio -->
     <section class="bg-[#F4F6FF] py-20 mt-[58rem] md:mt-[24rem]">
       <div class="container">
-        <div class="flex items-center gap-8">
+        <div class="flex items-center gap-4">
           <div class="w-12 md:w-24 h-1 bg-primary"></div>
           <h2 class="section-title text-primary">what i do</h2>
         </div>
@@ -113,7 +113,7 @@
       <div class="relative lg:absolute inset-x-0 container py-20">
         <div class="grid grid-cols-1 gap-8 md:grid-cols-2 bg-white px-4 py-8 md:p-20 rounded-3xl box-contact">
           <div>
-            <div class="flex items-center gap-8">
+            <div class="flex items-center gap-4">
               <div class="w-12 md:w-24 h-1 bg-primary"></div>
               <h2 class="section-title text-primary">Say Hello</h2>
             </div>
@@ -124,15 +124,15 @@
             <div class="flex flex-col gap-5 mt-6">
               <div href="https://dribbble.com/Rauliqbal" target="_blank" class="flex items-center gap-2 md:gap-4 transition duration-200">
                 <i class="bx text-lg md:text-2xl bx-mail-send text-primary"></i>
-                <span class="text-[12px] sm:text-base">muhamadrauliqbal.13@gmail.com</span>
+                <span class="text-sm sm:text-base">muhamadrauliqbal.13@gmail.com</span>
               </div>
               <div href="https://www.linkedin.com/in/muhamad-raul-iqbal/" target="_blank" class="flex items-start gap-2 md:gap-4 transition duration-200">
                 <i class="bx text-lg md:text-2xl bx-map-pin text-primary"></i>
-                <span class="text-[12px] sm:text-base">Perum Telaga Murni no 14 A ,Kec. Cikarang Barat, Kab. Bekasi</span>
+                <span class="text-sm sm:text-base">Perum Telaga Murni no 14 A ,Kec. Cikarang Barat, Kab. Bekasi</span>
               </div>
               <div href="https://www.instagram.com/raul.iqbl_/" target="_blank" class="flex items-center gap-2 md:gap-4 transition duration-200">
                 <i class="bx text-lg md:text-2xl bx-phone text-primary"></i>
-                <span class="text-[12px] sm:text-base">+62 896 7310 2977</span>
+                <span class="text-sm sm:text-base">+62 896 7310 2977</span>
               </div>
             </div>
           </div>
