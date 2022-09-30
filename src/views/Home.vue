@@ -149,9 +149,9 @@
                 <i class="bx bx-paper-plane text-2xl"></i>
               </div>
 
-              <div class="w-full md:max-w-md flex bg-gray-100 py-3 px-6 rounded-xl">
+              <div class="w-full md:max-w-md bg-gray-100 py-3 px-6 rounded-xl relative">
                 <textarea class="w-full bg-gray-100 outline-0" rows="3" placeholder="message" name="message"></textarea>
-                <i class="bx bx-message-square-detail text-2xl"></i>
+                <i class="bx bx-message-square-detail text-2xl absolute top-3 right-6"></i>
               </div>
               <button class="btn-primary w-full md:w-[170px] mt-4 md:mt-8" type="submit">Send message</button>
             </form>
