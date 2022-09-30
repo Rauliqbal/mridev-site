@@ -111,8 +111,8 @@
     <!-- start:contact -->
     <section class="pt-20 bg-[#F4F6FF] relative">
       <div class="relative lg:absolute inset-x-0 container py-20">
-        <div class="grid grid-cols-1 gap-8 md:grid-cols-2 bg-white px-4 py-8 md:p-20 rounded-3xl box-contact">
-          <div>
+        <div class="grid grid-cols-1 gap-8 lg:grid-cols-2 bg-white px-4 py-8 md:p-20 rounded-3xl box-contact">
+          <div class="col-span-1 md:col-span-2 lg:col-span-1">
             <div class="flex items-center gap-4">
               <div class="w-12 md:w-24 h-1 bg-primary"></div>
               <h2 class="section-title text-primary">Say Hello</h2>
@@ -140,7 +140,7 @@
           <div class="py-6 px-0 md:px-8">
             <form class="flex flex-col gap-6" action="https://formspree.io/f/mqkjznjb" method="POST">
               <div class="w-full md:max-w-md flex items-center bg-gray-100 py-3 px-6 rounded-xl">
-                <input class="w-full bg-gray-100 outline-0" placeholder="name" type="name" name="name" />
+                <input class="w-full bg-gray-100 outline-0 focus:" placeholder="name" type="name" name="name" />
                 <i class="bx bx-user text-2xl"></i>
               </div>
 
@@ -186,6 +186,7 @@
       <img class="w-full h-[20rem] md:h-auto mt-[-24rem] lg:mt-24" src="../assets/images/bg-image.webp" />
     </section>
     <!-- end:contact -->
+    <div class="bg-[#1c2863] py-0 lg:py-20 xl:py-0"></div>
   </div>
 </template>
 
