@@ -30,6 +30,9 @@ module.exports = {
           "100%": { transform: "scaleY(0)" },
         },
       },
+      backgroundImage : {
+          'background-hero': "url('/src/assets/background-image.png')"
+      }
     },
   },
   plugins: [
