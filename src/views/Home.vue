@@ -10,14 +10,13 @@
                   <div class="w-12 md:w-24 h-1 bg-primary"></div>
                   <h2 class="section-title">Rauliqbal</h2>
                </div>
-               <h1 class="text-4xl md:text[-40px] lg:text-[60px] leading-normal md:leading-tight font-semibold tracking-wider mt-0 md:mt-6">
+               <h1 class="text-slate-900 text-4xl md:text[-40px] lg:text-[64px] leading-normal md:leading-tight font-semibold tracking-wider mt-0 md:mt-6">
                   Hello, my <br />
                   name's Raul. <br />
-                  I'm a FrontEnd Developer.
+                  I'm a Front-End Developer.
                </h1>
-               <router-link to="/portfolio" class="btn-primary mt-10 inline-flex">Recent work</router-link>
+               <router-link to="/project" class="btn-primary mt-10 inline-flex">Recent work</router-link>
             </div>
-
             <div class="mx-auto group max-w-md">
                <div class="relative" v-tilt="{ speed: 500, perspective: 1000, transition: true }">
                   <div class="flex items-center justify-center rounded-full bg-gradient-to-b from-blue-400 to-violet-500 w-60 h-60 md:w-[28rem] md:h-[28rem] overflow-hidden">
@@ -70,7 +69,7 @@
                   human-centered digital experiences.
                </h2>
 
-               <h3 class="text-5xl font-semibold text-white mt-20">Think.Make.<br />Solve</h3>
+               <h3 class="text-6xl font-semibold text-white mt-20">Think.Make.<br />Solve</h3>
             </div>
 
             <div class="flex flex-col md:flex-row items-center md:justify-center gap-8 px-4 absolute right-0 lg:mr-[4%] mt-8 md:mt-4 lg:-mt-8 xl:-mt-24">
@@ -100,38 +99,36 @@
 
       <!-- start:Portfolio -->
       <section class="mt-[58rem] md:mt-[24rem] bg-[#F4F6FF]">
-         <div class="container grid grid-cols-1 gap-24 mt-14 py-20">
-            <div class="flex flex-col w-full gap-8">
-               <div class="flex flex-col md:flex-row md:items-center gap-4 md:gap-8">
-                  <div class="w-full md:w-1/2">
-                     <span class="text-slate-900 text-5xl">#1</span>
-                     <h2 class="text-4xl md:text-5xl font-semibold mt-2 text-slate-900">Portfolio Project</h2>
-                  </div>
-                  <div class="w-full md:w-1/2">
-                     <p class="text-lg md:text-xl text-slate-400 mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque ratione ea, nihil voluptatem dolorum sequi!</p>
-                     <a class="md:ml-auto inline-flex mt-4 md:mt-8 py-3 px-6 text-sm font-semibold text-primary ring-2 ring-primary hover:bg-primary hover:text-white" href="#">See Project</a>
-                  </div>
-               </div>
-               <div class="w-full rounded-lg overflow-hidden">
-                  <img class="object-cover w-full" src="../assets/images/portfolio.png" alt="" />
-               </div>
+         <div class="container py-20">
+            <div class="flex items-center gap-4">
+               <div class="w-12 md:w-24 h-1 bg-primary"></div>
+               <h2 class="section-title text-primary">Recent Work</h2>
             </div>
+            <h2 class="text-5xl md:text-7xl font-semibold mt-4">
+               Look at My <br />
+               Portfolios.
+            </h2>
 
-            <div class="flex flex-col w-full gap-8">
-               <div class="flex flex-col md:flex-row md:items-center gap-4 md:gap-8">
-                  <div class="w-full md:w-1/2">
-                     <span class="text-slate-900 text-5xl">#1</span>
-                     <h2 class="text-4xl md:text-5xl font-semibold mt-2 text-slate-900">Portfolio Project</h2>
-                  </div>
-                  <div class="w-full md:w-1/2">
-                     <p class="text-lg md:text-xl text-slate-400 mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque ratione ea, nihil voluptatem dolorum sequi!</p>
-                     <a class="md:ml-auto inline-flex mt-4 md:mt-8 py-3 px-6 text-sm font-semibold text-primary ring-2 ring-primary hover:bg-primary hover:text-white" href="#">See Project</a>
-                  </div>
-               </div>
-               <div class="w-full rounded-lg overflow-hidden">
-                  <img class="object-cover w-full" src="../assets/images/portfolio.png" alt="" />
-               </div>
-            </div>
+            <swiper
+               :slidesPerView="2"
+               :spaceBetween="30"
+               :pagination="{
+                  clickable: true,
+               }"
+               :modules="modules"
+               class="mySwiper mt-8"
+            >
+               <swiper-slide class="pb-12" v-for="project in projects" :key="project.id">
+                  <figure class="relative overflow-hidden group rounded-3xl">
+                     <img class="object-cover w-full group-hover:scale-110 group-hover:blur-sm transition-all duration-200 ease-out" :src="'/src/assets/images/portfolio/' + project.img" alt="" />
+                     <figcaption class="p-8 flex flex-col justify-end bg-slate-900/40 inset-0 absolute opacity-0 scale-110 group-hover:opacity-100 group-hover:scale-100 ttransition-all duration-300 ease-out">
+                        <h2 class="text-2xl font-semibold text-white">{{ project.title }}</h2>
+                        <p class="text-slate-100 mt-2">{{ project.desc }}</p>
+                        <a class="mt-4 w-[130px] btn-primary" :href="project.url" target="_blank">See Project</a>
+                     </figcaption>
+                  </figure>
+               </swiper-slide>
+            </swiper>
          </div>
       </section>
       <!-- end:Portfolio -->
@@ -139,91 +136,137 @@
       <!-- start:contact -->
       <section class="pt-20 bg-[#F4F6FF] relative">
          <div class="relative lg:absolute inset-x-0 container py-20">
-            <div class="grid grid-cols-1 gap-8 lg:grid-cols-2 bg-white px-4 py-8 md:p-20 rounded-3xl box-contact">
-               <div class="col-span-1 md:col-span-2 lg:col-span-1">
-                  <div class="flex items-center gap-4">
-                     <div class="w-12 md:w-24 h-1 bg-primary"></div>
-                     <h2 class="section-title text-primary">Say Hello</h2>
-                  </div>
-                  <h2 class="text-2xl md:text-4xl font-semibold mt-2">Let's work together.</h2>
-
-                  <p class="mt-4">Have some project? or maybe just want to discuss your project, I help you as much as I can.</p>
-
-                  <div class="flex flex-col gap-5 mt-6">
-                     <div href="https://dribbble.com/Rauliqbal" target="_blank" class="flex items-center gap-2 md:gap-4 transition duration-200">
-                        <i class="bx text-lg md:text-2xl bx-mail-send text-primary"></i>
-                        <span class="text-sm sm:text-base">muhamadrauliqbal.13@gmail.com</span>
-                     </div>
-                     <div href="https://www.linkedin.com/in/muhamad-raul-iqbal/" target="_blank" class="flex items-start gap-2 md:gap-4 transition duration-200">
-                        <i class="bx text-lg md:text-2xl bx-map-pin text-primary"></i>
-                        <span class="text-sm sm:text-base">Perum Telaga Murni no 14 A ,Kec. Cikarang Barat, Kab. Bekasi</span>
-                     </div>
-                     <div href="https://www.instagram.com/raul.iqbl_/" target="_blank" class="flex items-center gap-2 md:gap-4 transition duration-200">
-                        <i class="bx text-lg md:text-2xl bx-phone text-primary"></i>
-                        <span class="text-sm sm:text-base">+62 896 7310 2977</span>
-                     </div>
-                  </div>
+            <div class="bg-white px-4 py-8 md:p-20 rounded-3xl box-contact">
+               <div class="flex items-center gap-4">
+                  <div class="w-12 md:w-24 h-1 bg-primary"></div>
+                  <h2 class="section-title text-primary">Say Hello</h2>
                </div>
-
-               <div class="py-6 px-0 md:px-8">
-                  <form class="flex flex-col gap-6" action="https://formspree.io/f/mqkjznjb" method="POST">
-                     <div class="w-full md:max-w-md flex items-center bg-gray-100 py-3 px-6 rounded-xl">
-                        <input class="w-full bg-gray-100 outline-0 focus:" placeholder="name" type="name" name="name" />
-                        <i class="bx bx-user text-2xl"></i>
+               <h2 class="text-5xl md:text-7xl font-semibold mt-4">
+                  Let's work <br />
+                  together.
+               </h2>
+               <div class="grid grid-cols-1 gap-8 lg:grid-cols-2">
+                  <div class="col-span-1 md:col-span-2 lg:col-span-1">
+                     <div class="flex flex-col gap-5">
+                        <p class="mt-14">Have some project? or maybe just want to discuss your project, I help you as much as I can.</p>
+                        <div href="https://dribbble.com/Rauliqbal" target="_blank" class="flex items-center gap-2 md:gap-4 transition duration-200">
+                           <i class="bx text-lg md:text-2xl bx-mail-send text-primary"></i>
+                           <span class="text-sm sm:text-base">muhamadrauliqbal.13@gmail.com</span>
+                        </div>
+                        <div href="https://www.linkedin.com/in/muhamad-raul-iqbal/" target="_blank" class="flex items-start gap-2 md:gap-4 transition duration-200">
+                           <i class="bx text-lg md:text-2xl bx-map-pin text-primary"></i>
+                           <span class="text-sm sm:text-base">Perum Telaga Murni no 14 A ,Kec. Cikarang Barat, Kab. Bekasi</span>
+                        </div>
+                        <div href="https://www.instagram.com/raul.iqbl_/" target="_blank" class="flex items-center gap-2 md:gap-4 transition duration-200">
+                           <i class="bx text-lg md:text-2xl bx-phone text-primary"></i>
+                           <span class="text-sm sm:text-base">+62 896 7310 2977</span>
+                        </div>
                      </div>
+                  </div>
 
-                     <div class="w-full md:max-w-md flex items-center bg-gray-100 py-3 px-6 rounded-xl">
-                        <input class="w-full bg-gray-100 outline-0" placeholder="email" type="email" name="email" />
-                        <i class="bx bx-paper-plane text-2xl"></i>
-                     </div>
+                  <div class="py-6 px-0 md:px-8">
+                     <form class="flex flex-col gap-6" action="https://formspree.io/f/mqkjznjb" method="POST">
+                        <div class="w-full md:max-w-md flex items-center bg-gray-100 py-3 px-6 rounded-xl">
+                           <input class="w-full bg-gray-100 outline-0 focus:" placeholder="name" type="name" name="name" />
+                           <i class="bx bx-user text-2xl"></i>
+                        </div>
 
-                     <div class="w-full md:max-w-md bg-gray-100 py-3 px-6 rounded-xl relative">
-                        <textarea class="w-full bg-gray-100 outline-0" rows="3" placeholder="message" name="message"></textarea>
-                        <i class="bx bx-message-square-detail text-2xl absolute top-3 right-6"></i>
-                     </div>
-                     <button class="btn-primary w-full md:w-[170px] mt-4 md:mt-8" type="submit">Send message</button>
-                  </form>
-               </div>
-               <div class="flex justify-evenly col-span-1 md:col-span-2">
-                  <a href="https://dribbble.com/Rauliqbal" target="_blank" class="flex items-center text-slate-500 gap-4 hover:bg-primary hover:text-white py-3 px-3 sm:py-3 sm:px-8 rounded-xl transition duration-200 ease-out">
-                     <i class="bx bxl-dribbble text-xl"></i>
-                     <span class="font-semibold text-xl hidden lg:block">Dribble</span>
-                  </a>
+                        <div class="w-full md:max-w-md flex items-center bg-gray-100 py-3 px-6 rounded-xl">
+                           <input class="w-full bg-gray-100 outline-0" placeholder="email" type="email" name="email" />
+                           <i class="bx bx-paper-plane text-2xl"></i>
+                        </div>
 
-                  <a href="https://github.com/Rauliqbal" target="_blank" class="flex items-center text-slate-500 gap-4 hover:bg-primary hover:text-white py-3 px-3 sm:py-3 sm:px-8 rounded-xl transition duration-200 ease-out">
-                     <i class="bx bxl-github text-xl"></i>
-                     <span class="font-semibold text-xl hidden lg:block">Github</span>
-                  </a>
+                        <div class="w-full md:max-w-md bg-gray-100 py-3 px-6 rounded-xl relative">
+                           <textarea class="w-full bg-gray-100 outline-0" rows="3" placeholder="message" name="message"></textarea>
+                           <i class="bx bx-message-square-detail text-2xl absolute top-3 right-6"></i>
+                        </div>
+                        <button class="btn-primary w-full md:w-[170px] mt-4 md:mt-8" type="submit">Send message</button>
+                     </form>
+                  </div>
+                  <div class="flex justify-evenly col-span-1 md:col-span-2">
+                     <a href="https://dribbble.com/Rauliqbal" target="_blank" class="flex items-center text-slate-500 gap-4 hover:bg-primary hover:text-white py-3 px-3 sm:py-3 sm:px-8 rounded-xl transition duration-200 ease-out">
+                        <i class="bx bxl-dribbble text-xl"></i>
+                        <span class="font-semibold text-xl hidden lg:block">Dribble</span>
+                     </a>
 
-                  <a href="https://www.linkedin.com/in/muhamad-raul-iqbal/" class="flex items-center text-slate-500 gap-4 hover:bg-primary hover:text-white py-3 px-3 sm:py-3 sm:px-8 rounded-xl transition duration-200 ease-out">
-                     <i class="bx bxl-linkedin text-xl"></i>
-                     <span class="font-semibold text-xl hidden lg:block">LinkedIn</span>
-                  </a>
+                     <a href="https://github.com/Rauliqbal" target="_blank" class="flex items-center text-slate-500 gap-4 hover:bg-primary hover:text-white py-3 px-3 sm:py-3 sm:px-8 rounded-xl transition duration-200 ease-out">
+                        <i class="bx bxl-github text-xl"></i>
+                        <span class="font-semibold text-xl hidden lg:block">Github</span>
+                     </a>
 
-                  <a
-                     href="https://www.youtube.com/channel/UCklGTRJJjc00lK-qF3L_CRQ"
-                     target="_blank"
-                     class="flex items-center text-slate-500 gap-4 hover:bg-primary hover:text-white py-3 px-3 sm:py-3 sm:px-8 rounded-xl transition duration-200 ease-out"
-                  >
-                     <i class="bx bxl-youtube text-xl"></i>
-                     <span class="font-semibold text-xl hidden lg:block">Youtube</span>
-                  </a>
+                     <a href="https://www.linkedin.com/in/muhamad-raul-iqbal/" class="flex items-center text-slate-500 gap-4 hover:bg-primary hover:text-white py-3 px-3 sm:py-3 sm:px-8 rounded-xl transition duration-200 ease-out">
+                        <i class="bx bxl-linkedin text-xl"></i>
+                        <span class="font-semibold text-xl hidden lg:block">LinkedIn</span>
+                     </a>
+
+                     <a
+                        href="https://www.youtube.com/channel/UCklGTRJJjc00lK-qF3L_CRQ"
+                        target="_blank"
+                        class="flex items-center text-slate-500 gap-4 hover:bg-primary hover:text-white py-3 px-3 sm:py-3 sm:px-8 rounded-xl transition duration-200 ease-out"
+                     >
+                        <i class="bx bxl-youtube text-xl"></i>
+                        <span class="font-semibold text-xl hidden lg:block">Youtube</span>
+                     </a>
+                  </div>
                </div>
             </div>
          </div>
          <img class="w-full h-[20rem] md:h-auto mt-[-24rem] lg:mt-24" src="../assets/images/bg-image.webp" />
       </section>
       <!-- end:contact -->
-      <div class="bg-[#1c2863] py-0 lg:py-20 xl:py-0"></div>
+      <div class="bg-[#1c2863] py-0 lg:py-28"></div>
    </div>
+   <Footer />
 </template>
 
 <script>
+import Footer from "../components/Footer.vue";
 import Navbar from "../components/Navbar.vue";
 import WorkCard from "../components/WorkCard.vue";
+// Import Swipers
+import { Swiper, SwiperSlide } from "swiper/vue";
+import "swiper/css";
+import "swiper/css/pagination";
+import { Pagination } from "swiper";
 
 export default {
-   components: { Navbar, WorkCard },
+   components: { Navbar, WorkCard, Footer, Swiper, SwiperSlide },
+   setup() {
+      return {
+         modules: [Pagination],
+      };
+   },
+
+   data() {
+      return {
+         projects: [
+            {
+               title: "My Mushaf - Al Qur'an Digital",
+               desc: "My Mushaf Indonesia adalah Aplikasi Al - Qur'an Digital Berbasis Website App.",
+               url: "https://mymushaf.vercel.app/",
+               img: "mymushaf.webp",
+            },
+            {
+               title: "FurniLux - Landing Page UI KIT",
+               desc: "Design landing page for funiture",
+               url: "https://lentera-house-landingpage.vercel.app/",
+               img: "furnilux.webp",
+            },
+            {
+               title: "Lets Cooking - Resep Masakan Indonesia ",
+               desc: "Lets Cooking adalah Aplikasi Resep masakan Indonesia Berbasis Website App.",
+               url: "https://letscooking.vercel.app/",
+               img: "lets-cook.webp",
+            },
+            {
+               title: "Anonime - Streaming Anime",
+               desc: "Website Streaming Anime Slicing from Figma",
+               url: "https://anonime.vercel.app/",
+               img: "anonime.webp",
+            },
+         ],
+      };
+   },
 
    methods: {
       goto(refName) {

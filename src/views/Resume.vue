@@ -412,6 +412,7 @@
 		</section>
 		<!-- End: Skills -->
 	</div>
+	<Footer/>
 </template>
 <script>
 import Navbar from "../components/Navbar.vue";
@@ -420,9 +421,10 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "../style.css";
 import { Autoplay , Pagination } from "swiper";
+import Footer from '../components/Footer.vue';
 
 export default {
-	components: { Navbar, Swiper, SwiperSlide },
+	components: { Navbar, Swiper, SwiperSlide, Footer },
 
 	data() {
 		return {

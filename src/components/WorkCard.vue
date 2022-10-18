@@ -27,7 +27,7 @@
 </template>
 
 <script>
-import workContent from "../service/workContent.json";
+import workContent from "../data/workContent.json";
 import { Swiper, SwiperSlide } from "swiper/vue";
 import { Autoplay, Pagination } from "swiper";
 

@@ -149,6 +149,7 @@
     </section>
     <!-- end:testimonial -->
   </div>
+  <Footer/>
 </template>
 
 <script>
@@ -163,10 +164,12 @@ import "../style.css";
 
 // import required modules
 import { Pagination } from "swiper";
+import Footer from '../components/Footer.vue';
 
 export default {
   components: {Navbar, Swiper,
-    SwiperSlide,},
+    SwiperSlide,
+    Footer,},
 
   setup() {
     return {
