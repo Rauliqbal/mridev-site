@@ -69,7 +69,7 @@
                   human-centered digital experiences.
                </h2>
 
-               <h3 class="text-6xl font-semibold text-white mt-20">Think.Make.<br />Solve</h3>
+               <h3 class="text-5xl font-semibold text-white mt-20">Think.Make.<br />Solve</h3>
             </div>
 
             <div class="flex flex-col md:flex-row items-center md:justify-center gap-8 px-4 absolute right-0 lg:mr-[4%] mt-8 md:mt-4 lg:-mt-8 xl:-mt-24">
@@ -116,6 +116,11 @@
                :pagination="{
                   clickable: true,
                }"
+               :autoplay="{
+                  delay: 3500,
+                  disableOnInteraction: false,
+               }"
+               :loop="true"
                :modules="modules"
                class="mySwiper mt-8"
             >
@@ -168,7 +173,7 @@
       <!-- end:Portfolio -->
 
       <!-- start:contact -->
-      <section class="pt-20 bg-[#F4F6FF] relative">
+      <section class="bg-[#F4F6FF] relative">
          <div class="relative lg:absolute inset-x-0 container py-20">
             <div class="bg-white px-4 py-8 md:p-20 rounded-3xl box-contact">
                <div class="flex items-center gap-4">
@@ -245,7 +250,7 @@
                </div>
             </div>
          </div>
-         <img class="w-full h-[20rem] md:h-auto mt-[-24rem] lg:mt-24" src="../assets/images/bg-image.webp" />
+         <img class="w-full h-[20rem] md:h-auto mt-[-24rem] lg:mt-0" src="../assets/images/bg-image.webp" />
       </section>
       <!-- end:contact -->
       <div class="bg-[#1c2863] py-0 lg:py-28"></div>
@@ -261,18 +266,17 @@ import WorkCard from "../components/WorkCard.vue";
 import { Swiper, SwiperSlide } from "swiper/vue";
 import "swiper/css";
 import "swiper/css/pagination";
-import { Pagination } from "swiper";
+import { Autoplay, Pagination } from "swiper";
 
 export default {
    components: { Navbar, WorkCard, Footer, Swiper, SwiperSlide },
    setup() {
       return {
-         modules: [Pagination],
+         modules: [Pagination, Autoplay],
       };
    },
    data() {
       return {
-         modules: [Pagination],
          swiperOptions: {
             breakpoints: {
                320: {
