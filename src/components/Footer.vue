@@ -10,7 +10,7 @@
                </div>
             </div>
             <div class="flex flex-col gap-2">
-               <router-link @click="reloadPage" to="/about" class="text-lg text-center md:text-start text-white hover:text-primary/70 transition duration-200">Home</router-link>
+               <router-link @click="reloadPage" to="/" class="text-lg text-center md:text-start text-white hover:text-primary/70 transition duration-200">Home</router-link>
                <router-link @click="reloadPage" to="/about" class="text-lg text-center md:text-start text-white hover:text-primary/70 transition duration-200">About me</router-link>
                <router-link @click="reloadPage" to="/resume" class="text-lg text-center md:text-start text-white hover:text-primary/70 transition duration-200">Resume</router-link>
                <router-link @click="reloadPage" to="/project" class="text-lg text-center md:text-start text-white hover:text-primary/70 transition duration-200">Projects</router-link>
