@@ -15,7 +15,7 @@
                   name's Raul. <br />
                   I'm a Front-End Developer.
                </h1>
-               <router-link to="/project" class="btn-primary mt-10 inline-flex">Recent work</router-link>
+               <router-link to="/project" @click="reloadPage" class="btn-primary mt-10 inline-flex">Recent work</router-link>
             </div>
             <div class="mx-auto group max-w-md">
                <div class="relative" v-tilt="{ speed: 500, perspective: 1000, transition: true }">
@@ -110,6 +110,7 @@
             </h2>
 
             <swiper
+               :breakpoints="swiperOptions.breakpoints"
                :slidesPerView="2"
                :spaceBetween="30"
                :pagination="{
@@ -118,13 +119,46 @@
                :modules="modules"
                class="mySwiper mt-8"
             >
-               <swiper-slide class="pb-12" v-for="project in projects" :key="project.id">
+               <swiper-slide class="pb-12">
                   <figure class="relative overflow-hidden group rounded-3xl">
-                     <img class="object-cover w-full group-hover:scale-110 group-hover:blur-sm transition-all duration-200 ease-out" :src="'/assets/images/' + project.img" alt="" />
+                     <img class="object-cover w-full group-hover:scale-110 group-hover:blur-sm transition-all duration-200 ease-out" src="../assets/images/mymushaf.webp" alt="" />
                      <figcaption class="p-8 flex flex-col justify-end bg-slate-900/40 inset-0 absolute opacity-0 scale-110 group-hover:opacity-100 group-hover:scale-100 ttransition-all duration-300 ease-out">
-                        <h2 class="text-2xl font-semibold text-white">{{ project.title }}</h2>
-                        <p class="text-slate-100 mt-2">{{ project.desc }}</p>
-                        <a class="mt-4 w-[130px] btn-primary" :href="project.url" target="_blank">See Project</a>
+                        <h2 class="text-2xl font-semibold text-white">My Mushaf - Al Qur'an Digital</h2>
+                        <p class="text-slate-100 mt-2">My Mushaf Indonesia adalah Aplikasi Al - Qur'an Digital Berbasis Website App.</p>
+                        <a class="mt-4 w-[130px] btn-primary" href="https://mymushaf.vercel.app/" target="_blank">See Project</a>
+                     </figcaption>
+                  </figure>
+               </swiper-slide>
+
+               <swiper-slide class="pb-12">
+                  <figure class="relative overflow-hidden group rounded-3xl">
+                     <img class="object-cover w-full group-hover:scale-110 group-hover:blur-sm transition-all duration-200 ease-out" src="../assets/images/furnilux.webp" alt="" />
+                     <figcaption class="p-8 flex flex-col justify-end bg-slate-900/40 inset-0 absolute opacity-0 scale-110 group-hover:opacity-100 group-hover:scale-100 ttransition-all duration-300 ease-out">
+                        <h2 class="text-2xl font-semibold text-white">FurniLux - Landing Page UI KIT</h2>
+                        <p class="text-slate-100 mt-2">Design landing page for funiture.</p>
+                        <a class="mt-4 w-[130px] btn-primary" href="https://lentera-house-landingpage.vercel.app/" target="_blank">See Project</a>
+                     </figcaption>
+                  </figure>
+               </swiper-slide>
+
+               <swiper-slide class="pb-12">
+                  <figure class="relative overflow-hidden group rounded-3xl">
+                     <img class="object-cover w-full group-hover:scale-110 group-hover:blur-sm transition-all duration-200 ease-out" src="../assets/images/lets-cook.webp" alt="" />
+                     <figcaption class="p-8 flex flex-col justify-end bg-slate-900/40 inset-0 absolute opacity-0 scale-110 group-hover:opacity-100 group-hover:scale-100 ttransition-all duration-300 ease-out">
+                        <h2 class="text-2xl font-semibold text-white">Lets Cooking - Resep Masakan Indonesia</h2>
+                        <p class="text-slate-100 mt-2">Lets Cooking adalah Aplikasi Resep masakan Indonesia Berbasis Website App.</p>
+                        <a class="mt-4 w-[130px] btn-primary" href="https://letscooking.vercel.app/" target="_blank">See Project</a>
+                     </figcaption>
+                  </figure>
+               </swiper-slide>
+
+               <swiper-slide class="pb-12">
+                  <figure class="relative overflow-hidden group rounded-3xl">
+                     <img class="object-cover w-full group-hover:scale-110 group-hover:blur-sm transition-all duration-200 ease-out" src="../assets/images/anonime.webp" alt="" />
+                     <figcaption class="p-8 flex flex-col justify-end bg-slate-900/40 inset-0 absolute opacity-0 scale-110 group-hover:opacity-100 group-hover:scale-100 ttransition-all duration-300 ease-out">
+                        <h2 class="text-2xl font-semibold text-white">Anonime - Streaming Anime</h2>
+                        <p class="text-slate-100 mt-2">Website Streaming Anime Slicing from Figma</p>
+                        <a class="mt-4 w-[130px] btn-primary" href="https://anonime.vercel.app/" target="_blank">See Project</a>
                      </figcaption>
                   </figure>
                </swiper-slide>
@@ -236,39 +270,29 @@ export default {
          modules: [Pagination],
       };
    },
-
    data() {
       return {
-         projects: [
-            {
-               title: "My Mushaf - Al Qur'an Digital",
-               desc: "My Mushaf Indonesia adalah Aplikasi Al - Qur'an Digital Berbasis Website App.",
-               url: "https://mymushaf.vercel.app/",
-               img: "mymushaf.webp",
+         modules: [Pagination],
+         swiperOptions: {
+            breakpoints: {
+               320: {
+                  slidesPerView: 1,
+                  spaceBetween: 10,
+               },
+               768: {
+                  slidesPerView: 2,
+                  spaceBetween: 50,
+               },
             },
-            {
-               title: "FurniLux - Landing Page UI KIT",
-               desc: "Design landing page for funiture",
-               url: "https://lentera-house-landingpage.vercel.app/",
-               img: "furnilux.webp",
-            },
-            {
-               title: "Lets Cooking - Resep Masakan Indonesia ",
-               desc: "Lets Cooking adalah Aplikasi Resep masakan Indonesia Berbasis Website App.",
-               url: "https://letscooking.vercel.app/",
-               img: "lets-cook.webp",
-            },
-            {
-               title: "Anonime - Streaming Anime",
-               desc: "Website Streaming Anime Slicing from Figma",
-               url: "https://anonime.vercel.app/",
-               img: "anonime.webp",
-            },
-         ],
+         },
       };
    },
-
    methods: {
+      reloadPage() {
+         window.setTimeout(function () {
+            location.reload();
+         }, 100);
+      },
       goto(refName) {
          var element = this.$refs[refName];
          var top = element.offsetTop;
