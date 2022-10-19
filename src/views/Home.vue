@@ -1,7 +1,6 @@
 <template>
-   <div class="overflow-hidden">
+   <div>
       <Navbar />
-
       <!-- start:hero -->
       <div class="bg-background-hero bg-cover">
          <div class="container grid grid-cols-1 md:grid-cols-2 items-center h-screen pt-10">
@@ -41,20 +40,20 @@
                </div>
             </div>
          </div>
+
+         <div class="container -mt-16 pb-10 invisible md:visible bottom-8">
+            <button @click="goto('skills')" class="flex items-center group gap-4">
+               <div class="z-20 w-1 pt-[0.7rem] px-2 h-6 border-2 border-primary rounded-3xl opacity-75 box-content relative">
+                  <div class="w-1 h-2 rounded-md bg-primary animate-bounce"></div>
+                  <span class="w-8 h-8 rounded-full bg-transparent p-4 border-2 border-blue-400 absolute opacity-0 group-hover:animate-ping group-hover:opacity-100 top-0 -left-[8px]"></span>
+               </div>
+
+               <span class="text-sm">SCROLL DOWN</span>
+            </button>
+         </div>
       </div>
 
       <!-- end:hero -->
-
-      <div class="container invisible md:visible absolute bottom-8">
-         <button @click="goto('skills')" class="flex items-center group gap-4">
-            <div class="z-20 w-1 pt-[0.7rem] px-2 h-6 border-2 border-primary rounded-3xl opacity-75 box-content relative">
-               <div class="w-1 h-2 rounded-md bg-primary animate-bounce"></div>
-               <span class="w-8 h-8 rounded-full bg-transparent p-4 border-2 border-blue-400 absolute opacity-0 group-hover:animate-ping group-hover:opacity-100 top-0 -left-[8px]"></span>
-            </div>
-
-            <span class="text-sm">SCROLL DOWN</span>
-         </button>
-      </div>
 
       <!-- start:Skills -->
       <section ref="skills" class="bg-[#1C2863]">

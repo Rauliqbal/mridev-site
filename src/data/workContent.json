@@ -11,7 +11,7 @@
       "desc": "Design landing page for funiture.",
       "img": "furnilux.webp",
       "url": "https://www.figma.com/community/file/1161470450362319670",
-      "type": "Landing Page Design"
+      "type": "UI Design"
    },
    {
       "title": "Lets Cooking - Resep Masakan Indonesia",
@@ -26,5 +26,26 @@
       "img": "anonime.webp",
       "url": "https://anonime.vercel.app/",
       "type": "Web App"
+   },
+   {
+      "title": "Lentera House - Landing Page",
+      "desc": "Slicing Design",
+      "img": "lenterahouse.webp",
+      "url": "https://lentera-house-landingpage.vercel.app/",
+      "type": "Landing Page"
+   },
+   {
+      "title": "Crafty Furniture - Market App",
+      "desc": "E Commerce Furniture",
+      "img": "craftyfurniture.webp",
+      "url": "https://crafty-app.vercel.app/",
+      "type": "Web App"
+   },
+   {
+      "title": "Cafe Street - Landing Page Design",
+      "desc": "Web Design for Coffe",
+      "img": "cafestreet.webp",
+      "url": "https://www.figma.com/community/file/1138256358581554095",
+      "type": "UI Design"
    }
 ]

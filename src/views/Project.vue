@@ -21,15 +21,17 @@
             </div>
          </div>
       </div>
+      <Footer />
    </div>
 </template>
 
 <script>
 import Navbar from "../components/Navbar.vue";
 import workContent from "../data/workContent.json";
+import Footer from "../components/Footer.vue";
 
 export default {
-   components: { Navbar },
+   components: { Navbar, Footer },
    data() {
       return {
          portfolio: workContent,
