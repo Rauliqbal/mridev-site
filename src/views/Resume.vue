@@ -359,7 +359,6 @@ import Navbar from "../components/Navbar.vue";
 import { Swiper, SwiperSlide } from "swiper/vue";
 import "swiper/css";
 import "swiper/css/pagination";
-import "../style.css";
 import { Autoplay, Pagination } from "swiper";
 import Footer from "../components/Footer.vue";
 

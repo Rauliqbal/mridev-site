@@ -2,6 +2,7 @@ import { createRouter, createWebHashHistory } from "vue-router";
 import Home from "../views/Home.vue";
 import About from "../views/About.vue";
 import Resume from "../views/Resume.vue";
+import Project from "../views/Project.vue";
 
 import NotFound from "../views/NotFound.vue";
 
@@ -22,11 +23,10 @@ const routes = [
       component: Resume,
    },
    {
-      path: "/about",
-      name: "About",
-      component: About,
+      path: "/project",
+      name: "Project",
+      component: Project,
    },
-
    {
       path: "/:pathMatch(.*)*",
       name: "NotFound",

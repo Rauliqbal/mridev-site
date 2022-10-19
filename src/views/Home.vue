@@ -128,7 +128,7 @@
                   <figure class="relative overflow-hidden group rounded-3xl">
                      <img class="object-cover w-full group-hover:scale-110 group-hover:blur-sm transition-all duration-200 ease-out" src="../assets/images/mymushaf.webp" alt="" />
                      <figcaption class="p-8 flex flex-col justify-end bg-slate-900/40 inset-0 absolute opacity-0 scale-110 group-hover:opacity-100 group-hover:scale-100 ttransition-all duration-300 ease-out">
-                        <h2 class="text-2xl font-semibold text-white">My Mushaf - Al Qur'an Digital</h2>
+                        <h2 class="text-lg md:text-2xl font-semibold text-white">My Mushaf - Al Qur'an Digital</h2>
                         <p class="text-slate-100 mt-2">My Mushaf Indonesia adalah Aplikasi Al - Qur'an Digital Berbasis Website App.</p>
                         <a class="mt-4 w-[130px] btn-primary" href="https://mymushaf.vercel.app/" target="_blank">See Project</a>
                      </figcaption>
@@ -137,33 +137,11 @@
 
                <swiper-slide class="pb-12">
                   <figure class="relative overflow-hidden group rounded-3xl">
-                     <img class="object-cover w-full group-hover:scale-110 group-hover:blur-sm transition-all duration-200 ease-out" src="../assets/images/furnilux.webp" alt="" />
+                     <img class="object-cover w-full group-hover:scale-110 group-hover:blur-sm transition-all duration-200 ease-out" src="../assets/images/" alt="" />
                      <figcaption class="p-8 flex flex-col justify-end bg-slate-900/40 inset-0 absolute opacity-0 scale-110 group-hover:opacity-100 group-hover:scale-100 ttransition-all duration-300 ease-out">
-                        <h2 class="text-2xl font-semibold text-white">FurniLux - Landing Page UI KIT</h2>
-                        <p class="text-slate-100 mt-2">Design landing page for funiture.</p>
-                        <a class="mt-4 w-[130px] btn-primary" href="https://lentera-house-landingpage.vercel.app/" target="_blank">See Project</a>
-                     </figcaption>
-                  </figure>
-               </swiper-slide>
-
-               <swiper-slide class="pb-12">
-                  <figure class="relative overflow-hidden group rounded-3xl">
-                     <img class="object-cover w-full group-hover:scale-110 group-hover:blur-sm transition-all duration-200 ease-out" src="../assets/images/lets-cook.webp" alt="" />
-                     <figcaption class="p-8 flex flex-col justify-end bg-slate-900/40 inset-0 absolute opacity-0 scale-110 group-hover:opacity-100 group-hover:scale-100 ttransition-all duration-300 ease-out">
-                        <h2 class="text-2xl font-semibold text-white">Lets Cooking - Resep Masakan Indonesia</h2>
-                        <p class="text-slate-100 mt-2">Lets Cooking adalah Aplikasi Resep masakan Indonesia Berbasis Website App.</p>
-                        <a class="mt-4 w-[130px] btn-primary" href="https://letscooking.vercel.app/" target="_blank">See Project</a>
-                     </figcaption>
-                  </figure>
-               </swiper-slide>
-
-               <swiper-slide class="pb-12">
-                  <figure class="relative overflow-hidden group rounded-3xl">
-                     <img class="object-cover w-full group-hover:scale-110 group-hover:blur-sm transition-all duration-200 ease-out" src="../assets/images/anonime.webp" alt="" />
-                     <figcaption class="p-8 flex flex-col justify-end bg-slate-900/40 inset-0 absolute opacity-0 scale-110 group-hover:opacity-100 group-hover:scale-100 ttransition-all duration-300 ease-out">
-                        <h2 class="text-2xl font-semibold text-white">Anonime - Streaming Anime</h2>
-                        <p class="text-slate-100 mt-2">Website Streaming Anime Slicing from Figma</p>
-                        <a class="mt-4 w-[130px] btn-primary" href="https://anonime.vercel.app/" target="_blank">See Project</a>
+                        <h2 class="text-lg md:text-2xl font-semibold text-white"></h2>
+                        <p class="text-slate-100 mt-2"></p>
+                        <a class="mt-4 w-[130px] btn-primary" href="" target="_blank">See Project</a>
                      </figcaption>
                   </figure>
                </swiper-slide>
@@ -277,6 +255,29 @@ export default {
    },
    data() {
       return {
+         project: [
+            {
+               title: "Anonime - Streaming Anime",
+               desc: "Website Streaming Anime Slicing from Figma.",
+               img: "anonime.webp",
+               url: "https://anonime.vercel.app/",
+               type: "Web App",
+            },
+            {
+               title: "Lets Cooking - Resep Masakan Indonesia",
+               desc: "Lets Cooking adalah Aplikasi Resep masakan Indonesia Berbasis Website App.",
+               img: "lets-cook.webp",
+               url: "https://letscooking.vercel.app/",
+               type: "Web App",
+            },
+            {
+               title: "FurniLux - Landing Page UI KIT",
+               desc: "Design landing page for funiture.",
+               img: "furnilux.webp",
+               url: "https://www.figma.com/community/file/1161470450362319670",
+               type: "Landing Page Design",
+            },
+         ],
          swiperOptions: {
             breakpoints: {
                320: {
