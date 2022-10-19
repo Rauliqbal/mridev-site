@@ -12,7 +12,7 @@
       <div class="container py-20">
          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <div class="flex flex-col" v-for="project in portfolio" :key="project.id">
-               <img :src="'/public/portfolio/' + project.img" alt="" />
+               <img :src="'../assets/' + project.img" alt="" />
                <h2>{{ project.title }}</h2>
             </div>
          </div>

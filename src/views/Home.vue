@@ -126,7 +126,7 @@
             >
                <swiper-slide class="pb-12" v-for="project in portfolio" :key="project.id">
                   <figure class="relative overflow-hidden group rounded-3xl">
-                     <img class="object-cover w-full group-hover:scale-110 group-hover:blur-sm transition-all duration-200 ease-out" :src="'/public/portfolio/' + project.img" :alt="'Image' + project.title" />
+                     <img class="object-cover w-full group-hover:scale-110 group-hover:blur-sm transition-all duration-200 ease-out" :src="'/portfolio/' + project.img" :alt="'Image' + project.title" />
                      <figcaption class="p-8 flex flex-col justify-end bg-slate-900/40 inset-0 absolute opacity-0 scale-110 group-hover:opacity-100 group-hover:scale-100 ttransition-all duration-300 ease-out">
                         <h2 class="text-lg md:text-2xl font-semibold text-white">{{ project.title }}</h2>
                         <p class="text-slate-100 mt-2">{{ project.desc }}</p>
