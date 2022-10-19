@@ -227,7 +227,6 @@
 <script>
 import Footer from "../components/Footer.vue";
 import Navbar from "../components/Navbar.vue";
-import WorkCard from "../components/WorkCard.vue";
 // Import Swipers
 import { Swiper, SwiperSlide } from "swiper/vue";
 import "swiper/css";
@@ -235,7 +234,7 @@ import "swiper/css/pagination";
 import { Autoplay, Pagination } from "swiper";
 
 export default {
-   components: { Navbar, WorkCard, Footer, Swiper, SwiperSlide },
+   components: { Navbar, Footer, Swiper, SwiperSlide },
    setup() {
       return {
          modules: [Pagination, Autoplay],
