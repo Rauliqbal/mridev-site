@@ -14,6 +14,7 @@
                <router-link @click="reloadPage" to="/about" class="text-lg text-center md:text-start text-white hover:text-primary/70 transition duration-200">About me</router-link>
                <router-link @click="reloadPage" to="/resume" class="text-lg text-center md:text-start text-white hover:text-primary/70 transition duration-200">Resume</router-link>
                <router-link @click="reloadPage" to="/project" class="text-lg text-center md:text-start text-white hover:text-primary/70 transition duration-200">Projects</router-link>
+               <router-link @click="reloadPage" to="/contact" class="text-lg text-center md:text-start text-white hover:text-primary/70 transition duration-200">Contact</router-link>
             </div>
          </div>
 
