@@ -1,17 +1,30 @@
 [
    {
-      "title": "portfolio template",
-      "img": "vue.svg",
-      "type": "landing page"
+      "title": "My Mushaf - Al Qur'an Digital",
+      "desc": "My Mushaf Indonesia adalah Aplikasi Al - Qur'an Digital Berbasis Website App.",
+      "img": "mymushaf.webp",
+      "url": "https://mymushaf.vercel.app/",
+      "type": "Web App"
    },
    {
-      "title": "portfolio template 2",
-      "img": "anonime.webp",
-      "type": "landing page"
+      "title": "FurniLux - Landing Page UI KIT",
+      "desc": "Design landing page for funiture.",
+      "img": "furnilux.webp",
+      "url": "https://www.figma.com/community/file/1161470450362319670",
+      "type": "Landing Page Design"
    },
    {
-      "title": "portfolio template 3",
+      "title": "Lets Cooking - Resep Masakan Indonesia",
+      "desc": "Lets Cooking adalah Aplikasi Resep masakan Indonesia Berbasis Website App.",
+      "img": "lets-cook.webp",
+      "url": "https://letscooking.vercel.app/",
+      "type": "Web App"
+   },
+   {
+      "title": "Anonime - Streaming Anime",
+      "desc": "Website Streaming Anime Slicing from Figma.",
       "img": "anonime.webp",
-      "type": "landing page"
+      "url": "https://anonime.vercel.app/",
+      "type": "Web App"
    }
 ]
