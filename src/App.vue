@@ -1,12 +1,19 @@
 <template>
+   <PageLoader />
    <router-view v-slot="{ Component }">
-      <Transition name="fade" mode="out-in">
-         <component :is="Component" />
-      </Transition>
+      <transition name="fade" mode="out-in">
+         <component :is="Component"></component>
+      </transition>
    </router-view>
 </template>
 
-<script></script>
+<script>
+import PageLoader from "../src/components/PageLoader.vue";
+
+export default {
+   components: { PageLoader },
+};
+</script>
 
 <style type="text/css">
 .fade-enter-active,

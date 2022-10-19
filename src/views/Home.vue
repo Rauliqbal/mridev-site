@@ -4,7 +4,7 @@
 
       <!-- start:hero -->
       <div class="bg-background-hero bg-cover">
-         <div class="container grid grid-cols-1 md:grid-cols-2 items-center h-screen mt-10 md:mt-0">
+         <div class="container grid grid-cols-1 md:grid-cols-2 items-center h-screen pt-10">
             <div>
                <div class="flex items-center gap-4">
                   <div class="w-12 md:w-24 h-1 bg-primary"></div>

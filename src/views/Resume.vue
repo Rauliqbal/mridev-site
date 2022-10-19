@@ -322,7 +322,7 @@
                   <div class="flex items-center flex-col gap-2 group">
                      <img
                         class="w-20 mx-auto p-4 border-2 border-slate-200 rounded-xl group-hover:-translate-y-2 group-hover:shadow-lg transition duration-300 ease-out"
-                        src="http://assets.stickpng.com/thumbs/5842a622a6515b1e0ad75af9.png"
+                        src="https://cdn-images-1.medium.com/max/1200/1*A6kkoOVJVpXPWewg8axc5w.png"
                      />
                      <span class="text-[12px] text-center uppercase text-slate-500 group-hover:text-primary font-semibold transition duration-300 ease-out">Canva</span>
                   </div>
@@ -336,10 +336,7 @@
                   </div>
 
                   <div class="flex items-center flex-col gap-2 group">
-                     <img
-                        class="w-20 mx-auto p-4 border-2 border-slate-200 rounded-xl group-hover:-translate-y-2 group-hover:shadow-lg transition duration-300 ease-out"
-                        src="https://assets.stickpng.com/images/62a883c33048e459144d0393.png"
-                     />
+                     <img class="w-20 mx-auto p-4 border-2 border-slate-200 rounded-xl group-hover:-translate-y-2 group-hover:shadow-lg transition duration-300 ease-out" src="https://cdn.worldvectorlogo.com/logos/invision.svg" />
                      <span class="text-[12px] text-center uppercase text-slate-500 group-hover:text-primary font-semibold transition duration-300 ease-out">InVision</span>
                   </div>
                   <div class="flex items-center flex-col gap-2 group">
