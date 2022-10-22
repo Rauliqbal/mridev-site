@@ -9,7 +9,7 @@
                   <div class="w-12 h-[2px] bg-primary"></div>
                   <h2 class="section-title">Rauliqbal</h2>
                </div>
-               <h1 class="text-slate-900 text-4xl md:text[-40px] lg:text-[64px] leading-normal md:leading-tight font-semibold tracking-wider mt-0 md:mt-6">
+               <h1 class="text-slate-900 text-4xl md:text[-40px] lg:text-[54px] xl:text-[64px] leading-normal md:leading-tight font-semibold tracking-wider mt-2">
                   Hello, my <br />
                   name's Raul. <br />
                   I'm a Front-End Developer.
@@ -63,7 +63,7 @@
                   <div class="w-12 h-[2px] bg-secondary"></div>
                   <h2 class="section-title text-secondary">what i do</h2>
                </div>
-               <h2 class="text-xl md:text-3xl font-semibold text-white mt-2">
+               <h2 class="text-xl md:text-3xl font-semibold text-white mt-4">
                   I enjoy creating delightful, <br />
                   human-centered digital experiences.
                </h2>
@@ -72,20 +72,16 @@
             </div>
 
             <div class="flex flex-col md:flex-row items-center md:justify-center gap-8 px-4 absolute right-0 lg:mr-[4%] mt-8 md:mt-4 lg:-mt-8 xl:-mt-24">
-               <div class="flex flex-col justify-center items-center w-full md:max-w-[370px] bg-[#fff] rounded-3xl p-8 md:p-12 shadow hover:shadow-xl hover:-translate-y-4 transition-all duration-300 ease-out">
-                  <div class="p-6 bg-blue-300 rounded-full w-[200px] h-[200px]">
-                     <img src="../assets/images/fe-dev.svg" />
-                  </div>
+               <div class="flex flex-col justify-center items-center w-full md:max-w-[320px] bg-white rounded-3xl p-8 hover:shadow-xl hover:-translate-y-4 transition-all duration-300 ease-out">
+                  <img class="w-44 h-44" src="../assets/images/fe-dev.svg" />
                   <div class="mt-8">
                      <h4 class="text-xl md:text-2xl text-center font-semibold">Front End Developer</h4>
                      <p class="text-center text-slate-500 mt-4">I like to code things from scratch, and enjoy bringing ideas to life in the browser.</p>
                   </div>
                </div>
 
-               <div class="flex flex-col justify-center items-center w-full md:max-w-[370px] bg-[#fff] rounded-3xl p-8 md:p-12 shadow hover:shadow-xl hover:-translate-y-4 transition-all duration-300 ease-out">
-                  <div class="p-6 bg-violet-300 rounded-full w-[200px] h-[200px]">
-                     <img src="../assets/images/ui-des.svg" />
-                  </div>
+               <div class="flex flex-col justify-center items-center w-full md:max-w-[320px] bg-white rounded-3xl p-8 hover:shadow-xl hover:-translate-y-4 transition-all duration-300 ease-out">
+                  <img class="w-44 h-44" src="../assets/images/ui-des.svg" />
                   <div class="mt-8">
                      <h4 class="text-xl md:text-2xl text-center font-semibold">UI Designer</h4>
                      <p class="text-center text-slate-500 mt-4">I like to code things from scratch, and enjoy bringing ideas to life in the browser.</p>
@@ -97,20 +93,20 @@
       <!-- end:Skills -->
 
       <!-- start:Portfolio -->
-      <section class="mt-[52rem] md:mt-[20rem] bg-[#F4F6FF]">
+      <section class="mt-[52rem] md:mt-[18rem]">
          <div class="container py-20">
             <div class="flex items-center gap-4">
                <div class="w-12 h-[2px] bg-primary"></div>
                <h2 class="section-title text-primary">Recent Work</h2>
             </div>
-            <h2 class="text-5xl md:text-7xl font-semibold mt-4">
-               Look at My <br />
-               Portfolios.
+            <h2 class="text-4xl md:text-[64px] leading-tight font-semibold mt-4">
+               Look at my <br />
+               portfolios.
             </h2>
 
             <swiper
                :breakpoints="swiperOptions.breakpoints"
-               :slidesPerView="2"
+               :slidesPerView="1"
                :spaceBetween="30"
                :pagination="{
                   clickable: true,
@@ -138,12 +134,33 @@
       </section>
       <!-- end:Portfolio -->
 
+      <!-- start: Product -->
+      <section>
+         <div class="container py-20">
+            <div class="flex items-center gap-4">
+               <div class="w-12 h-[2px] bg-primary"></div>
+               <h2 class="section-title text-primary">My Product</h2>
+            </div>
+            <h2 class="text-4xl md:text-[64px] leading-tight font-semibold mt-4">
+               Support me by<br />
+               buy my product.
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
+               <CardProduct />
+               <CardProduct />
+               <CardProduct />
+            </div>
+         </div>
+      </section>
+      <!-- end:product -->
+
       <!-- start:testimonial -->
-      <section class="bg-[#F4F6FF]">
+      <section>
          <div class="container py-20">
             <div class="text-center">
                <h2 class="section-title">Testimonials</h2>
-               <h2 class="text-5xl md:text-7xl font-semibold mt-4">
+               <h2 class="text-4xl md:text-[64px] leading-tight font-semibold mt-4">
                   What people say <br />
                   about me ?
                </h2>
@@ -151,7 +168,7 @@
 
             <swiper
                :slidesPerView="2"
-               :spaceBetween="30"
+               :spaceBetween="24"
                :breakpoints="swiperOptions.breakpoints"
                :loop="true"
                :pagination="{
@@ -161,8 +178,8 @@
                class="mySwiper mt-8"
             >
                <swiper-slide class="pb-14">
-                  <div class="flex bg-white hover:shadow-lg transition duration-300 py-8 pl-16 pr-8 rounded-2xl relative">
-                     <span class="absolute text-4xl left-4 text-slate-300"><i class="bx bxs-quote-left"></i></span>
+                  <div class="flex flex-col bg-white hover:shadow-lg transition duration-300 py-8 pl-8 md:pl-24 pr-8 rounded-2xl relative">
+                     <span class="relative md:absolute text-6xl left-4 text-slate-200"><i class="bx bxs-quote-left"></i></span>
                      <div>
                         <p class="text-base md:text-lg leading-relaxed tracking-wide font-medium text-slate-500 italic">
                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis perspiciatis quos cupiditate sint consectetur doloribus deleniti, laborum qui voluptates tempora.
@@ -173,8 +190,8 @@
                </swiper-slide>
 
                <swiper-slide class="pb-14">
-                  <div class="flex bg-white hover:shadow-lg transition duration-300 py-8 pl-16 pr-8 rounded-2xl relative">
-                     <span class="absolute text-4xl left-4 text-slate-300"><i class="bx bxs-quote-left"></i></span>
+                  <div class="flex flex-col bg-white hover:shadow-lg transition duration-300 py-8 pl-8 md:pl-24 pr-8 rounded-2xl relative">
+                     <span class="relative md:absolute text-6xl left-4 text-slate-200"><i class="bx bxs-quote-left"></i></span>
                      <div>
                         <p class="text-base md:text-lg leading-relaxed tracking-wide font-medium text-slate-500 italic">
                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis perspiciatis quos cupiditate sint consectetur doloribus deleniti, laborum qui voluptates tempora.
@@ -185,8 +202,8 @@
                </swiper-slide>
 
                <swiper-slide class="pb-14">
-                  <div class="flex bg-white hover:shadow-lg transition duration-300 py-8 pl-16 pr-8 rounded-2xl relative">
-                     <span class="absolute text-4xl left-4 text-slate-300"><i class="bx bxs-quote-left"></i></span>
+                  <div class="flex bg-white hover:shadow-lg transition duration-300 py-8 pl-24 pr-8 rounded-2xl relative">
+                     <span class="absolute text-6xl left-4 text-slate-200"><i class="bx bxs-quote-left"></i></span>
                      <div>
                         <p class="text-base md:text-lg leading-relaxed tracking-wide font-medium text-slate-500 italic">
                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis perspiciatis quos cupiditate sint consectetur doloribus deleniti, laborum qui voluptates tempora.
@@ -201,14 +218,14 @@
       <!-- end:testimonial -->
 
       <!-- start:contact -->
-      <section class="bg-[#F4F6FF] relative">
+      <section class="relative">
          <div class="relative lg:absolute inset-x-0 container py-20">
             <div class="bg-white px-4 py-8 md:p-20 rounded-3xl box-contact">
                <div class="flex items-center gap-4">
                   <div class="w-12 h-[2px] bg-primary"></div>
                   <h2 class="section-title text-primary">Say Hello</h2>
                </div>
-               <h2 class="text-5xl md:text-7xl font-semibold mt-4">
+               <h2 class="text-4xl md:text-[64px] leading-tight font-semibold mt-4">
                   Let's work <br />
                   together.
                </h2>
@@ -289,6 +306,7 @@
 <script>
 import Footer from "../components/Footer.vue";
 import Navbar from "../components/Navbar.vue";
+import CardProduct from "../components/CardProduct.vue";
 // Import Swipers
 import { Swiper, SwiperSlide } from "swiper/vue";
 import "swiper/css";
@@ -296,7 +314,7 @@ import "swiper/css/pagination";
 import { Autoplay, Pagination } from "swiper";
 
 export default {
-   components: { Navbar, Footer, Swiper, SwiperSlide },
+   components: { CardProduct, Navbar, Footer, Swiper, SwiperSlide },
    setup() {
       return {
          modules: [Pagination, Autoplay],
