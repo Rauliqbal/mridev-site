@@ -3,10 +3,10 @@
       <Navbar />
       <!-- start:hero -->
       <div class="bg-background-hero bg-cover">
-         <div class="container grid grid-cols-1 md:grid-cols-2 items-center h-screen pt-10">
+         <div class="container grid grid-cols-1 lg:grid-cols-2 items-center h-screen pt-10">
             <div>
                <div class="flex items-center gap-4">
-                  <div class="w-12 md:w-24 h-1 bg-primary"></div>
+                  <div class="w-12 h-[2px] bg-primary"></div>
                   <h2 class="section-title">Rauliqbal</h2>
                </div>
                <h1 class="text-slate-900 text-4xl md:text[-40px] lg:text-[64px] leading-normal md:leading-tight font-semibold tracking-wider mt-0 md:mt-6">
@@ -60,7 +60,7 @@
          <div class="container py-20">
             <div class="md:w-1/2">
                <div class="flex items-center gap-4">
-                  <div class="w-12 md:w-24 h-1 bg-secondary"></div>
+                  <div class="w-12 h-[2px] bg-secondary"></div>
                   <h2 class="section-title text-secondary">what i do</h2>
                </div>
                <h2 class="text-xl md:text-3xl font-semibold text-white mt-2">
@@ -68,7 +68,7 @@
                   human-centered digital experiences.
                </h2>
 
-               <h3 class="text-5xl font-semibold text-white mt-20">Think.Make.<br />Solve</h3>
+               <h3 class="text-5xl md:text-7xl font-semibold mt-20 text-white">Think.Make.<br />Solve</h3>
             </div>
 
             <div class="flex flex-col md:flex-row items-center md:justify-center gap-8 px-4 absolute right-0 lg:mr-[4%] mt-8 md:mt-4 lg:-mt-8 xl:-mt-24">
@@ -97,10 +97,10 @@
       <!-- end:Skills -->
 
       <!-- start:Portfolio -->
-      <section class="mt-[58rem] md:mt-[24rem] bg-[#F4F6FF]">
+      <section class="mt-[52rem] md:mt-[20rem] bg-[#F4F6FF]">
          <div class="container py-20">
             <div class="flex items-center gap-4">
-               <div class="w-12 md:w-24 h-1 bg-primary"></div>
+               <div class="w-12 h-[2px] bg-primary"></div>
                <h2 class="section-title text-primary">Recent Work</h2>
             </div>
             <h2 class="text-5xl md:text-7xl font-semibold mt-4">
@@ -124,7 +124,7 @@
                class="mySwiper mt-8"
             >
                <swiper-slide class="pb-12" v-for="project in portfolio" :key="project.id">
-                  <figure class="relative overflow-hidden group rounded-3xl">
+                  <figure class="relative overflow-hidden group rounded-xl md:rounded-3xl">
                      <img class="object-cover w-full group-hover:scale-110 group-hover:blur-sm transition-all duration-200 ease-out" :src="'/portfolio/' + project.img" :alt="'Image' + project.title" />
                      <figcaption class="p-8 flex flex-col justify-end bg-slate-900/40 inset-0 absolute opacity-0 scale-110 group-hover:opacity-100 group-hover:scale-100 ttransition-all duration-300 ease-out">
                         <h2 class="text-lg md:text-2xl font-semibold text-white">{{ project.title }}</h2>
@@ -138,12 +138,74 @@
       </section>
       <!-- end:Portfolio -->
 
+      <!-- start:testimonial -->
+      <section class="bg-[#F4F6FF]">
+         <div class="container py-20">
+            <div class="text-center">
+               <h2 class="section-title">Testimonials</h2>
+               <h2 class="text-5xl md:text-7xl font-semibold mt-4">
+                  What people say <br />
+                  about me ?
+               </h2>
+            </div>
+
+            <swiper
+               :slidesPerView="2"
+               :spaceBetween="30"
+               :breakpoints="swiperOptions.breakpoints"
+               :loop="true"
+               :pagination="{
+                  clickable: true,
+               }"
+               :modules="modules"
+               class="mySwiper mt-8"
+            >
+               <swiper-slide class="pb-14">
+                  <div class="flex bg-white hover:shadow-lg transition duration-300 py-8 pl-16 pr-8 rounded-2xl relative">
+                     <span class="absolute text-4xl left-4 text-slate-300"><i class="bx bxs-quote-left"></i></span>
+                     <div>
+                        <p class="text-base md:text-lg leading-relaxed tracking-wide font-medium text-slate-500 italic">
+                           Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis perspiciatis quos cupiditate sint consectetur doloribus deleniti, laborum qui voluptates tempora.
+                        </p>
+                        <h5 class="text-xl font-semibold mt-4">Raisha Ramadanti</h5>
+                     </div>
+                  </div>
+               </swiper-slide>
+
+               <swiper-slide class="pb-14">
+                  <div class="flex bg-white hover:shadow-lg transition duration-300 py-8 pl-16 pr-8 rounded-2xl relative">
+                     <span class="absolute text-4xl left-4 text-slate-300"><i class="bx bxs-quote-left"></i></span>
+                     <div>
+                        <p class="text-base md:text-lg leading-relaxed tracking-wide font-medium text-slate-500 italic">
+                           Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis perspiciatis quos cupiditate sint consectetur doloribus deleniti, laborum qui voluptates tempora.
+                        </p>
+                        <h5 class="text-xl font-semibold mt-4">Azura</h5>
+                     </div>
+                  </div>
+               </swiper-slide>
+
+               <swiper-slide class="pb-14">
+                  <div class="flex bg-white hover:shadow-lg transition duration-300 py-8 pl-16 pr-8 rounded-2xl relative">
+                     <span class="absolute text-4xl left-4 text-slate-300"><i class="bx bxs-quote-left"></i></span>
+                     <div>
+                        <p class="text-base md:text-lg leading-relaxed tracking-wide font-medium text-slate-500 italic">
+                           Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis perspiciatis quos cupiditate sint consectetur doloribus deleniti, laborum qui voluptates tempora.
+                        </p>
+                        <h5 class="text-xl font-semibold mt-4">Naura</h5>
+                     </div>
+                  </div>
+               </swiper-slide>
+            </swiper>
+         </div>
+      </section>
+      <!-- end:testimonial -->
+
       <!-- start:contact -->
       <section class="bg-[#F4F6FF] relative">
          <div class="relative lg:absolute inset-x-0 container py-20">
             <div class="bg-white px-4 py-8 md:p-20 rounded-3xl box-contact">
                <div class="flex items-center gap-4">
-                  <div class="w-12 md:w-24 h-1 bg-primary"></div>
+                  <div class="w-12 h-[2px] bg-primary"></div>
                   <h2 class="section-title text-primary">Say Hello</h2>
                </div>
                <h2 class="text-5xl md:text-7xl font-semibold mt-4">

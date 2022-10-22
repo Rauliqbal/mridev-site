@@ -3,7 +3,7 @@
       <Navbar />
       <div class="bg-[#1C2863]">
          <div class="container mt-20 py-16">
-            <h1 class="text-4xl text-white font-bold">Projects</h1>
+            <h3 class="text-4xl text-white font-bold">Projects</h3>
          </div>
       </div>
 
