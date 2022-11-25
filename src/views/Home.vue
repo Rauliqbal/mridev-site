@@ -58,25 +58,25 @@
       <!-- start:Skills -->
       <section ref="skills" class="bg-[#1C2863]">
          <div class="container py-20">
-            <div class="md:w-1/2">
+            <div class="md:w-2/3">
                <div class="flex items-center gap-4">
                   <div class="w-12 h-[2px] bg-secondary"></div>
-                  <h2 class="section-title text-secondary">what i do</h2>
+                  <h2 class="section-title text-secondary">what we serve</h2>
                </div>
-               <h2 class="text-xl md:text-3xl font-semibold text-white mt-4">
-                  I enjoy creating delightful, <br />
-                  human-centered digital experiences.
+               <h2 class="text-xl md:text-4xl font-semibold text-white mt-4">
+                  Some of the services I specialize in, <br />
+                  if you are interested, please contact me.
                </h2>
 
                <h3 class="text-5xl md:text-7xl font-semibold mt-20 text-white">Think.Make.<br />Solve</h3>
             </div>
 
-            <div class="flex flex-col md:flex-row items-center md:justify-center gap-8 px-4 absolute right-0 lg:mr-[4%] mt-8 md:mt-4 lg:-mt-8 xl:-mt-24">
+            <div class="flex flex-col md:flex-row items-center md:justify-center gap-8 px-4 absolute right-0 lg:mr-[4%] mt-8 md:mt-4 lg:-mt-8 xl:-mt-40">
                <div class="flex flex-col justify-center items-center w-full md:max-w-[320px] bg-white rounded-3xl p-8 hover:shadow-xl hover:-translate-y-4 transition-all duration-300 ease-out">
                   <img class="w-44 h-44" src="../assets/images/fe-dev.svg" />
                   <div class="mt-8">
                      <h4 class="text-xl md:text-2xl text-center font-semibold">Front End Developer</h4>
-                     <p class="text-center text-slate-500 mt-4">I like to code things from scratch, and enjoy bringing ideas to life in the browser.</p>
+                     <p class="text-center text-slate-500 mt-4">Create your amazing idea in websites , full interaction with responsive views.</p>
                   </div>
                </div>
 
@@ -84,7 +84,7 @@
                   <img class="w-44 h-44" src="../assets/images/ui-des.svg" />
                   <div class="mt-8">
                      <h4 class="text-xl md:text-2xl text-center font-semibold">UI Designer</h4>
-                     <p class="text-center text-slate-500 mt-4">I like to code things from scratch, and enjoy bringing ideas to life in the browser.</p>
+                     <p class="text-center text-slate-500 mt-4">Create eye-catching and powerful mobile apps with a focus on User.</p>
                   </div>
                </div>
             </div>
@@ -117,12 +117,12 @@
                }"
                :loop="true"
                :modules="modules"
-               class="mySwiper mt-8"
+               class="mySwiper mt-10"
             >
                <swiper-slide class="pb-12" v-for="project in portfolio" :key="project.id">
                   <figure class="relative overflow-hidden group rounded-xl md:rounded-3xl">
                      <img class="object-cover w-full group-hover:scale-110 group-hover:blur-sm transition-all duration-200 ease-out" :src="'/portfolio/' + project.img" :alt="'Image' + project.title" />
-                     <figcaption class="p-8 flex flex-col justify-end bg-slate-900/40 inset-0 absolute opacity-0 scale-110 group-hover:opacity-100 group-hover:scale-100 ttransition-all duration-300 ease-out">
+                     <figcaption class="p-4 md:p-8 flex flex-col justify-end bg-slate-900/40 inset-0 absolute opacity-0 scale-110 group-hover:opacity-100 group-hover:scale-100 ttransition-all duration-300 ease-out">
                         <h2 class="text-lg md:text-2xl font-semibold text-white">{{ project.title }}</h2>
                         <p class="text-slate-100 mt-2">{{ project.desc }}</p>
                         <a class="mt-4 w-[130px] btn-primary" :href="project.url" target="_blank">See Project</a>
@@ -146,10 +146,8 @@
                buy my product.
             </h2>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
-               <CardProduct />
-               <CardProduct />
-               <CardProduct />
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-10">
+               <CardProduct v-for="product in products" :key="product.id" :url="product.url" :name="product.name" :image="product.image" :source="product.source" :type="product.type" />
             </div>
          </div>
       </section>
@@ -175,7 +173,7 @@
                   clickable: true,
                }"
                :modules="modules"
-               class="mySwiper mt-8"
+               class="mySwiper mt-10"
             >
                <swiper-slide class="pb-14">
                   <div class="flex flex-col bg-white hover:shadow-lg transition duration-300 py-8 pl-8 md:pl-24 pr-8 rounded-2xl relative">
@@ -303,13 +301,14 @@
 </template>
 
 <script>
-import CardProduct from "../components/CardProduct.vue";
+import CardProduct from "../components/product/CardProduct.vue";
 // Import Swipers
 import { Swiper, SwiperSlide } from "swiper/vue";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Autoplay, Pagination } from "swiper";
 import Navbar from "../components/Navbar.vue";
+import productContent from "../data/productContent.json";
 
 export default {
    components: { CardProduct, Swiper, SwiperSlide, Navbar },
@@ -320,6 +319,7 @@ export default {
    },
    data() {
       return {
+         products: productContent,
          portfolio: [
             {
                title: "My Mushaf - Al Qur'an Digital",
