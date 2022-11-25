@@ -1,5 +1,6 @@
 <template>
    <div>
+      <Navbar />
       <!-- start:hero -->
       <div class="bg-background-hero bg-cover grid grid-cols-1 lg:grid-cols-2 items-center container pt-28 pb-20">
          <div class="md:order-first order-last py-4 md:py-0">
@@ -402,9 +403,10 @@ import "swiper/css/pagination";
 
 // import required modules
 import { Pagination } from "swiper";
+import Navbar from "../components/Navbar.vue";
 
 export default {
-   components: { Swiper, SwiperSlide },
+   components: { Swiper, SwiperSlide, Navbar },
 
    setup() {
       return {

@@ -1,5 +1,6 @@
 <template>
    <div>
+      <Navbar />
       <div class="bg-[#1C2863]">
          <div class="container mt-20 py-16">
             <h3 class="text-4xl text-white font-bold">Product</h3>
@@ -26,7 +27,7 @@
                   <img class="w-10 group-hover:scale-125 transition-all duration-200 ease-out" src="../assets/images/uplabs-icon.svg" alt="" />
                </a>
 
-               <a target="_blank" href="figma.com/@rauliqbal" class="flex items-center justify-center w-16 h-16 bg-slate-100 rounded-full group">
+               <a target="_blank" href="https://www.figma.com/@rauliqbal" class="flex items-center justify-center w-16 h-16 bg-slate-100 rounded-full group">
                   <img class="w-8 group-hover:scale-125 transition-all duration-200 ease-out" src="../assets/images/figma-icon.svg" alt="" />
                </a>
             </div>
@@ -66,4 +67,6 @@
    </div>
 </template>
 
-<script setup></script>
+<script setup>
+import Navbar from "../components/Navbar.vue";
+</script>

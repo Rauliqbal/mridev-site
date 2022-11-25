@@ -1,5 +1,6 @@
 <template>
    <div>
+      <Navbar />
       <div class="bg-[#1C2863]">
          <div class="container mt-20 py-16">
             <h3 class="text-4xl text-white font-bold">Projects</h3>
@@ -25,6 +26,7 @@
 
 <script setup>
 import { ref } from "vue";
+import Navbar from "../components/Navbar.vue";
 import workContent from "../data/workContent.json";
 
 const portfolio = ref(workContent);
