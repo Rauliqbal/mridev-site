@@ -1,5 +1,4 @@
 <template>
-   <Navbar />
    <div>
       <div class="bg-[#1C2863]">
          <div class="container mt-20 py-16">
@@ -65,20 +64,6 @@
       </section>
       <!-- END:New Product -->
    </div>
-   <Footer />
 </template>
 
-<script>
-import Navbar from "../components/Navbar.vue";
-import Footer from "../components/Footer.vue";
-
-export default {
-   components: { Navbar, Footer },
-
-   data() {
-      return {
-         // Retourn the API Dates
-      };
-   },
-};
-</script>
+<script setup></script>

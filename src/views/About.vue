@@ -1,7 +1,5 @@
 <template>
    <div>
-      <Navbar />
-
       <!-- start:hero -->
       <div class="bg-background-hero bg-cover grid grid-cols-1 lg:grid-cols-2 items-center container pt-28 pb-20">
          <div class="md:order-first order-last py-4 md:py-0">
@@ -395,25 +393,18 @@
       </section>
       <!-- End: Skills -->
    </div>
-   <Footer />
 </template>
 
 <script>
-import Navbar from "../components/Navbar.vue";
 import { Swiper, SwiperSlide } from "swiper/vue";
-
 import "swiper/css";
-
 import "swiper/css/pagination";
-
-import "../style.css";
 
 // import required modules
 import { Pagination } from "swiper";
-import Footer from "../components/Footer.vue";
 
 export default {
-   components: { Navbar, Swiper, SwiperSlide, Footer },
+   components: { Swiper, SwiperSlide },
 
    setup() {
       return {

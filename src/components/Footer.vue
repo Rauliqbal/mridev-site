@@ -10,11 +10,11 @@
                </div>
             </div>
             <div class="flex flex-col gap-2">
-               <router-link @click="reloadPage" to="/" class="text-lg text-center md:text-start text-white hover:text-primary/70 transition duration-200">Home</router-link>
-               <router-link @click="reloadPage" to="/about" class="text-lg text-center md:text-start text-white hover:text-primary/70 transition duration-200">About me</router-link>
-               <router-link @click="reloadPage" to="/project" class="text-lg text-center md:text-start text-white hover:text-primary/70 transition duration-200">Projects</router-link>
-               <router-link @click="reloadPage" to="/product" class="text-lg text-center md:text-start text-white hover:text-primary/70 transition duration-200">Product</router-link>
-               <router-link @click="reloadPage" to="/contact" class="text-lg text-center md:text-start text-white hover:text-primary/70 transition duration-200">Contact</router-link>
+               <router-link to="/" class="text-lg text-center md:text-start text-white hover:text-primary/70 transition duration-200">Home</router-link>
+               <router-link to="/about" class="text-lg text-center md:text-start text-white hover:text-primary/70 transition duration-200">About me</router-link>
+               <router-link to="/project" class="text-lg text-center md:text-start text-white hover:text-primary/70 transition duration-200">Projects</router-link>
+               <router-link to="/product" class="text-lg text-center md:text-start text-white hover:text-primary/70 transition duration-200">Product</router-link>
+               <router-link to="/contact" class="text-lg text-center md:text-start text-white hover:text-primary/70 transition duration-200">Contact</router-link>
             </div>
          </div>
 
@@ -27,14 +27,4 @@
    </footer>
 </template>
 
-<script>
-export default {
-   methods: {
-      reloadPage() {
-         window.setTimeout(function () {
-            location.reload();
-         }, 100);
-      },
-   },
-};
-</script>
+<script></script>

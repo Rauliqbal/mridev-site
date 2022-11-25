@@ -1,18 +1,17 @@
 <template>
-   <PageLoader />
+   <Navbar />
    <router-view v-slot="{ Component }">
       <transition name="fade" mode="out-in">
          <component :is="Component"></component>
       </transition>
    </router-view>
+   <Footer />
 </template>
 
-<script>
-import PageLoader from "../src/components/PageLoader.vue";
-
-export default {
-   components: { PageLoader },
-};
+<script setup>
+import { ref } from "vue";
+import Footer from "./components/Footer.vue";
+import Navbar from "./components/Navbar.vue";
 </script>
 
 <style type="text/css">

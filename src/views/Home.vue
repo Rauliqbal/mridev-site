@@ -1,6 +1,5 @@
 <template>
    <div>
-      <Navbar />
       <!-- start:hero -->
       <div class="bg-background-hero bg-cover">
          <div class="container grid grid-cols-1 lg:grid-cols-2 items-center h-screen pt-10">
@@ -300,12 +299,9 @@
       <!-- end:contact -->
       <div class="bg-[#1c2863] py-0 lg:py-28"></div>
    </div>
-   <Footer />
 </template>
 
 <script>
-import Footer from "../components/Footer.vue";
-import Navbar from "../components/Navbar.vue";
 import CardProduct from "../components/CardProduct.vue";
 // Import Swipers
 import { Swiper, SwiperSlide } from "swiper/vue";
@@ -314,7 +310,7 @@ import "swiper/css/pagination";
 import { Autoplay, Pagination } from "swiper";
 
 export default {
-   components: { CardProduct, Navbar, Footer, Swiper, SwiperSlide },
+   components: { CardProduct, Swiper, SwiperSlide },
    setup() {
       return {
          modules: [Pagination, Autoplay],
