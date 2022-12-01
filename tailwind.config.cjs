@@ -42,6 +42,7 @@ module.exports = {
          },
          backgroundImage: {
             "background-hero": "url('/src/assets/bg-image.webp')",
+            pattern: "url('/src/assets/images/bg-image.webp')",
          },
       },
    },

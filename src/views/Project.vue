@@ -1,5 +1,5 @@
 <template>
-   <div>
+   <main>
       <Navbar />
       <div class="bg-[#1C2863]">
          <div class="container mt-20 py-16">
@@ -8,7 +8,7 @@
       </div>
 
       <div class="container py-20">
-         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
             <div class="relative overflow-hidden group rounded-2xl" v-for="project in portfolio" :key="project.id">
                <img class="object-cover w-full group-hover:scale-110 group-hover:blur-sm transition-all duration-200 ease-out" :src="'/portfolio/' + project.img" :alt="'Image ' + project.title" />
 
@@ -21,7 +21,7 @@
             </div>
          </div>
       </div>
-   </div>
+   </main>
 </template>
 
 <script setup>

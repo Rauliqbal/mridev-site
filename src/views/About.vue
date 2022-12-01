@@ -1,5 +1,5 @@
 <template>
-   <div>
+   <main>
       <Navbar />
       <!-- start:hero -->
       <div class="bg-background-hero bg-cover grid grid-cols-1 lg:grid-cols-2 items-center container pt-28 pb-20">
@@ -119,7 +119,7 @@
 
       <!-- start: Certificates -->
       <section class="container py-20">
-         <div class="flex items-center gap-4">
+         <div class="flex items-center gap-4 mb-4">
             <div class="w-12 h-[2px] bg-primary"></div>
             <h2 class="section-title">Certificates</h2>
          </div>
@@ -141,7 +141,7 @@
             >
                <swiper-slide>
                   <div class="pb-14">
-                     <div class="cursor-pointer flex flex-col border-2 border-slate-200 hover:shadow-xl rounded-xl transition-all duration-300 overflow-hidden" data-bs-toggle="modal" data-bs-target="#certificateModal4">
+                     <div class="cursor-pointer flex flex-col box-border bg-white rounded-xl transition-all duration-300 overflow-hidden" data-bs-toggle="modal" data-bs-target="#certificateModal4">
                         <div class="p-5">
                            <img class="w-16 h-16 object-cover bg-[#335ef7] mb-4" src="https://images.glints.com/unsafe/1200x0/glints-dashboard.s3.amazonaws.com/company-logo/0ecccc80caed7d3013433880e099e4fb.png" />
                            <h5 class="font-semibold text-xl">Front-End Web Pemula</h5>
@@ -153,7 +153,7 @@
 
                <swiper-slide>
                   <div class="pb-14">
-                     <div class="cursor-pointer flex flex-col border-2 border-slate-200 hover:shadow-xl rounded-xl transition-all duration-300 overflow-hidden" data-bs-toggle="modal" data-bs-target="#certificateModal3">
+                     <div class="cursor-pointer flex flex-col box-border bg-white rounded-xl transition-all duration-300 overflow-hidden" data-bs-toggle="modal" data-bs-target="#certificateModal3">
                         <div class="p-5">
                            <img
                               class="w-16 h-16 object-cover bg-[#335ef7] mb-4"
@@ -168,7 +168,7 @@
 
                <swiper-slide>
                   <div class="pb-14">
-                     <div class="cursor-pointer flex flex-col border-2 border-slate-200 hover:shadow-xl rounded-xl transition-all duration-300 overflow-hidden" data-bs-toggle="modal" data-bs-target="#certificateModal2">
+                     <div class="cursor-pointer flex flex-col box-border bg-white rounded-xl transition-all duration-300 overflow-hidden" data-bs-toggle="modal" data-bs-target="#certificateModal2">
                         <div class="p-5">
                            <img class="w-16 h-16 bg-[#335ef7] mb-4" src="https://images.glints.com/unsafe/1200x0/glints-dashboard.s3.amazonaws.com/company-logo/0ecccc80caed7d3013433880e099e4fb.png" />
                            <h5 class="font-semibold text-xl">Belajar Dasar Pemrograman Web</h5>
@@ -180,7 +180,7 @@
 
                <swiper-slide>
                   <div class="pb-14">
-                     <div class="cursor-pointer flex flex-col border-2 border-slate-200 hover:shadow-xl rounded-xl transition-all duration-300 overflow-hidden" data-bs-toggle="modal" data-bs-target="#certificateModal1">
+                     <div class="cursor-pointer flex flex-col box-border bg-white rounded-xl transition-all duration-300 overflow-hidden" data-bs-toggle="modal" data-bs-target="#certificateModal1">
                         <div class="p-5">
                            <img
                               class="w-16 h-16 bg-[#335ef7] mb-4 rounded-full"
@@ -393,7 +393,7 @@
          </div>
       </section>
       <!-- End: Skills -->
-   </div>
+   </main>
 </template>
 
 <script>

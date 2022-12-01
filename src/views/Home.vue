@@ -1,5 +1,5 @@
 <template>
-   <div>
+   <main>
       <Navbar />
       <!-- start:hero -->
       <div class="bg-background-hero bg-cover">
@@ -52,7 +52,6 @@
             </button>
          </div>
       </div>
-
       <!-- end:hero -->
 
       <!-- start:Skills -->
@@ -72,7 +71,7 @@
             </div>
 
             <div class="flex flex-col md:flex-row items-center md:justify-center gap-8 px-4 absolute right-0 lg:mr-[4%] mt-8 md:mt-4 lg:-mt-8 xl:-mt-40">
-               <div class="flex flex-col justify-center items-center w-full md:max-w-[320px] bg-white rounded-3xl p-8 hover:shadow-xl hover:-translate-y-4 transition-all duration-300 ease-out">
+               <div class="flex flex-col justify-center items-center w-full md:max-w-[320px] bg-white rounded-3xl p-8 box-border hover:-translate-y-4 transition-all duration-300 ease-out">
                   <img class="w-44 h-44" src="../assets/images/fe-dev.svg" />
                   <div class="mt-8">
                      <h4 class="text-xl md:text-2xl text-center font-semibold">Front End Developer</h4>
@@ -80,7 +79,7 @@
                   </div>
                </div>
 
-               <div class="flex flex-col justify-center items-center w-full md:max-w-[320px] bg-white rounded-3xl p-8 hover:shadow-xl hover:-translate-y-4 transition-all duration-300 ease-out">
+               <div class="flex flex-col justify-center items-center w-full md:max-w-[320px] bg-white rounded-3xl p-8 box-border hover:-translate-y-4 transition-all duration-300 ease-out">
                   <img class="w-44 h-44" src="../assets/images/ui-des.svg" />
                   <div class="mt-8">
                      <h4 class="text-xl md:text-2xl text-center font-semibold">UI Designer</h4>
@@ -93,7 +92,7 @@
       <!-- end:Skills -->
 
       <!-- start:Portfolio -->
-      <section class="mt-[52rem] md:mt-[18rem]">
+      <section class="mt-[50rem] md:mt-[15rem]">
          <div class="container py-20">
             <div class="flex items-center gap-4">
                <div class="w-12 h-[2px] bg-primary"></div>
@@ -120,7 +119,7 @@
                class="mySwiper mt-10"
             >
                <swiper-slide class="pb-12" v-for="project in portfolio" :key="project.id">
-                  <figure class="relative overflow-hidden group rounded-xl md:rounded-3xl">
+                  <figure class="box-border relative overflow-hidden group rounded-xl md:rounded-3xl">
                      <img class="object-cover w-full group-hover:scale-110 group-hover:blur-sm transition-all duration-200 ease-out" :src="'/portfolio/' + project.img" :alt="'Image' + project.title" />
                      <figcaption class="p-4 md:p-8 flex flex-col justify-end bg-slate-900/40 inset-0 absolute opacity-0 scale-110 group-hover:opacity-100 group-hover:scale-100 ttransition-all duration-300 ease-out">
                         <h2 class="text-lg md:text-2xl font-semibold text-white">{{ project.title }}</h2>
@@ -146,7 +145,7 @@
                buy my product.
             </h2>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-10">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 mt-10">
                <CardProduct v-for="product in products" :key="product.id" :url="product.url" :name="product.name" :image="product.image" :source="product.source" :type="product.type" />
             </div>
          </div>
@@ -176,7 +175,7 @@
                class="mySwiper mt-10"
             >
                <swiper-slide class="pb-14">
-                  <div class="flex flex-col bg-white hover:shadow-lg transition duration-300 py-8 pl-8 md:pl-24 pr-8 rounded-2xl relative">
+                  <div class="flex flex-col bg-white box-border py-8 pl-8 md:pl-24 pr-8 rounded-2xl relative">
                      <span class="relative md:absolute text-6xl left-4 text-slate-200"><i class="bx bxs-quote-left"></i></span>
                      <div>
                         <p class="text-base md:text-lg leading-relaxed tracking-wide font-medium text-slate-500 italic">
@@ -188,7 +187,7 @@
                </swiper-slide>
 
                <swiper-slide class="pb-14">
-                  <div class="flex flex-col bg-white hover:shadow-lg transition duration-300 py-8 pl-8 md:pl-24 pr-8 rounded-2xl relative">
+                  <div class="flex flex-col bg-white box-border py-8 pl-8 md:pl-24 pr-8 rounded-2xl relative">
                      <span class="relative md:absolute text-6xl left-4 text-slate-200"><i class="bx bxs-quote-left"></i></span>
                      <div>
                         <p class="text-base md:text-lg leading-relaxed tracking-wide font-medium text-slate-500 italic">
@@ -200,7 +199,7 @@
                </swiper-slide>
 
                <swiper-slide class="pb-14">
-                  <div class="flex bg-white hover:shadow-lg transition duration-300 py-8 pl-24 pr-8 rounded-2xl relative">
+                  <div class="flex bg-white box-border py-8 pl-24 pr-8 rounded-2xl relative">
                      <span class="absolute text-6xl left-4 text-slate-200"><i class="bx bxs-quote-left"></i></span>
                      <div>
                         <p class="text-base md:text-lg leading-relaxed tracking-wide font-medium text-slate-500 italic">
@@ -218,7 +217,7 @@
       <!-- start:contact -->
       <section class="relative">
          <div class="relative lg:absolute inset-x-0 container py-20">
-            <div class="bg-white px-4 py-8 md:p-20 rounded-3xl box-contact">
+            <div class="bg-white px-4 py-8 md:p-20 rounded-3xl box-border">
                <div class="flex items-center gap-4">
                   <div class="w-12 h-[2px] bg-primary"></div>
                   <h2 class="section-title text-primary">Say Hello</h2>
@@ -297,7 +296,7 @@
       </section>
       <!-- end:contact -->
       <div class="bg-[#1c2863] py-0 lg:py-28"></div>
-   </div>
+   </main>
 </template>
 
 <script>

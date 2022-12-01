@@ -1,5 +1,5 @@
 <template>
-   <div>
+   <main>
       <Navbar />
       <div class="bg-[#1C2863]">
          <div class="container mt-20 py-16">
@@ -10,7 +10,7 @@
       <div class="bg-background-hero bg-cover grid grid-cols-1 lg:grid-cols-2 items-center container pt-8">
          <div class="py-4 md:py-0">
             <div class="flex items-center gap-4 mb-0 md:mb-6">
-               <div class="w-12 md:w-24 h-1 bg-primary"></div>
+               <div class="w-12 h-[2px] bg-primary"></div>
                <h2 class="section-title">Design and Source Code</h2>
             </div>
             <h1 class="text-2xl md:text-6xl font-semibold text-slate-900">Digital Product</h1>
@@ -19,15 +19,15 @@
                ready to use for your awesome projects.
             </p>
             <div class="flex items-center gap-6 mt-8">
-               <a target="_blank" href="https://histudio.vercel.app/" class="flex items-center justify-center w-16 h-16 bg-slate-100 rounded-full group">
+               <a target="_blank" href="https://histudio.vercel.app/" class="flex items-center justify-center w-16 h-16 bg-slate-200 rounded-full group">
                   <img class="w-6 group-hover:scale-125 transition-all duration-200 ease-out" src="../assets/images/histudio-icon.svg" alt="" />
                </a>
 
-               <a target="_blank" href="https://www.uplabs.com/rauliqbal" class="flex items-center justify-center w-16 h-16 bg-slate-100 rounded-full group">
+               <a target="_blank" href="https://www.uplabs.com/rauliqbal" class="flex items-center justify-center w-16 h-16 bg-slate-200 rounded-full group">
                   <img class="w-10 group-hover:scale-125 transition-all duration-200 ease-out" src="../assets/images/uplabs-icon.svg" alt="" />
                </a>
 
-               <a target="_blank" href="https://www.figma.com/@rauliqbal" class="flex items-center justify-center w-16 h-16 bg-slate-100 rounded-full group">
+               <a target="_blank" href="https://www.figma.com/@rauliqbal" class="flex items-center justify-center w-16 h-16 bg-slate-200 rounded-full group">
                   <img class="w-8 group-hover:scale-125 transition-all duration-200 ease-out" src="../assets/images/figma-icon.svg" alt="" />
                </a>
             </div>
@@ -55,7 +55,7 @@
          </div>
       </section>
       <!-- END:New Product -->
-   </div>
+   </main>
 </template>
 
 <script setup>

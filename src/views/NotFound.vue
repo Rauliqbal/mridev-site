@@ -1,6 +1,6 @@
 <template>
-   <Navbar />
-   <div>
+   <main>
+      <Navbar />
       <div class="bg-gray-100 h-screen flex justify-center">
          <center class="m-auto">
             <svg class="emoji-404" enable-background="new 0 0 226 249.135" height="249.135" id="Layer_1" overflow="visible" version="1.1" viewBox="0 0 226 249.135" width="226" xml:space="preserve">
@@ -32,7 +32,7 @@
          </center>
          <center class="mt-6"></center>
       </div>
-   </div>
+   </main>
 </template>
 
 <script setup>
