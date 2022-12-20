@@ -328,11 +328,11 @@ export default {
                type: "Web App",
             },
             {
-               title: "FurniLux - Landing Page UI KIT",
-               desc: "Design landing page for funiture.",
+               title: "FurniLux - E Commerce Funiture",
+               desc: "Furnilux adalah Website Toko Online Untuk membeli segala perabotan rumah.",
                img: "furnilux.webp",
-               url: "https://www.figma.com/community/file/1161470450362319670",
-               type: "Landing Page Design",
+               url: "https://furnilux.vercel.app",
+               type: "Web App",
             },
             {
                title: "Lets Cooking - Resep Masakan Indonesia",

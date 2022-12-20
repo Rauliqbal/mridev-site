@@ -9,7 +9,7 @@
    },
    {
       "id": 2,
-      "url": "https://histudio.vercel.app",
+      "url": "https://histudio.vercel.app/product/g6eKXLEcnDvgwbKbzP0EOw==",
       "name": "Cafe Street - E Commerce Landing Page",
       "source": "Hi Studio",
       "type": "premium",
@@ -17,10 +17,18 @@
    },
    {
       "id": 3,
-      "url": "https://histudio.vercel.app",
-      "name": "Let's Food UI Kit - E Commerce Landing Page", 
+      "url": "https://histudio.vercel.app/product/y7054M5z0aNobKP9qMzPNA==",
+      "name": "Personal Portfolio Website - Landing Page",
       "source": "Hi Studio",
       "type": "freemium",
       "image": "https://public-files.gumroad.com/variants/icbuqy0i0tgiygb9h31y6s8nt1ih/3298c3eb001bbed90f1d616da66708480096a0a1b6e81bd4f8a2d6e9b831d301"
+   },
+   {
+      "id": 4,
+      "url": "https://histudio.vercel.app/product/DEmTK1qQqBqRsBe2ynD9gg==",
+      "name": "Let's Food UI Kit - E Commerce Landing Page Design",
+      "source": "Hi Studio",
+      "type": "freemium",
+      "image": "https://public-files.gumroad.com/variants/akl09f4x76jnnawss4mshf1ce5ee/3298c3eb001bbed90f1d616da66708480096a0a1b6e81bd4f8a2d6e9b831d301"
    }
 ]

@@ -10,7 +10,7 @@
       <div class="container py-20">
          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
             <div class="relative overflow-hidden group rounded-2xl" v-for="project in portfolio" :key="project.id">
-               <img class="object-cover w-full group-hover:scale-110 group-hover:blur-sm transition-all duration-200 ease-out" :src="'/portfolio/' + project.img" :alt="'Image ' + project.title" />
+               <img class="object-cover w-full h-full group-hover:scale-110 group-hover:blur-sm transition-all duration-200 ease-out" :src="'/portfolio/' + project.img" :alt="'Image ' + project.title" />
 
                <div class="p-4 md:p-8 flex flex-col justify-end bg-slate-900/40 inset-0 absolute opacity-0 scale-110 group-hover:opacity-100 group-hover:scale-100 ttransition-all duration-300 ease-out">
                   <h2 class="text-lg md:text-2xl font-semibold text-white">{{ project.title }}</h2>

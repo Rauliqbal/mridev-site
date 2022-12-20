@@ -1,5 +1,12 @@
 [
    {
+      "title": "Zullkit - Store UI KIT",
+      "desc": "Website yang menjual UI Kit",
+      "img": "zullkit.webp",
+      "url": "https://zullkit-app.netlify.app/",
+      "type": "Web Dev"
+   },
+   {
       "title": "My Mushaf - Al Qur'an Digital",
       "desc": "My Mushaf Indonesia adalah Aplikasi Al - Qur'an Digital Berbasis Website App.",
       "img": "mymushaf.webp",
