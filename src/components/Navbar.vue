@@ -4,11 +4,11 @@
       <label for="active" class="menu-btn z-40"><i class="text-white bx bx-grid-alt text-3xl"></i> </label>
       <div class="wrapper z-30">
          <ul>
-            <li><router-link to="/" class="text-2xl md:text-4xl" href="#">Home</router-link></li>
-            <li><router-link to="/about" class="text-2xl md:text-4xl" href="#">About me</router-link></li>
-            <li><router-link to="/project" class="text-2xl md:text-4xl" href="#">Projects</router-link></li>
-            <li><router-link to="/product" class="text-2xl md:text-4xl" href="#">Product</router-link></li>
-            <li><router-link to="/contact" class="text-2xl md:text-4xl" href="#">Contact</router-link></li>
+            <li><router-link @click="showHide()" to="/" class="text-2xl md:text-4xl" href="#">Home</router-link></li>
+            <li><router-link @click="showHide()" to="/about" class="text-2xl md:text-4xl" href="#">About me</router-link></li>
+            <li><router-link @click="showHide()" to="/project" class="text-2xl md:text-4xl" href="#">Projects</router-link></li>
+            <li><router-link @click="showHide()" to="/product" class="text-2xl md:text-4xl" href="#">Product</router-link></li>
+            <li><router-link @click="showHide()" to="/contact" class="text-2xl md:text-4xl" href="#">Contact</router-link></li>
          </ul>
          <div class="flex gap-4 md:gap-8 absolute bottom-20 left-1/2 -translate-x-1/2">
             <a href="https://dribbble.com/Rauliqbal" target="_blank" class="flex items-center text-sm md:text-lg gap-2 text-white hover:text-slate-700 transition duration-200">
@@ -51,6 +51,9 @@ export default {
          window.setTimeout(function () {
             location.reload();
          }, 100);
+      },
+      showHide() {
+         document.getElementById("active").checked = false;
       },
    },
 };

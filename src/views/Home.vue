@@ -1,6 +1,5 @@
 <template>
    <main>
-      <Navbar />
       <!-- start:hero -->
       <div class="bg-background-hero bg-cover">
          <div class="container grid grid-cols-1 lg:grid-cols-2 items-center h-screen pt-10">
@@ -306,11 +305,10 @@ import { Swiper, SwiperSlide } from "swiper/vue";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Autoplay, Pagination } from "swiper";
-import Navbar from "../components/Navbar.vue";
 import productContent from "../data/productContent.json";
 
 export default {
-   components: { CardProduct, Swiper, SwiperSlide, Navbar },
+   components: { CardProduct, Swiper, SwiperSlide },
    setup() {
       return {
          modules: [Pagination, Autoplay],

@@ -1,6 +1,5 @@
 <template>
    <main>
-      <Navbar />
       <div class="bg-[#1C2863]">
          <div class="container mt-20 py-16">
             <h3 class="text-4xl text-white font-bold">Contact</h3>
@@ -91,8 +90,6 @@
    </main>
 </template>
 
-<script setup>
-import Navbar from "../components/Navbar.vue";
-</script>
+<script setup></script>
 
 <style></style>

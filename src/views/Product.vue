@@ -1,6 +1,5 @@
 <template>
    <main>
-      <Navbar />
       <div class="bg-[#1C2863]">
          <div class="container mt-20 py-16">
             <h3 class="text-4xl text-white font-bold">Product</h3>
@@ -61,7 +60,6 @@
 <script setup>
 import { ref } from "vue";
 import CardProduct from "../components/product/CardProduct.vue";
-import Navbar from "../components/Navbar.vue";
 import productContent from "../data/productContent.json";
 
 const products = ref(productContent);
