@@ -17,7 +17,7 @@
 
 @layer components {
    .btn-primary {
-      @apply bg-primary py-3 px-5 text-white font-semibold rounded-lg hover:bg-indigo-600 active:scale-95 transition duration-150;
+      @apply inline-flex bg-primary py-3 px-5 text-white font-semibold rounded-lg hover:bg-indigo-600 active:scale-95 transition duration-150;
    }
    .section-title {
       @apply text-primary font-semibold text-xl md:text-2xl tracking-wider capitalize;
@@ -123,5 +123,12 @@
    }
    ::-webkit-scrollbar-thumb:hover {
       @apply bg-gradient-to-t from-blue-700 to-violet-700;
+   }
+
+   .line-clamp-1 {
+      @apply overflow-hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
    }
 }

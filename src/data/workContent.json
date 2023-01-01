@@ -1,52 +1,52 @@
 [
    {
+      "title": "BeLife - Landing Page",
+      "desc": "Belief is a website for family insurance services, such as health insurance, etc.",
+      "img": "belife.webp",
+      "url": "https://belife-landingpage.vercel.app/",
+      "type": "Landing Page"
+   },
+   {
       "title": "Zullkit - Store UI KIT",
-      "desc": "Website yang menjual UI Kit",
+      "desc": "Zullkit is a website that provides UI Kits and website designs.",
       "img": "zullkit.webp",
       "url": "https://zullkit-app.netlify.app/",
       "type": "Web Dev"
    },
    {
       "title": "My Mushaf - Al Qur'an Digital",
-      "desc": "My Mushaf Indonesia adalah Aplikasi Al - Qur'an Digital Berbasis Website App.",
+      "desc": "My Mushaf is a website-based digital al-Quran application.",
       "img": "mymushaf.webp",
       "url": "https://mymushaf.vercel.app/",
       "type": "Web App"
    },
    {
       "title": "FurniLux - Landing Page UI KIT",
-      "desc": "Design landing page for funiture.",
+      "desc": "Furnilux is a website that provides home furnishings, to beautify your room.",
       "img": "furnilux.webp",
       "url": "https://www.figma.com/community/file/1161470450362319670",
       "type": "UI Design"
    },
    {
       "title": "Lets Cooking - Resep Masakan Indonesia",
-      "desc": "Lets Cooking adalah Aplikasi Resep masakan Indonesia Berbasis Website App.",
+      "desc": "Lets Cooking is a Website App-Based Indonesian Recipe Application.",
       "img": "lets-cook.webp",
       "url": "https://letscooking.vercel.app/",
       "type": "Web App"
    },
    {
       "title": "Anonime - Streaming Anime",
-      "desc": "Website Streaming Anime Slicing from Figma.",
+      "desc": "Anonime is your favorite anime streaming place.",
       "img": "anonime.webp",
       "url": "https://anonime.vercel.app/",
       "type": "Web App"
    },
    {
       "title": "Lentera House - Landing Page",
-      "desc": "Slicing Design",
+      "desc": "Lantern house is a website to find your dream house.",
       "img": "lenterahouse.webp",
       "url": "https://lentera-house-landingpage.vercel.app/",
       "type": "Landing Page"
-   },
-   {
-      "title": "Crafty Furniture - Market App",
-      "desc": "E Commerce Furniture",
-      "img": "craftyfurniture.webp",
-      "url": "https://crafty-app.vercel.app/",
-      "type": "Web App"
    },
    {
       "title": "Cafe Street - Landing Page Design",
