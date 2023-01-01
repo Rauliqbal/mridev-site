@@ -7,6 +7,14 @@ module.exports = {
       extend: {
          container: {
             center: true,
+            padding: "1rem",
+            screens: {
+               sm: "512px",
+               md: "720px",
+               lg: "1024px",
+               xl: "1060px",
+               "1440px": "1220px",
+            },
          },
          fontFamily: {
             poppins: ["Poppins", "sans-serif"],
