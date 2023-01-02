@@ -20,7 +20,7 @@
 
          <hr class="bg-white" />
          <div class="flex justify-between items-center px-4 md:px-8 text-white py-8">
-            <h5>© 2022, Rauliqbal.</h5>
+            <h5>© {{ date }}, Rauliqbal.</h5>
             <button @click="scrollToTop" class="hover:text-primary/70 transition duration-200">Back to top</button>
          </div>
       </div>
@@ -31,4 +31,6 @@
 function scrollToTop() {
    window.scrollTo(0, 0);
 }
+
+const date = new Date().getFullYear();
 </script>
