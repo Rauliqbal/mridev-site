@@ -21,11 +21,11 @@
       "type": "Web App"
    },
    {
-      "title": "FurniLux - Landing Page UI KIT",
+      "title": "FurniLux - Best Furniture",
       "desc": "Furnilux is a website that provides home furnishings, to beautify your room.",
       "img": "furnilux.webp",
-      "url": "https://www.figma.com/community/file/1161470450362319670",
-      "type": "UI Design"
+      "url": "https://furnilux.vercel.app/",
+      "type": "Landing Page"
    },
    {
       "title": "Lets Cooking - Resep Masakan Indonesia",
