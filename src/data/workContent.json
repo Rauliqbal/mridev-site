@@ -1,5 +1,12 @@
 [
    {
+      "title": "My Mushaf - Al Qur'an Digital App",
+      "desc": "My mushaf is an application of the Qur'an in Indonesian",
+      "img": "mymushaf-app.webp",
+      "url": "https://github.com/Rauliqbal/my_mushaf-app",
+      "type": "Application"
+   },
+   {
       "title": "BeLife - Landing Page",
       "desc": "Belief is a website for family insurance services, such as health insurance, etc.",
       "img": "belife.webp",
@@ -50,7 +57,7 @@
    },
    {
       "title": "Cafe Street - Landing Page Design",
-      "desc": "Web Design for Coffe",
+      "desc": "This website design is for a company that provides coffee",
       "img": "cafestreet.webp",
       "url": "https://www.figma.com/community/file/1138256358581554095",
       "type": "UI Design"

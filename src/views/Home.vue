@@ -320,24 +320,24 @@ export default {
          portfolio: [
             {
                title: "My Mushaf - Al Qur'an Digital",
-               desc: "My Mushaf Indonesia adalah Aplikasi Al - Qur'an Digital Berbasis Website App.",
+               desc: "My Mushaf is a website-based digital al-Quran application.",
                img: "mymushaf.webp",
                url: "https://mymushaf.vercel.app/",
                type: "Web App",
             },
             {
                title: "FurniLux - E Commerce Funiture",
-               desc: "Furnilux adalah Website Toko Online Untuk membeli segala perabotan rumah.",
+               desc: "Furnilux is a website that provides home furnishings, to beautify your room.",
                img: "furnilux.webp",
                url: "https://furnilux.vercel.app",
                type: "Web App",
             },
             {
-               title: "Lets Cooking - Resep Masakan Indonesia",
-               desc: "Lets Cooking adalah Aplikasi Resep masakan Indonesia Berbasis Website App.",
-               img: "lets-cook.webp",
-               url: "https://letscooking.vercel.app/",
-               type: "Web App",
+               title: "BeLife - Landing Page",
+               desc: "Belief is a website for family insurance services, such as health insurance, etc.",
+               img: "belife.webp",
+               url: "https://belife-landingpage.vercel.app/",
+               type: "Landing Page",
             },
             {
                title: "Anonime - Streaming Anime",
