@@ -19,9 +19,9 @@
                <i class="bx bxl-linkedin"></i>
                <span>LinkedIn</span>
             </a>
-            <a href="https://www.instagram.com/raul.iqbl_/" target="_blank" class="flex items-center text-sm md:text-lg gap-2 text-white hover:text-slate-700 transition duration-200">
-               <i class="bx bxl-instagram"></i>
-               <span>Instagram</span>
+            <a href="https://github.com/Rauliqbal" target="_blank" class="flex items-center text-sm md:text-lg gap-2 text-white hover:text-slate-700 transition duration-200">
+               <i class="bx bxl-github"></i>
+               <span>Github</span>
             </a>
          </div>
       </div>
@@ -36,8 +36,9 @@
                <i class="bx bxl-linkedin text-lg"></i>
                <span class="text-lg">LinkedIn</span>
             </a>
-            <a href="https://www.instagram.com/raul.iqbl_/" target="_blank" class="flex items-center gap-2 text-slate-500 hover:text-primary transition duration-200">
-               <i class="bx bxl-instagram text-lg"></i> <span class="text-lg">Instagram</span>
+            <a href="https://github.com/Rauliqbal" target="_blank" class="flex items-center gap-2 text-slate-500 hover:text-primary transition duration-200">
+               <i class="bx bxl-github"></i>
+               <span>Github</span>
             </a>
          </div>
       </header>

@@ -8,7 +8,7 @@
 
       <div class="container py-20">
          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
-            <CardProject v-for="project in portfolio" :id="project.id" :title="project.title" :image="project.img" :type="project.type" :url="project.url" :desc="project.desc" />
+            <CardProject v-for="project in portfolio" :id="project.id" :title="project.title" :image="project.img" :type="project.type" :url="project.url" :desc="project.desc" :source_code="project.source_code" />
          </div>
       </div>
    </main>

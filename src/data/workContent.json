@@ -4,62 +4,71 @@
       "desc": "My mushaf is an application of the Qur'an in Indonesian",
       "img": "mymushaf-app.webp",
       "url": "https://github.com/Rauliqbal/my_mushaf-app",
-      "type": "Application"
+      "type": "Application",
+      "source_code": "https://github.com/Rauliqbal/my_mushaf-app"
    },
    {
       "title": "BeLife - Landing Page",
       "desc": "Belief is a website for family insurance services, such as health insurance, etc.",
       "img": "belife.webp",
       "url": "https://belife-landingpage.vercel.app/",
-      "type": "Landing Page"
+      "type": "Landing Page",
+      "source_code": "https://github.com/Rauliqbal/belife-landingpage"
    },
    {
       "title": "Zullkit - Store UI KIT",
       "desc": "Zullkit is a website that provides UI Kits and website designs.",
       "img": "zullkit.webp",
       "url": "https://zullkit-app.netlify.app/",
-      "type": "Web Dev"
+      "type": "Web Dev",
+      "source_code": "https://github.com/Rauliqbal/zullkit-app"
    },
    {
       "title": "My Mushaf - Al Qur'an Digital",
       "desc": "My Mushaf is a website-based digital al-Quran application.",
       "img": "mymushaf.webp",
       "url": "https://mymushaf.vercel.app/",
-      "type": "Web App"
+      "type": "Web App",
+      "source_code": "https://github.com/Rauliqbal/My_mushaf"
    },
    {
       "title": "FurniLux - Best Furniture",
       "desc": "Furnilux is a website that provides home furnishings, to beautify your room.",
       "img": "furnilux.webp",
       "url": "https://furnilux.vercel.app/",
-      "type": "Landing Page"
+      "type": "Landing Page",
+      "source_code": "https://github.com/Rauliqbal/furnilux-frontend"
    },
    {
       "title": "Lets Cooking - Resep Masakan Indonesia",
       "desc": "Lets Cooking is a Website App-Based Indonesian Recipe Application.",
       "img": "lets-cook.webp",
       "url": "https://letscooking.vercel.app/",
-      "type": "Web App"
+      "type": "Web App",
+      "source_code": "https://github.com/Rauliqbal/lets-cooking-app"
    },
    {
       "title": "Anonime - Streaming Anime",
       "desc": "Anonime is your favorite anime streaming place.",
       "img": "anonime.webp",
       "url": "https://anonime.vercel.app/",
-      "type": "Web App"
+      "type": "Web App",
+      "source_code": "https://github.com/Rauliqbal/Anonime-app"
    },
    {
       "title": "Lentera House - Landing Page",
       "desc": "Lantern house is a website to find your dream house.",
       "img": "lenterahouse.webp",
       "url": "https://lentera-house-landingpage.vercel.app/",
-      "type": "Landing Page"
+      "type": "Landing Page",
+      "source_code": "https://github.com/Rauliqbal/lentera-house-landingpage"
    },
    {
       "title": "Cafe Street - Landing Page Design",
       "desc": "This website design is for a company that provides coffee",
       "img": "cafestreet.webp",
       "url": "https://www.figma.com/community/file/1138256358581554095",
-      "type": "UI Design"
+      "type": "UI Design",
+      "source_code": "https://www.figma.com/community/file/1138256358581554095"
    }
 ]
