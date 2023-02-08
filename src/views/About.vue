@@ -21,7 +21,7 @@
                company.
             </p>
 
-            <a class="btn-primary inline-flex mt-8" href="https://drive.google.com/file/d/146Ebl_VJqstMxv169d6WJn-U5RC5ZOjJ/view" target="_blank">Get my CV</a>
+            <a class="btn-primary inline-flex mt-8" href="/cv-rauliqbal.pdf" target="_blank">Get my CV</a>
          </div>
 
          <div class="order-first md:order-last mx-auto group max-w-md pt-24 pb-12">
@@ -61,9 +61,9 @@
                      <h2 class="section-title">Experience</h2>
                   </div>
                   <div class="relative border-l-2 border-l-primary pl-6 before:block before:absolute before:w-4 before:h-4 before:rounded-full before:left-[-9px] before:top-0 before:bg-white before:border-4 before:border-primary">
-                     <h6 class="py-[2px] px-3 text-[12px] border-2 border-primary font-semibold text-primary inline-flex rounded-full -mt-4">2021 - Current</h6>
+                     <h6 class="py-[2px] px-3 text-[12px] border-2 border-primary font-semibold text-primary inline-flex rounded-full -mt-4">2022 - Current</h6>
                      <h4 class="uppercase font-semibold text-2xl mt-2">freelancer</h4>
-                     <h5 class="text-base italic text-slate-500 mt-2">Front-End Development</h5>
+                     <h5 class="text-base italic text-slate-500 mt-2">Front-End Developer</h5>
                   </div>
                </div>
 
