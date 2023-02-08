@@ -10,7 +10,7 @@
                </div>
                <h1 class="text-slate-900 text-4xl md:text[-40px] lg:text-[54px] xl:text-[64px] leading-normal md:leading-tight font-semibold tracking-wider mt-2">
                   Hello, my <br />
-                  name's Raul. <br />
+                  name's <span class="text-primary">Raul.</span> <br />
                   I'm a Front-End Developer.
                </h1>
                <router-link to="/project" @click="reloadPage" class="btn-primary mt-10 inline-flex">Recent work</router-link>
