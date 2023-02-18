@@ -1,5 +1,13 @@
 [
    {
+      "title": "Cozy App - Find Cozy House",
+      "desc": "Application to find a place to live",
+      "img": "cozy-app.webp",
+      "url": "https://github.com/Rauliqbal/cozy-app",
+      "type": "Application",
+      "source_code": "https://github.com/Rauliqbal/cozy-app"
+   },
+   {
       "title": "MOVIERAA - Sreaming Movie & TV Shows",
       "desc": "Movieraa is a website for streaming movies and tv shows, but this is just a website view.",
       "img": "movieraa.webp",
