@@ -118,6 +118,11 @@
                      <h4 class="uppercase font-semibold text-2xl mt-2">BuildWith Angga</h4>
                      <h5 class="text-base italic text-slate-500 mt-2">Bootcamp Front-End Developer : Mastering Vue JS 3</h5>
                   </div>
+                  <div class="relative border-l-2 border-l-primary pl-6 before:block before:absolute before:w-4 before:h-4 before:rounded-full before:left-[-9px] before:top-0 before:bg-white before:border-4 before:border-primary pb-8">
+                     <h6 class="py-[2px] px-3 text-[12px] border-2 border-primary font-semibold text-primary inline-flex rounded-full -mt-4">2023</h6>
+                     <h4 class="uppercase font-semibold text-2xl mt-2">Digital Talent Scholarship</h4>
+                     <h5 class="text-base italic text-slate-500 mt-2">Junir Web Developer 2023</h5>
+                  </div>
                </div>
             </div>
          </div>
@@ -139,7 +144,7 @@
                   clickable: true,
                }"
                :autoplay="{
-                  delay: 4500,
+                  delay: 3500,
                   disableOnInteraction: false,
                }"
                :loop="true"
@@ -210,6 +215,21 @@
                            />
                            <h5 class="font-semibold text-xl">Front-End Developer : Mastering Vue JS 3</h5>
                            <h5 class="font-semibold text-slate-500 mt-1">Publisher : BuildWithAngga</h5>
+                        </div>
+                     </div>
+                  </div>
+               </swiper-slide>
+
+               <swiper-slide>
+                  <div class="pb-14">
+                     <div class="cursor-pointer flex flex-col box-border bg-white rounded-xl transition-all duration-300 overflow-hidden" data-bs-toggle="modal" data-bs-target="#certificateModal6">
+                        <div class="p-5">
+                           <img
+                              class="w-16 h-16 bg-[#335ef7] mb-4"
+                              src="data:image/png;base64,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"
+                           />
+                           <h5 class="font-semibold text-xl">Junior Web Developer</h5>
+                           <h5 class="font-semibold text-slate-500 mt-1">Publisher : Digital Talent Scholarship 2023</h5>
                         </div>
                      </div>
                   </div>
@@ -309,6 +329,25 @@
                   </div>
                   <div class="modal-body relative p-4">
                      <img src="../assets/certificate/btcmpvue3.webp" alt="" />
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <!-- Certificate Junior Web Developer -->
+         <div class="modal fade fixed top-0 left-0 hidden w-full h-full outline-none overflow-x-hidden overflow-y-auto" id="certificateModal6" tabindex="-1" aria-labelledby="exampleModalCenterTitle" aria-modal="true" role="dialog">
+            <div class="modal-dialog modal-xl modal-dialog-centered relative w-auto pointer-events-none">
+               <div class="modal-content border-none shadow-lg relative flex flex-col w-full pointer-events-auto bg-white bg-clip-padding rounded-md outline-none text-current">
+                  <div class="modal-header flex flex-shrink-0 items-center justify-between p-4 border-b border-gray-200 rounded-t-md">
+                     <button
+                        type="button"
+                        class="btn-close box-content w-4 h-4 p-1 text-black border-none rounded-none opacity-50 focus:shadow-none focus:outline-none focus:opacity-100 hover:text-black hover:opacity-75 hover:no-underline"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                     ></button>
+                  </div>
+                  <div class="modal-body relative p-4">
+                     <img src="../assets/certificate/jwd.webp" alt="" />
                   </div>
                </div>
             </div>
@@ -443,7 +482,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 // import required modules
-import { Pagination } from "swiper";
+import { Autoplay, Pagination } from "swiper";
 import Navbar from "../components/Navbar.vue";
 
 export default {
@@ -451,7 +490,7 @@ export default {
 
    setup() {
       return {
-         modules: [Pagination],
+         modules: [Pagination, Autoplay],
       };
    },
 
