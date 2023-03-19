@@ -6,12 +6,11 @@
             <div>
                <div class="flex items-center gap-4">
                   <div class="w-12 h-[2px] bg-primary"></div>
-                  <h2 class="section-title">Rauliqbal</h2>
+                  <h2 class="section-title">Hello</h2>
                </div>
-               <h1 class="text-slate-900 text-4xl md:text[-40px] lg:text-[54px] xl:text-[64px] leading-normal md:leading-tight font-semibold tracking-wider mt-2">
-                  Hello, my <br />
-                  name's <span class="text-primary">Raul.</span> <br />
-                  I'm a Front-End Developer.
+               <h1 class="text-slate-900 text-4xl md:text[-54px] lg:text-[54px] leading-normal md:leading-tight font-semibold tracking-wider mt-2">
+                  My name is <span class="text-primary">Raul</span> <br />
+                  I'm a Front-End Developer
                </h1>
                <router-link to="/project" @click="reloadPage" class="btn-primary mt-10 inline-flex">Recent work</router-link>
             </div>
@@ -62,11 +61,11 @@
                   <h2 class="section-title text-secondary">what we serve</h2>
                </div>
                <h2 class="text-xl md:text-4xl font-semibold text-white mt-4">
-                  Some of the services I specialize in, <br />
+                  Some of the services I specialize in, <br class="hidden md:block" />
                   if you are interested, please contact me.
                </h2>
 
-               <h3 class="text-5xl md:text-7xl font-semibold mt-20 text-white">Think.Make.<br />Solve</h3>
+               <h3 class="text-5xl md:text-6xl font-semibold mt-20 text-white">Think.Make.<br />Solve</h3>
             </div>
 
             <div class="flex flex-col md:flex-row items-center md:justify-center gap-8 px-4 absolute right-0 lg:mr-[4%] mt-8 md:mt-4 lg:-mt-8 xl:-mt-40">
