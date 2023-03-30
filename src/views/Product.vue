@@ -18,8 +18,8 @@
                ready to use for your awesome projects.
             </p>
             <div class="flex items-center gap-6 mt-8">
-               <a target="_blank" href="https://histudio.vercel.app/" class="flex items-center justify-center w-16 h-16 bg-slate-200 rounded-full group">
-                  <img class="w-6 group-hover:scale-125 transition-all duration-200 ease-out" src="../assets/images/histudio-icon.svg" alt="" />
+               <a target="_blank" href="https://azurakit.vercel.app/" class="flex items-center justify-center w-16 h-16 bg-slate-200 rounded-full group">
+                  <img class="w-8 group-hover:scale-125 transition-all duration-200 ease-out" src="../assets/images/azurakit-icon.png" alt="" />
                </a>
 
                <a target="_blank" href="https://www.uplabs.com/rauliqbal" class="flex items-center justify-center w-16 h-16 bg-slate-200 rounded-full group">
