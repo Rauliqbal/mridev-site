@@ -29,7 +29,7 @@
                            </div>
                            <div href="https://www.linkedin.com/in/muhamad-raul-iqbal/" target="_blank" class="flex items-start gap-2 md:gap-4 transition duration-200">
                               <i class="bx text-lg md:text-2xl bx-map-pin text-primary"></i>
-                              <span class="text-sm sm:text-base">Perum Telaga Murni no 14 A ,Kec. Cikarang Barat, Kab. Bekasi</span>
+                              <span class="text-sm sm:text-base">Perum Telaga Murni Blok D1/14A ,Kec. Cikarang Barat, Kab. Bekasi</span>
                            </div>
                            <div href="https://www.instagram.com/raul.iqbl_/" target="_blank" class="flex items-center gap-2 md:gap-4 transition duration-200">
                               <i class="bx text-lg md:text-2xl bx-phone text-primary"></i>
