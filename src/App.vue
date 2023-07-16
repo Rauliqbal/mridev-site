@@ -1,7 +1,7 @@
 <template>
    <PageLoader />
    <Navbar />
-   <router-view v-slot="{ Component }">
+   <router-view id="luxy" v-slot="{ Component }">
       <transition name="fade" mode="out-in">
          <component :is="Component"></component>
       </transition>

@@ -1,5 +1,13 @@
 [
    {
+      "title": "Creative Agency Website - Landing Page",
+      "desc": "Studio Agency Website",
+      "img": "creative-agency.webp",
+      "url": "htpps://sukode.vercel.app",
+      "type": "Landing Page",
+      "source_code": "https://github.com/Rauliqbal/creative-studio"
+   },
+   {
       "title": "Cozy App - Find Cozy House",
       "desc": "Application to find a place to live",
       "img": "cozy-app.webp",
