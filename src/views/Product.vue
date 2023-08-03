@@ -53,7 +53,7 @@
             <CardProduct v-for="product in products" :key="product.id" :url="product.url" :name="product.name" :image="product.image" :source="product.source" :type="product.type" />
          </div>
       </section>
-      <!-- END:New Product -->
+      <!-- END:New Product --> 
    </main>
 </template>
 

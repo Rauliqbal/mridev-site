@@ -21,7 +21,64 @@
                company.
             </p>
 
-            <a class="btn-primary inline-flex mt-8" href="/cv-rauliqbal.pdf" target="_blank">Get my CV</a>
+            <button type="button" class="btn-primary inline-flex mt-8" data-te-toggle="modal" data-te-target="#exampleModalCenteredScrollable" data-te-ripple-init data-te-ripple-color="light">Get my CV</button>
+
+            <!-- Modal CV -->
+            <div
+               data-te-modal-init
+               class="fixed left-0 top-0 z-[1055] hidden h-full w-full overflow-y-auto overflow-x-hidden outline-none"
+               id="exampleModalCenteredScrollable"
+               tabindex="-1"
+               aria-labelledby="exampleModalCenteredScrollable"
+               aria-modal="true"
+               role="dialog"
+            >
+               <div
+                  data-te-modal-dialog-ref
+                  class="pointer-events-none relative flex min-h-[calc(100%-1rem)] w-auto translate-y-[-50px] items-center opacity-0 transition-all duration-300 ease-in-out min-[576px]:mx-auto min-[576px]:mt-7 min-[576px]:max-w-[500px] min-[992px]:max-w-[800px] min-[1200px]:max-w-[1100px]"
+               >
+                  <div class="pointer-events-auto relative flex w-full flex-col rounded-md border-none bg-white bg-clip-padding text-current shadow-lg outline-none dark:bg-neutral-600">
+                     <div class="flex flex-shrink-0 items-center justify-between rounded-t-md border-b-2 border-neutral-100 border-opacity-100 p-4 dark:border-opacity-50">
+                        <!--Modal title-->
+                        <h5 class="text-xl font-medium leading-normal text-neutral-800 dark:text-neutral-200" id="exampleModalCenteredScrollableLabel">CV Rauliqbal</h5>
+                        <!--Close button-->
+                        <button type="button" class="box-content rounded-none border-none hover:no-underline hover:opacity-75 focus:opacity-100 focus:shadow-none focus:outline-none" data-te-modal-dismiss aria-label="Close">
+                           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-6 w-6">
+                              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                           </svg>
+                        </button>
+                     </div>
+
+                     <!--Modal body-->
+                     <div class="relative p-4">
+                        <img src="../assets/images/cv-rauliqbal.jpg" alt="" />
+                     </div>
+
+                     <!--Modal footer-->
+                     <div class="flex flex-shrink-0 flex-wrap items-center justify-end rounded-b-md border-t-2 border-neutral-100 border-opacity-100 p-4 dark:border-opacity-50">
+                        <button
+                           type="button"
+                           class="inline-block rounded bg-primary-100 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-primary-700 transition duration-150 ease-in-out hover:bg-primary-accent-100 focus:bg-primary-accent-100 focus:outline-none focus:ring-0 active:bg-primary-accent-200"
+                           data-te-modal-dismiss
+                           data-te-ripple-init
+                           data-te-ripple-color="light"
+                        >
+                           Close
+                        </button>
+                        <a
+                           href="/public/cv-rauliqbal.pdf"
+                           target="_blank"
+                           type="button"
+                           class="ml-1 inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]"
+                           data-te-ripple-init
+                           data-te-ripple-color="light"
+                        >
+                           Get My CV
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </div>
          </div>
 
          <div class="order-first md:order-last mx-auto group max-w-md pt-24 pb-12">
@@ -151,85 +208,13 @@
                :modules="modules"
                class="mySwiper"
             >
-               <swiper-slide>
-                  <div class="pb-14">
-                     <div class="cursor-pointer flex flex-col box-border bg-white rounded-xl transition-all duration-300 overflow-hidden" data-bs-toggle="modal" data-bs-target="#certificateModal1">
+               <swiper-slide v-for="certificate in certificates" :key="certificate">
+                  <div class="pb-14" data-te-toggle="modal" :data-te-target="'#certificate' + certificate.id">
+                     <div class="cursor-pointer flex flex-col box-border bg-white rounded-xl transition-all duration-300 overflow-hidden">
                         <div class="p-5">
-                           <img
-                              class="w-16 h-16 bg-[#335ef7] mb-4 rounded-full"
-                              src="data:image/png;base64,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"
-                           />
-                           <h5 class="font-semibold text-xl">Full-Stack Website Designer 2021</h5>
-                           <h5 class="font-semibold text-slate-500 mt-1">Publisher : BuildWithAngga</h5>
-                        </div>
-                     </div>
-                  </div>
-               </swiper-slide>
-
-               <swiper-slide>
-                  <div class="pb-14">
-                     <div class="cursor-pointer flex flex-col box-border bg-white rounded-xl transition-all duration-300 overflow-hidden" data-bs-toggle="modal" data-bs-target="#certificateModal2">
-                        <div class="p-5">
-                           <img class="w-16 h-16 bg-[#335ef7] mb-4" src="https://images.glints.com/unsafe/1200x0/glints-dashboard.s3.amazonaws.com/company-logo/0ecccc80caed7d3013433880e099e4fb.png" />
-                           <h5 class="font-semibold text-xl">Belajar Dasar Pemrograman Web</h5>
-                           <h5 class="font-semibold text-slate-500 mt-1">Publisher : Dicoding</h5>
-                        </div>
-                     </div>
-                  </div>
-               </swiper-slide>
-
-               <swiper-slide>
-                  <div class="pb-14">
-                     <div class="cursor-pointer flex flex-col box-border bg-white rounded-xl transition-all duration-300 overflow-hidden" data-bs-toggle="modal" data-bs-target="#certificateModal3">
-                        <div class="p-5">
-                           <img
-                              class="w-16 h-16 object-cover bg-[#335ef7] mb-4"
-                              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAMAAACahl6sAAAAe1BMVEX///84CVPXzdzTydlkP3l2VYhpRX16W4w7DVbv6/Hy7/TZ0N5VLWz9/P07DFXi2+ZbNHG7q8RKH2JvTYPJvND39fiXfqWtmriBY5KyoL3Ow9VDF11fOXS/sMiNcpzEtszn4eqmkbJQJ2iag6iJbZlHG2Cgiq13V4qYgKbpkXnDAAAER0lEQVR4nO2b6XaqMBRGSfFqRAYRUUFUcKh9/ye8tk2YHJhN0vXtnxZZZzc5GU6ipgEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZfGXwdoNp6LD6Iy7IN/Q6OSIDqUTM0o49nhniQ6nPSuSxwyUVdmTIpEuOqKWHEoixF75omNqR7lJCBnFomNqh773FnbBZKFq99IsZ+3RnMl2KTqiDsSfRzlNmo+jfrLNTGTpXcF8exxN9okbOkb9b8VeanKJB4utCUmuw9PL3Duf1ofZtLqRrK9sQpFhFPa35AE2PY6/G0l/FWKQJv3qbeE+Z/bII+Pivviuy4di+vG2eJ/y8VqE2K9SOe2WY/HrrioRsnnxZWvDn3rVcO+hUmT06tuGyZ6aC28SLjI/Psz6ChFtydNk96Z4n8JFdMuPP3br1cabX+z6ItqVZ8l7wn1OKpJ9ZBnOMvjcH2uJOGwMtkXvfh+IMP7VEtEm7AWnYeKrTWcRXZJ07yyizdkb4gGia0B3kRN7g+CppLsI71v7QeKrTXcRayvFANxdRBv9PrgQm+09iLAFly12V9KDCK9Axv1H14AeRBL2CrFzew8ia/aK2RDx1aZHEbHbxB67lvIt8vlXcoTXtsUeyfUgwvZWVPkJkS1/zSHCq093EZ/tEb1B4qtNd5GQvUFwubG//YjgOkp3kej3OVvwPYLOIrx4HA0TX206i5zZC1SvosRsf6h8XYs3iIyVRkYtEZ0f9shT+737Sx2RtBofSVONbyVi8RI2EX9G3UXESu90XAeMsCYdRKz03pMMB9TtRbJzN9HV0h9ai0yzGwOCi6W/tBUJs+songz3BVqK+KfshtCowcWPAWklokdENo82ItNz7sLWWBKP5iJ+csk0yEaK/PimoYgf5O6cEZoIX5mkNBLxAzOnQY7h++KspIGIkeRb49atpLokX1skXl0KGgvhC/ciNUXCCS1o0L0soxWnjoi/npMintjK+yOqRWbn8r2h6CAg0CoqRWjJgsxdecbcHJUiJUYHKTUaitCrTDNHkSciln6XGeSyEl27esVDEeNumLpleCDNsuohMYsz98++H6bIdqNLmhoZvzvW7JTm4NllDTORajHyBOM2Z9MJm6ct965P0etS+sZgGM5zDQmKus0JR/caCopMN6XcoGqKhMW9xuKsX5UUCfJLKvpv56cXetUSCXLdanGKfz5TUSTM2uO45hO4giJ+WlK4JNk6REERfnOsWE5QUITNH3Rd+FQ9EYNlSOl0QD0Rh3Ws0pZEXZFxcd+knojBtx/UC3LZrp5I+jupb5foK2QjsIIis2LJZ+udllMlRQorFIZ5NRUU0XZPfoSonIjmeH9E5LZwvC86qClya5WV+TdENM36OI3KReuJ6KDaMt3to7yMjEcItTGWnxPzx4YmomPpjuUsXTcWHQUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPCA/7KYLqJppiVbAAAAAElFTkSuQmCC"
-                           />
-                           <h5 class="font-semibold text-xl">Dasar Git</h5>
-                           <h5 class="font-semibold text-slate-500 mt-1">Publisher : Progate</h5>
-                        </div>
-                     </div>
-                  </div>
-               </swiper-slide>
-
-               <swiper-slide>
-                  <div class="pb-14">
-                     <div class="cursor-pointer flex flex-col box-border bg-white rounded-xl transition-all duration-300 overflow-hidden" data-bs-toggle="modal" data-bs-target="#certificateModal4">
-                        <div class="p-5">
-                           <img class="w-16 h-16 object-cover bg-[#335ef7] mb-4" src="https://images.glints.com/unsafe/1200x0/glints-dashboard.s3.amazonaws.com/company-logo/0ecccc80caed7d3013433880e099e4fb.png" />
-                           <h5 class="font-semibold text-xl">Front-End Web Pemula</h5>
-                           <h5 class="font-semibold text-slate-500 mt-1">Publisher : Dicoding</h5>
-                        </div>
-                     </div>
-                  </div>
-               </swiper-slide>
-
-               <swiper-slide>
-                  <div class="pb-14">
-                     <div class="cursor-pointer flex flex-col box-border bg-white rounded-xl transition-all duration-300 overflow-hidden" data-bs-toggle="modal" data-bs-target="#certificateModal5">
-                        <div class="p-5">
-                           <img
-                              class="w-16 h-16 bg-[#335ef7] mb-4 rounded-full"
-                              src="data:image/png;base64,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"
-                           />
-                           <h5 class="font-semibold text-xl">Front-End Developer : Mastering Vue JS 3</h5>
-                           <h5 class="font-semibold text-slate-500 mt-1">Publisher : BuildWithAngga</h5>
-                        </div>
-                     </div>
-                  </div>
-               </swiper-slide>
-
-               <swiper-slide>
-                  <div class="pb-14">
-                     <div class="cursor-pointer flex flex-col box-border bg-white rounded-xl transition-all duration-300 overflow-hidden" data-bs-toggle="modal" data-bs-target="#certificateModal6">
-                        <div class="p-5">
-                           <img
-                              class="w-16 h-16 bg-[#335ef7] mb-4"
-                              src="data:image/png;base64,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"
-                           />
-                           <h5 class="font-semibold text-xl">Junior Web Developer</h5>
-                           <h5 class="font-semibold text-slate-500 mt-1">Publisher : Digital Talent Scholarship 2023</h5>
+                           <img class="w-16 h-16 bg-[#335ef7] mb-4" :src="'/images/' + certificate.image" />
+                           <h5 class="font-semibold text-xl">{{ certificate.title }}</h5>
+                           <h5 class="font-semibold text-slate-500 mt-1">Publisher : {{ certificate.publish }}</h5>
                         </div>
                      </div>
                   </div>
@@ -238,116 +223,33 @@
          </div>
 
          <!-- Modal Content -->
-
-         <!-- Certificate FullStack WebDesigner -->
-         <div class="modal fade fixed top-0 left-0 hidden w-full h-full outline-none overflow-x-hidden overflow-y-auto" id="certificateModal1" tabindex="-1" aria-labelledby="exampleModalCenterTitle" aria-modal="true" role="dialog">
-            <div class="modal-dialog modal-xl modal-dialog-centered relative w-auto pointer-events-none">
+         <div
+            v-for="certificate in certificates"
+            :key="certificate"
+            data-te-modal-init
+            class="fixed left-0 top-0 z-[1055] hidden h-full w-full overflow-y-auto overflow-x-hidden outline-none"
+            :id="'certificate' + certificate.id"
+            tabindex="-1"
+            aria-labelledby="exampleModalCenterTitle"
+            aria-hidden="true"
+         >
+            <div
+               data-te-modal-dialog-ref
+               class="pointer-events-none relative flex min-h-[calc(100%-1rem)] w-auto translate-y-[-50px] items-center opacity-0 transition-all duration-300 ease-in-out min-[576px]:mx-auto min-[576px]:mt-7 min-[576px]:max-w-[500px] min-[992px]:max-w-[800px]"
+            >
                <div class="modal-content border-none shadow-lg relative flex flex-col w-full pointer-events-auto bg-white bg-clip-padding rounded-md outline-none text-current">
-                  <div class="modal-header flex flex-shrink-0 items-center justify-between p-4 border-b border-gray-200 rounded-t-md">
-                     <button
-                        type="button"
-                        class="btn-close box-content w-4 h-4 p-1 text-black border-none rounded-none opacity-50 focus:shadow-none focus:outline-none focus:opacity-100 hover:text-black hover:opacity-75 hover:no-underline"
-                        data-bs-dismiss="modal"
-                        aria-label="Close"
-                     ></button>
+                  <div class="flex flex-shrink-0 items-center justify-between rounded-t-md border-b-2 border-neutral-100 border-opacity-100 p-4 dark:border-opacity-50">
+                     <!--Modal title-->
+                     <h5 class="text-xl font-medium leading-normal text-neutral-800 dark:text-neutral-200" id="exampleModalXlLabel">{{ certificate.title }}</h5>
+                     <!--Close button-->
+                     <button type="button" class="box-content rounded-none border-none hover:no-underline hover:opacity-75 focus:opacity-100 focus:shadow-none focus:outline-none" data-te-modal-dismiss aria-label="Close">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-6 w-6">
+                           <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                     </button>
                   </div>
                   <div class="modal-body relative p-4">
-                     <img src="../assets/certificate/fullstackwebdesigner.webp" alt="" />
-                  </div>
-               </div>
-            </div>
-         </div>
-
-         <!-- Certificate Dasar Web -->
-         <div class="modal fade fixed top-0 left-0 hidden w-full h-full outline-none overflow-x-hidden overflow-y-auto" id="certificateModal2" tabindex="-1" aria-labelledby="exampleModalCenterTitle" aria-modal="true" role="dialog">
-            <div class="modal-dialog modal-xl modal-dialog-centered relative w-auto pointer-events-none">
-               <div class="modal-content border-none shadow-lg relative flex flex-col w-full pointer-events-auto bg-white bg-clip-padding rounded-md outline-none text-current">
-                  <div class="modal-header flex flex-shrink-0 items-center justify-between p-4 border-b border-gray-200 rounded-t-md">
-                     <button
-                        type="button"
-                        class="btn-close box-content w-4 h-4 p-1 text-black border-none rounded-none opacity-50 focus:shadow-none focus:outline-none focus:opacity-100 hover:text-black hover:opacity-75 hover:no-underline"
-                        data-bs-dismiss="modal"
-                        aria-label="Close"
-                     ></button>
-                  </div>
-                  <div class="modal-body relative p-4">
-                     <img src="../assets/certificate/dasarweb.webp" alt="" />
-                  </div>
-               </div>
-            </div>
-         </div>
-
-         <!-- Certificate Git -->
-         <div class="modal fade fixed top-0 left-0 hidden w-full h-full outline-none overflow-x-hidden overflow-y-auto" id="certificateModal3" tabindex="-1" aria-labelledby="exampleModalCenterTitle" aria-modal="true" role="dialog">
-            <div class="modal-dialog modal-xl modal-dialog-centered relative w-auto pointer-events-none">
-               <div class="modal-content border-none shadow-lg relative flex flex-col w-full pointer-events-auto bg-white bg-clip-padding rounded-md outline-none text-current">
-                  <div class="modal-header flex flex-shrink-0 items-center justify-between p-4 border-b border-gray-200 rounded-t-md">
-                     <button
-                        type="button"
-                        class="btn-close box-content w-4 h-4 p-1 text-black border-none rounded-none opacity-50 focus:shadow-none focus:outline-none focus:opacity-100 hover:text-black hover:opacity-75 hover:no-underline"
-                        data-bs-dismiss="modal"
-                        aria-label="Close"
-                     ></button>
-                  </div>
-                  <div class="modal-body relative p-4">
-                     <img src="../assets/certificate/git.webp" alt="" />
-                  </div>
-               </div>
-            </div>
-         </div>
-
-         <!-- Certificate Front End Pemula -->
-         <div class="modal fade fixed top-0 left-0 hidden w-full h-full outline-none overflow-x-hidden overflow-y-auto" id="certificateModal4" tabindex="-1" aria-labelledby="exampleModalCenterTitle" aria-modal="true" role="dialog">
-            <div class="modal-dialog modal-xl modal-dialog-centered relative w-auto pointer-events-none">
-               <div class="modal-content border-none shadow-lg relative flex flex-col w-full pointer-events-auto bg-white bg-clip-padding rounded-md outline-none text-current">
-                  <div class="modal-header flex flex-shrink-0 items-center justify-between p-4 border-b border-gray-200 rounded-t-md">
-                     <button
-                        type="button"
-                        class="btn-close box-content w-4 h-4 p-1 text-black border-none rounded-none opacity-50 focus:shadow-none focus:outline-none focus:opacity-100 hover:text-black hover:opacity-75 hover:no-underline"
-                        data-bs-dismiss="modal"
-                        aria-label="Close"
-                     ></button>
-                  </div>
-                  <div class="modal-body relative p-4">
-                     <img src="../assets/certificate/frontendpemula.webp" alt="" />
-                  </div>
-               </div>
-            </div>
-         </div>
-
-         <!-- Certificate Mastering Vue js -->
-         <div class="modal fade fixed top-0 left-0 hidden w-full h-full outline-none overflow-x-hidden overflow-y-auto" id="certificateModal5" tabindex="-1" aria-labelledby="exampleModalCenterTitle" aria-modal="true" role="dialog">
-            <div class="modal-dialog modal-xl modal-dialog-centered relative w-auto pointer-events-none">
-               <div class="modal-content border-none shadow-lg relative flex flex-col w-full pointer-events-auto bg-white bg-clip-padding rounded-md outline-none text-current">
-                  <div class="modal-header flex flex-shrink-0 items-center justify-between p-4 border-b border-gray-200 rounded-t-md">
-                     <button
-                        type="button"
-                        class="btn-close box-content w-4 h-4 p-1 text-black border-none rounded-none opacity-50 focus:shadow-none focus:outline-none focus:opacity-100 hover:text-black hover:opacity-75 hover:no-underline"
-                        data-bs-dismiss="modal"
-                        aria-label="Close"
-                     ></button>
-                  </div>
-                  <div class="modal-body relative p-4">
-                     <img src="../assets/certificate/btcmpvue3.webp" alt="" />
-                  </div>
-               </div>
-            </div>
-         </div>
-
-         <!-- Certificate Junior Web Developer -->
-         <div class="modal fade fixed top-0 left-0 hidden w-full h-full outline-none overflow-x-hidden overflow-y-auto" id="certificateModal6" tabindex="-1" aria-labelledby="exampleModalCenterTitle" aria-modal="true" role="dialog">
-            <div class="modal-dialog modal-xl modal-dialog-centered relative w-auto pointer-events-none">
-               <div class="modal-content border-none shadow-lg relative flex flex-col w-full pointer-events-auto bg-white bg-clip-padding rounded-md outline-none text-current">
-                  <div class="modal-header flex flex-shrink-0 items-center justify-between p-4 border-b border-gray-200 rounded-t-md">
-                     <button
-                        type="button"
-                        class="btn-close box-content w-4 h-4 p-1 text-black border-none rounded-none opacity-50 focus:shadow-none focus:outline-none focus:opacity-100 hover:text-black hover:opacity-75 hover:no-underline"
-                        data-bs-dismiss="modal"
-                        aria-label="Close"
-                     ></button>
-                  </div>
-                  <div class="modal-body relative p-4">
-                     <img src="../assets/certificate/jwd.webp" alt="" />
+                     <img :src="'/certificate/' + certificate.certificate" :alt="'Sertifikat telah menyelesaikan ' + certificate.title" />
                   </div>
                </div>
             </div>
@@ -474,13 +376,16 @@
 </template>
 
 <script>
+import { Modal, Ripple, initTE } from "tw-elements";
+initTE({ Modal, Ripple });
 import { Swiper, SwiperSlide } from "swiper/vue";
+
 import "swiper/css";
 import "swiper/css/pagination";
 
-// import required modules
 import { Autoplay, Pagination } from "swiper";
 import Navbar from "../components/Navbar.vue";
+import certificates from "../data/certificateContent.json";
 
 export default {
    components: { Swiper, SwiperSlide, Navbar },
@@ -493,7 +398,7 @@ export default {
 
    data() {
       return {
-         // Retourn the API Dates
+         certificates: certificates,
 
          swiperOptions: {
             breakpoints: {
@@ -503,13 +408,8 @@ export default {
                },
                768: {
                   slidesPerView: 2,
-                  spaceBetween: 50,
+                  spaceBetween: 24,
                },
-
-               // 1440: {
-               //    slidesPerView: 3,
-               //    spaceBetween: 30
-               // }
             },
          },
       };

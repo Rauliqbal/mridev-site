@@ -16,8 +16,8 @@
 
 <script setup>
 import { ref } from "vue";
-import workContent from "../data/workContent.json";
+import projectContent from "../data/projectContent.json";
 import CardProject from "../components/CardProject.vue";
 
-const portfolio = ref(workContent);
+const portfolio = ref(projectContent);
 </script>

@@ -1,0 +1,44 @@
+[
+   {
+      "id": 1,
+      "image": "dicoding.jpg",
+      "title": "Belajar Dasar Pemrograman Web",
+      "publish": "Dicoding",
+      "certificate": "dasarweb.webp"
+   },
+   {
+      "id": 2,
+      "image": "buildwithangga.jpg",
+      "title": "Full-Stack Website Designer 2021",
+      "publish": "BuildWith Angga",
+      "certificate": "fullstackwebdesigner.webp"
+   },
+   {
+      "id": 3,
+      "image": "progate.jpg",
+      "title": "Dasar Git",
+      "publish": "Progate",
+      "certificate": "git.webp"
+   },
+   {
+      "id": 4,
+      "image": "dicoding.jpg",
+      "title": "Front-End Web Pemula",
+      "publish": "Dicoding",
+      "certificate": "frontendpemula.webp"
+   },
+   {
+      "id": 5,
+      "image": "buildwithangga.jpg",
+      "title": "Front-End Developer : Mastering Vue JS 3",
+      "publish": "BuildWith Angga",
+      "certificate": "btcmpvue3.webp"
+   },
+   {
+      "id": 6,
+      "image": "digitalent.jpg",
+      "title": "Junior Web Developer 2023",
+      "publish": "Digital Talent Scholarship",
+      "certificate": "jwd.webp"
+   }
+]
