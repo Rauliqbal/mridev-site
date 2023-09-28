@@ -3,7 +3,7 @@
       <div class="container pt-20">
          <div class="flex flex-col md:flex-row justify-center gap-8 md:gap-32 mb-20">
             <div>
-               <h3 class="text-3xl md:text-5xl text-white font-semibold max-w-[496px]">You only have one chance to make a first impression.</h3>
+               <h3 class="text-3xl md:text-5xl md:leading-tight text-white font-semibold max-w-[496px] font-BaiJamjuree">You only have one chance to make a first impression.</h3>
                <div class="flex items-center gap-4 md:gap-8 mt-8">
                   <div class="w-4 md:w-24 h-1 bg-secondary"></div>
                   <h2 class="section-title text-base md:text-2xl text-secondary">Let’s make it an amazing one.</h2>

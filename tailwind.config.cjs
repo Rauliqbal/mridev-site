@@ -18,6 +18,7 @@ module.exports = {
          },
          fontFamily: {
             poppins: ["Poppins", "sans-serif"],
+            BaiJamjuree: ['Bai Jamjuree', "sans-serif"]
          },
          colors: {
             primary: "#5F65F4",

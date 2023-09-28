@@ -8,7 +8,7 @@
 
       <div class="container py-20">
          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
-            <CardProject v-for="project in portfolio" :key="project.div" :id="project.id" :title="project.title" :image="project.img" :type="project.type" :url="project.url" :desc="project.desc" :source_code="project.source_code" />
+            <CardProject v-for="project in portfolios" :key="project.div" :id="project.id" :title="project.title" :image="project.img" :type="project.type" :url="project.url" :desc="project.desc" :source_code="project.source_code" />
          </div>
       </div>
    </main>
@@ -16,8 +16,8 @@
 
 <script setup>
 import { ref } from "vue";
-import projectContent from "../data/projectContent.json";
+import projectContent from "../data/portfolio.json";
 import CardProject from "../components/CardProject.vue";
 
-const portfolio = ref(projectContent);
+const portfolios = ref(portfolio);
 </script>

@@ -9,20 +9,20 @@
       "preview": "vite preview"
    },
    "dependencies": {
-      "boxicons": "^2.1.2",
+      "boxicons": "^2.1.4",
       "luxy.js": "^0.1.0",
       "swiper": "^8.3.2",
-      "tw-elements": "^1.0.0-alpha12",
-      "vue": "^3.2.37",
-      "vue-router": "^4.1.5",
+      "tw-elements": "^1.0.0",
+      "vue": "^3.3.4",
+      "vue-router": "^4.2.5",
       "vue-tilt.js": "^1.1.1",
       "vue-typed-js": "^0.1.2"
    },
    "devDependencies": {
       "@vitejs/plugin-vue": "^3.0.3",
-      "autoprefixer": "^10.4.8",
-      "postcss": "^8.4.16",
-      "tailwindcss": "^3.1.8",
+      "autoprefixer": "^10.4.16",
+      "postcss": "^8.4.30",
+      "tailwindcss": "^3.3.3",
       "vite": "^3.0.7"
    }
 }

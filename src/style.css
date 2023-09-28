@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 @layer base {
-   #app {
+   body {
       @apply font-poppins bg-[#f7f7f7];
    }
 
@@ -17,7 +17,7 @@
       @apply md:inline-flex bg-primary py-3 px-5 text-white font-semibold rounded-lg hover:bg-indigo-600 active:scale-95 transition duration-150;
    }
    .section-title {
-      @apply text-primary font-semibold text-xl md:text-2xl tracking-wider capitalize;
+      @apply text-primary font-semibold text-xl md:text-2xl tracking-wider capitalize font-BaiJamjuree;
    }
 
    .animation-delay-2000 {
@@ -30,9 +30,11 @@
    .box-border {
       filter: drop-shadow(0px 14px 0px #798af4);
    }
-
    .desc {
-      @apply text-base md:text-lg text-slate-500;
+      @apply text-base md:text-lg text-slate-700 tracking-wide leading-relaxed;
+   }
+   .text-gradient {
+      @apply bg-gradient-to-r from-purple-500 via-indigo-500 to-blue-600 text-transparent bg-clip-text
    }
 }
 

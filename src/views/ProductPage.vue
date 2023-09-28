@@ -50,7 +50,7 @@
 
          <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
             <!-- Card -->
-            <CardProduct v-for="product in products" :key="product.id" :url="product.url" :name="product.name" :image="product.image" :source="product.source" :type="product.type" />
+            <CardProduct v-for="product in products" :key="product.id" :url="product.url" :name="product.name" :image="product.img" :source="product.source" :type="product.type" />
          </div>
       </section>
       <!-- END:New Product --> 
@@ -59,8 +59,8 @@
 
 <script setup>
 import { ref } from "vue";
-import CardProduct from "../components/product/CardProduct.vue";
-import productContent from "../data/productContent.json";
+import CardProduct from "../components/CardProduct.vue";
+import product from "../data/product.json";
 
-const products = ref(productContent);
+const products = ref(product);
 </script>
