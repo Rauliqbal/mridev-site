@@ -27,7 +27,7 @@
       </div>
 
       <header class="flex items-center gap-14 top-5 left-[1.4rem] absolute">
-         <router-link to="/"><img src="../assets/images/logo.png" alt="im Rauliqbal a front end developer" /></router-link>
+         <router-link to="/"><img src="/images/logo.png" alt="im Rauliqbal a front end developer" /></router-link>
          <div class="md:flex gap-8 hidden">
             <a href="https://dribbble.com/Rauliqbal" target="_blank" class="flex items-center gap-2 text-slate-500 hover:text-primary transition duration-200">
                <i class="bx bxl-dribbble text-lg"></i> <span class="text-lg">Dribble</span>

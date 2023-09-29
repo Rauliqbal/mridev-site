@@ -2,7 +2,8 @@
 const plugin = require("tailwindcss/plugin");
 
 module.exports = {
-   content: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}", "./node_modules/tw-elements/dist/js/**/*.js"],
+   content: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}", 'node_modules/flowbite-vue/**/*.{js,jsx,ts,tsx}',
+   'node_modules/flowbite/**/*.{js,jsx,ts,tsx}'],
    theme: {
       extend: {
          container: {
@@ -55,5 +56,7 @@ module.exports = {
          },
       },
    },
-   plugins: [require("tw-elements/dist/plugin.cjs")],
+   plugins: [
+      require('flowbite/plugin')
+  ],
 };
