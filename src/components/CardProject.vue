@@ -13,7 +13,7 @@ defineProps({
 <template>
    <div class="flex flex-col gap-6 group rounded-2xl p-4 md:p-8 bg-white" :key="id">
       <div class="relative overflow-hidden rounded-xl">
-         <img class="object-cover transition-all duration-200 ease-out lg:h-96" :src="'/portfolio/' + image" :alt="'Image ' + title" />
+         <img class="object-cover transition-all duration-200 ease-out " :src="'/portfolio/' + image" :alt="'Image ' + title" />
          <span class="absolute top-0 right-0 text-[12px] px-6 py-1 bg-primary rounded-bl-2xl text-white">{{ type }}</span>
       </div>
 
