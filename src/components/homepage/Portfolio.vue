@@ -13,12 +13,12 @@ const portfolios = ref(portfoliosData)
           <div class="w-12 h-[2px] bg-primary"></div>
           <h2 class="section-title text-primary">Recent Work</h2>
        </div>
-      <div class="flex justify-between mt-4 items-center">
+      <div class="flex flex-col md:flex-row gap-4 justify-between mt-4 md:items-center">
          <h2 class="text-4xl md:text-[64px] leading-tight font-semibold font-BaiJamjuree">
             Look at my <br />
             <span class="text-gradient">Portfolios.</span>
          </h2>
-         <p class="w-[500px] desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis nisi modi cumque perspiciatis provident debitis</p>
+         <p class="max-w-[500px] desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis nisi modi cumque perspiciatis provident debitis</p>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 mt-10 gap-8">

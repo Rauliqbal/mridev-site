@@ -16,7 +16,7 @@ const certificates = ref(certificateContent);
     </div>
 
     <swiper
-      :slidesPerView="2"
+     
       :spaceBetween="30"
       :pagination="{
         clickable: true,
@@ -27,6 +27,11 @@ const certificates = ref(certificateContent);
         disableOnInteraction: false,
       }"
       :modules="[Pagination]"
+      :breakpoints="{
+        768: {
+          slidesPerView: 2
+        }
+      }"
       class="mySwiper"
     >
       <swiper-slide v-for="certificate in certificates" :key="certificate">
