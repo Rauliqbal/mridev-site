@@ -1,11 +1,30 @@
-<script setup>
+<script>
 import certificateContent from "/src/data/certificate";
 import { ref } from "vue";
 import { Swiper, SwiperSlide } from "swiper/vue";
-import { Pagination } from "swiper/modules";
 import "swiper/css";
 
 const certificates = ref(certificateContent);
+import 'swiper/css/pagination';
+import { Autoplay, Pagination } from 'swiper/modules';
+
+export default {
+  components: {
+    Swiper,
+    SwiperSlide,
+  },
+  setup() {
+    return {
+      modules: [Autoplay, Pagination],
+    };
+  },
+  data() {
+    return {
+      certificates: certificates
+    }
+  }
+};
+
 
 </script>
 <template>
@@ -14,9 +33,7 @@ const certificates = ref(certificateContent);
       <div class="w-12 h-[2px] bg-primary"></div>
       <h2 class="section-title">Certificates</h2>
     </div>
-
     <swiper
-     
       :spaceBetween="30"
       :pagination="{
         clickable: true,
@@ -26,12 +43,12 @@ const certificates = ref(certificateContent);
         delay: 2500,
         disableOnInteraction: false,
       }"
-      :modules="[Pagination]"
       :breakpoints="{
         768: {
           slidesPerView: 2
         }
       }"
+      :modules="modules"
       class="mySwiper"
     >
       <swiper-slide v-for="certificate in certificates" :key="certificate">

@@ -1,5 +1,21 @@
 [
    {
+      "title": "Travel Web - Landing Page",
+      "desc": "Modern travel website landing page",
+      "img": "hilink.webp",
+      "url": "https://travel-landingpage-iota.vercel.app/",
+      "type": "Landing Page",
+      "source_code": "https://github.com/Rauliqbal/travel-landingpage"
+   },
+   {
+      "title": "Website Blog",
+      "desc": "Simple blog using Astro",
+      "img": "astro-blog.webp",
+      "url": "https://simple-blog-opal-nine.vercel.app/",
+      "type": "Blog",
+      "source_code": "https://github.com/Rauliqbal/simple-blog"
+   },
+   {
       "title": "Creative Agency Website - Landing Page",
       "desc": "Studio Agency Website",
       "img": "creative-agency.webp",
