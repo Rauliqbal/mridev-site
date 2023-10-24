@@ -1,0 +1,42 @@
+[
+  {
+    "title": "sass",
+    "icon": "sass-icon.svg"
+  },
+  {
+    "title": "bootstrap",
+    "icon": "bootstrap-icon.svg"
+  },
+  {
+    "title": "tailwind",
+    "icon": "tailwind-icon.svg"
+  },
+  {
+    "title": "javascript",
+    "icon": "javascript-icon.svg"
+  },
+  {
+    "title": "react",
+    "icon": "react-icon.svg"
+  },
+  {
+    "title": "vue",
+    "icon": "vue-icon.svg"
+  },
+  {
+    "title": "express",
+    "icon": "express-icon.svg"
+  },
+  {
+    "title": "nuxt",
+    "icon": "nuxt-icon.svg"
+  },
+  {
+    "title": "mongodb",
+    "icon": "mongodb-icon.svg"
+  },
+  {
+    "title": "flutter",
+    "icon": "flutter-icon.svg"
+  }
+]

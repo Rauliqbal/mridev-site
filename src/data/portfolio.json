@@ -1,19 +1,39 @@
 [
    {
+      "title": "Anonime - Streaming Anime",
+      "desc": "Anonime is your favorite anime streaming plac",
+      "img": "anonime.webp",
+      "url": "https://anonime-react.vercel.app/",
+      "type": "Web App",
+      "source_code": "https://github.com/Rauliqbal/anonime",
+      "tech" : [
+         {"icon": "react-icon.svg"},
+         {"icon": "tailwind-icon.svg"}
+      ]
+   },
+   {
       "title": "Travel Web - Landing Page",
       "desc": "Modern travel website landing page",
       "img": "hilink.webp",
       "url": "https://travel-landingpage-iota.vercel.app/",
       "type": "Landing Page",
-      "source_code": "https://github.com/Rauliqbal/travel-landingpage"
+      "source_code": "https://github.com/Rauliqbal/travel-landingpage",
+      "tech" : [
+         {"icon": "html-icon.svg"},
+         {"icon": "tailwind-icon.svg"}
+      ]
    },
    {
       "title": "Website Blog",
-      "desc": "Simple blog using Astro",
+      "desc": "Simple blog site with Astro JS framework",
       "img": "astro-blog.webp",
       "url": "https://simple-blog-opal-nine.vercel.app/",
       "type": "Blog",
-      "source_code": "https://github.com/Rauliqbal/simple-blog"
+      "source_code": "https://github.com/Rauliqbal/simple-blog",
+      "tech" : [
+         {"icon": "astro-icon.svg"},
+         {"icon": "tailwind-icon.svg"}
+      ]
    },
    {
       "title": "Creative Agency Website - Landing Page",
@@ -21,7 +41,10 @@
       "img": "creative-agency.webp",
       "url": "https://sukode.vercel.app",
       "type": "Landing Page",
-      "source_code": "https://github.com/Rauliqbal/creative-studio"
+      "source_code": "https://github.com/Rauliqbal/creative-studio",
+      "tech" : [
+         {"icon": "html-icon.svg"}
+      ]
    },
    {
       "title": "Cozy App - Find Cozy House",
@@ -29,7 +52,10 @@
       "img": "cozy-app.webp",
       "url": "https://github.com/Rauliqbal/cozy-app",
       "type": "Application",
-      "source_code": "https://github.com/Rauliqbal/cozy-app"
+      "source_code": "https://github.com/Rauliqbal/cozy-app",
+      "tech" : [
+         {"icon": "flutter-icon.svg"}
+      ]
    },
    {
       "title": "MOVIERAA - Sreaming Movie & TV Shows",
@@ -37,7 +63,12 @@
       "img": "movieraa.webp",
       "url": "https://movieraa.vercel.app/",
       "type": "Web Dev",
-      "source_code": "https://github.com/Rauliqbal/movieraa"
+      "source_code": "https://github.com/Rauliqbal/movieraa",
+      "tech" : [
+         {"icon": "vue-icon.svg"},
+         {"icon": "tailwind-icon.svg"}
+
+      ]
    },
    {
       "title": "My Mushaf - Al Qur'an Digital App",
@@ -45,7 +76,10 @@
       "img": "mymushaf-app.webp",
       "url": "https://github.com/Rauliqbal/my_mushaf-app",
       "type": "Application",
-      "source_code": "https://github.com/Rauliqbal/my_mushaf-app"
+      "source_code": "https://github.com/Rauliqbal/my_mushaf-app",
+      "tech" : [
+         {"icon": "flutter-icon.svg"}
+      ]
    },
    {
       "title": "BeLife - Landing Page",
@@ -53,7 +87,12 @@
       "img": "belife.webp",
       "url": "https://belife-landingpage.vercel.app/",
       "type": "Landing Page",
-      "source_code": "https://github.com/Rauliqbal/belife-landingpage"
+      "source_code": "https://github.com/Rauliqbal/belife-landingpage",
+      "tech" : [
+         {"icon": "react-icon.svg"},
+         {"icon": "tailwind-icon.svg"}
+
+      ]
    },
    {
       "title": "Zullkit - Store UI KIT",
@@ -61,7 +100,12 @@
       "img": "zullkit.webp",
       "url": "https://zullkit-app.netlify.app/",
       "type": "Web Dev",
-      "source_code": "https://github.com/Rauliqbal/zullkit-app"
+      "source_code": "https://github.com/Rauliqbal/zullkit-app",
+      "tech" : [
+         {"icon": "vue-icon.svg"},
+         {"icon": "tailwind-icon.svg"}
+
+      ]
    },
    {
       "title": "My Mushaf - Al Qur'an Digital",
@@ -69,7 +113,11 @@
       "img": "mymushaf.webp",
       "url": "https://mymushaf.vercel.app/",
       "type": "Web App",
-      "source_code": "https://github.com/Rauliqbal/My_mushaf"
+      "source_code": "https://github.com/Rauliqbal/My_mushaf",
+      "tech" : [
+         {"icon": "vue-icon.svg"},
+         {"icon": "tailwind-icon.svg"}
+      ]
    },
    {
       "title": "FurniLux - Best Furniture",
@@ -77,15 +125,12 @@
       "img": "furnilux.webp",
       "url": "https://furnilux.vercel.app/",
       "type": "Landing Page",
-      "source_code": "https://github.com/Rauliqbal/furnilux-frontend"
-   },
-   {
-      "title": "Anonime - Streaming Anime",
-      "desc": "Anonime is your favorite anime streaming place.",
-      "img": "anonime.webp",
-      "url": "https://anonime.vercel.app/",
-      "type": "Web App",
-      "source_code": "https://github.com/Rauliqbal/Anonime-app"
+      "source_code": "https://github.com/Rauliqbal/furnilux-frontend",
+      "tech" : [
+         {"icon": "vue-icon.svg"},
+         {"icon": "tailwind-icon.svg"}
+
+      ]
    },
    {
       "title": "Lentera House - Landing Page",
@@ -93,7 +138,12 @@
       "img": "lenterahouse.webp",
       "url": "https://lentera-house-landingpage.vercel.app/",
       "type": "Landing Page",
-      "source_code": "https://github.com/Rauliqbal/lentera-house-landingpage"
+      "source_code": "https://github.com/Rauliqbal/lentera-house-landingpage",
+      "tech" : [
+         {"icon": "vue-icon.svg"},
+         {"icon": "tailwind-icon.svg"}
+
+      ]
    },
    {
       "title": "Cafe Street - Landing Page Design",
@@ -101,6 +151,9 @@
       "img": "cafestreet.webp",
       "url": "https://www.figma.com/community/file/1138256358581554095",
       "type": "UI Design",
-      "source_code": "https://www.figma.com/community/file/1138256358581554095"
+      "source_code": "https://www.figma.com/community/file/1138256358581554095",
+      "tech" : [
+         {"icon": "figma-icon.svg"}
+      ]
    }
 ]

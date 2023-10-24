@@ -129,23 +129,32 @@ function showModal() {
 
       <div class="relative -top-[27rem]">
         <span
-          class="animate-floating absolute -left-8 md:left-0 top-44 md:-top-4 bg-white rounded-full shadow-2xl animation-delay-2000"
+          class="animate-floating absolute -left-8 md:left-0 top-44 md:-top-2 bg-white rounded-full shadow-2xl animation-delay-2000"
         >
           <img
             class="p-3 w-14 md:w-20"
-            src="/images/tailwind-icon.svg"
+            src="/icons/tailwind-icon.svg"
+            alt=""
+          />
+        </span>
+        <span
+          class="animate-floating absolute -right-8 md:right-16 top-52 md:-top-20 bg-white rounded-full shadow-2xl animation-delay-3000"
+        >
+          <img
+            class="p-3 w-14 md:w-20"
+            src="/icons/react-icon.svg"
             alt=""
           />
         </span>
         <span
           class="animate-floating absolute top-72 md:top-40 -right-6 bg-white rounded-full shadow-2xl"
         >
-          <img class="p-3 w-14 md:w-20" src="/images/vue-icon.svg" alt="" />
+          <img class="p-3 w-14 md:w-20" src="/icons/vue-icon.svg" alt="" />
         </span>
         <span
           class="animate-floating absolute -bottom-[27.5rem] left-0 md:left-9 bg-white rounded-full shadow-2xl animation-delay-4000"
         >
-          <img class="p-3 w-14 md:w-20" src="/images/figma-icon.svg" alt="" />
+          <img class="p-3 w-14 md:w-20" src="/icons/figma-icon.svg" alt="" />
         </span>
       </div>
     </div>

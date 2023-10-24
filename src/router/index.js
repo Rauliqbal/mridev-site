@@ -13,6 +13,7 @@ const routes = [
       component: Home,
       meta: {
          title: "Resume",
+         
       },
    },
    {
@@ -21,6 +22,7 @@ const routes = [
       component: About,
       meta: {
          title: "About Me",
+         
       },
    },
    {

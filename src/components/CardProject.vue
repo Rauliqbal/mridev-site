@@ -7,6 +7,7 @@ defineProps({
    type: String,
    url: String,
    source_code: String,
+   techs : Array
 });
 </script>
 
@@ -20,16 +21,21 @@ defineProps({
       <div>
          <div>
             <h2 class="text-lg md:text-xl font-semibold line-clamp-1" :title="title">{{ title }}</h2>
-            <p class="text-slate-500 mt-4 text-sm h-[42px]">{{ desc }}</p>
+            <p class="text-slate-500 my-4 text-sm">{{ desc }}</p>
+            <ul class="flex gap-2">
+               <li v-for="tech in techs" :key="tech">
+                  <img class="w-6 h-6 md:h-8 md:w-8" :src="'/icons/' + tech.icon" :alt="'icon' + tech.icon">
+               </li>
+            </ul>
          </div>
          
-         <div class="flex items-center justify-between mt-6">
-            <a class="w-[130px] btn-primary" :href="url" target="_blank">See Project</a>
-            <a :href="source_code" target="_blank" class="flex items-center text-sm gap-1 text-slate-400 hover:text-slate-700 transition duration-200">
-               <i class="bx bxl-github"></i>
-               <span>Source Code</span>
-            </a>
-         </div>
+      </div>
+      <div class="flex items-center justify-between mt-auto">
+         <a class="w-[130px] btn-primary" :href="url" target="_blank">See Project</a>
+         <a :href="source_code" target="_blank" class="flex items-center text-sm gap-1 text-slate-400 hover:text-slate-700 transition duration-200">
+            <i class="bx bxl-github"></i>
+            <span>Source Code</span>
+         </a>
       </div>
    </div>
 </template>

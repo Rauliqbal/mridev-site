@@ -18,7 +18,7 @@ const portfolios = ref(projectContent);
          </div>
 
          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 mt-10">
-            <CardProject v-for="project in portfolios" :key="project.div" :id="project.id" :title="project.title" :image="project.img" :type="project.type" :url="project.url" :desc="project.desc" :source_code="project.source_code" />
+            <CardProject v-for="project in portfolios" :key="project.div" :id="project.id" :title="project.title" :image="project.img" :type="project.type" :url="project.url" :desc="project.desc" :source_code="project.source_code" :techs="project.tech"/>
          </div>
       </div>
 
