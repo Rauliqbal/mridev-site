@@ -8,16 +8,19 @@ const products = ref(productsData)
 <template>
   <section>
     <div class="container py-20">
-       <div class="flex items-center gap-4">
-          <div class="w-12 h-[2px] bg-primary"></div>
-          <h2 class="section-title text-primary">My Product</h2>
-       </div>
-       <h2 class="text-4xl md:text-[64px] leading-tight font-semibold mt-4 font-BaiJamjuree  ">
-          Support me by<br />
-          <span class="text-gradient">buy my product.</span>
-       </h2>
+      <h2 class="section-title">
+       Support me by <br class="block" />
+       buy
+        <span
+          class="inline-flex items-center gap-2 text-2xl md:text-4xl px-3 py-2 md:px-6 md:py-3 rounded-full bg-blue-200
+          "
+        >
+          <p class="text-xl md:text-3xl">🎁</p>
+          <h2 class="text-gradient">my product</h2>
+        </span>
+      </h2>
 
-       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mt-10">
+       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mt-20">
          <CardProduct v-for="product in products.slice(0,3)" :key="product.id" :name="product.name" :source="product.source" :type="product.type" :image="product.image" :url="product.url"/>
        </div>
     </div>

@@ -1,56 +1,59 @@
-<script setup></script>
+<script setup>
+import { RouterLink } from 'vue-router';
+
+const services = [
+  {
+    title: "Front End Developer",
+    desc: "Create your amazing idea in websites , full interaction with responsive views.",
+    image: "ui-dev.jpg",
+    role: "DEVELOPER",
+    url:"/project"
+  },
+  {
+    title: "UI Designer",
+    desc: "Create eye-catching and powerful mobile apps with a focus on User.",
+    image: "ui-des.jpg",
+    role: "DESIGNER",
+    url:"https://www.figma.com/@rauliqbal"
+  },
+];
+</script>
 <template>
-  <section  class="bg-[#1C2863]">
+  <section>
     <div class="container py-20">
-      <div class="md:w-2/3">
-        <div class="flex items-center gap-4">
-          <div class="w-12 h-[2px] bg-secondary"></div>
-          <h2 class="section-title text-secondary">what we serve</h2>
-        </div>
-        <h2
-          class="text-xl md:text-4xl md:leading-snug font-semibold text-white mt-4"
+      <h2 class="section-title">
+        Some of the <br class="block" />
+        <span
+          class="inline-flex items-center gap-2 text-2xl md:text-4xl px-3 py-2 md:px-6 md:py-3 rounded-full bg-blue-200"
         >
-          Some of the services I specialize in, <br class="hidden md:block" />
-          if you are interested, please contact me.
-        </h2>
+          <p class="text-xl md:text-3xl">💻</p>
+          <h2 class="text-gradient">services</h2>
+        </span>
+        I specialize in
+      </h2>
 
-        <h3
-          class="text-5xl md:text-6xl font-semibold mt-20 text-white font-BaiJamjuree"
-        >
-          Think.Make.<br />Solve
-        </h3>
-      </div>
-
-      <div
-        class="flex flex-col md:flex-row items-center md:justify-center gap-8 px-4 absolute right-0 lg:mr-[4%] mt-8 md:mt-4 lg:-mt-8 xl:-mt-40"
-      >
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-20 ">
         <div
-          class="flex flex-col justify-center items-center w-full md:max-w-[320px] bg-white rounded-3xl p-8 box-border hover:-translate-y-4 transition-all duration-300 ease-out"
+          v-for="service in services"
+          class="service-card flex flex-col w-full bg-white rounded-3xl  box-border hover:-translate-y-4 transition-all duration-300 ease-out"
         >
-          <img class="w-44 h-44" src="/images/fe-dev.svg" />
-          <div class="mt-8">
-            <h4 class="text-xl md:text-2xl text-center font-semibold">
-              Front End Developer
+          <div class="px-8 md:px-10 py-10">
+            <div class="flex items-center gap-2 mb-1">
+              <div class="w-8 h-[2px] bg-primary"></div>
+              <h2 class="badge text-primary uppercase">
+                {{ service.role }}
+              </h2>
+            </div>
+            <h4 class="text-xl md:text-3xl font-semibold">
+              {{ service.title }}
             </h4>
-            <p class="text-center text-slate-500 mt-4">
-              Create your amazing idea in websites , full interaction with
-              responsive views.
+            <p class="desc text-slate-500 mt-4 mb-4">
+              {{ service.desc }}
             </p>
-          </div>
-        </div>
 
-        <div
-          class="flex flex-col justify-center items-center w-full md:max-w-[320px] bg-white rounded-3xl p-8 box-border hover:-translate-y-4 transition-all duration-300 ease-out"
-        >
-          <img class="w-44 h-44" src="/images/ui-des.svg" />
-          <div class="mt-8">
-            <h4 class="text-xl md:text-2xl text-center font-semibold">
-              UI Designer
-            </h4>
-            <p class="text-center text-slate-500 mt-4">
-              Create eye-catching and powerful mobile apps with a focus on User.
-            </p>
+            <a class="font-medium text-blue-500 hover:text-blue-700" :href="service.url">Look at my work <i class='bx bx-link-alt'></i></a>
           </div>
+          <img class="rounded-2xl -left-10" :src="'/images/' + service.image" />
         </div>
       </div>
     </div>

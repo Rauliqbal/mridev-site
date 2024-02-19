@@ -10,16 +10,19 @@
    .shadow-noblur {
       box-shadow: 0px 14px 0px #5f65f4;
    }
+   
 }
 
 @layer components {
    .btn-primary {
       @apply md:inline-flex bg-primary py-3 px-5 text-white font-semibold rounded-lg hover:bg-indigo-600 active:scale-95 transition duration-150;
    }
-   .section-title {
-      @apply text-primary font-semibold text-xl md:text-2xl tracking-wider capitalize font-BaiJamjuree;
+   .badge {
+      @apply text-primary font-semibold text-sm md:text-lg tracking-wider capitalize font-BaiJamjuree;
    }
-
+   .section-title{
+      @apply text-center text-4xl lg:text-5xl !leading-snug font-semibold px-1
+   }
    .animation-delay-2000 {
       animation-delay: 1s !important;
    }
@@ -131,3 +134,19 @@
       -webkit-box-orient: vertical;
    }
 }
+
+@layer demo {
+   @keyframes scale-a-lil {
+     from {
+       scale: .5;
+     }
+   }
+   
+   @media (prefers-reduced-motion: no-preference) {
+     .service-card img {
+       animation: scale-a-lil linear both;
+       animation-timeline: view();
+       animation-range: 25vh 60vh;
+     }
+   }
+ }

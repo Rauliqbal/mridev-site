@@ -20,7 +20,7 @@ defineProps({
 
       <div>
          <div>
-            <h2 class="text-lg md:text-xl font-semibold line-clamp-1" :title="title">{{ title }}</h2>
+            <h2 class="text-xl md:text-3xl font-semibold line-clamp-1" :title="title">{{ title }}</h2>
             <p class="text-slate-500 my-4 text-sm">{{ desc }}</p>
             <ul class="flex gap-2">
                <li v-for="tech in techs" :key="tech">

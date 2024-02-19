@@ -1,29 +1,66 @@
 <script setup>
-import { ref } from 'vue'
-import CardProject from '../CardProject.vue'
-import portfoliosData from '/src/data/portfolio.json'
+import { ref } from "vue";
+import CardProject from "../CardProject.vue";
+import portfoliosData from "/src/data/portfolio.json";
 
-const portfolios = ref(portfoliosData)
-
+const portfolios = ref(portfoliosData);
 </script>
 <template>
-  <section class="mt-[50rem] md:mt-[15rem]">
-    <div class="container py-20">
-       <div class="flex items-center gap-4">
-          <div class="w-12 h-[2px] bg-primary"></div>
-          <h2 class="section-title text-primary">Recent Work</h2>
-       </div>
-      <div class="flex flex-col md:flex-row gap-4 justify-between mt-4 md:items-center">
-         <h2 class="text-4xl md:text-[64px] leading-tight font-semibold font-BaiJamjuree">
-            Look at my <br />
-            <span class="text-gradient">Portfolios.</span>
-         </h2>
-         <p class="max-w-[500px] desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis nisi modi cumque perspiciatis provident debitis</p>
-      </div>
+  <section>
+    <div class="py-20">
+      <div id="sectionPin" class="overflow-clip">
+        <div class="overflow-hidden sticky h-screen top-0 w-[100vw]">
+          <h2 class="section-title">
+            You can visit <br class="block" />
+            some of
+            <span
+              class="inline-flex items-center gap-2 text-2xl md:text-4xl px-3 py-2 md:px-6 md:py-3 rounded-full bg-violet-200"
+            >
+              <p class="text-xl md:text-3xl">🤖</p>
+              <h2 class="text-gradient">my works</h2>
+            </span>
+          </h2>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 mt-10 gap-8">
-         <CardProject v-for="portfolio in portfolios.slice(0,4)" :key="portfolio" :id="portfolio.id" :title="portfolio.title" :desc="portfolio.desc" :image="portfolio.img" :type="portfolio.type" :url="portfolio.url" :source_code="portfolio.source_code"/>
+          <div class="pin-wrap flex justify-start items-center gap-8 px-4 md:px-20 mt-20">
+            <CardProject
+              v-for="portfolio in portfolios.slice(0, 5)"
+              :key="portfolio"
+              :id="portfolio.id"
+              :title="portfolio.title"
+              :desc="portfolio.desc"
+              :image="portfolio.img"
+              :type="portfolio.type"
+              :url="portfolio.url"
+              :techs="portfolio.tech"
+              :source_code="portfolio.source_code"
+            />
+          </div>
+        </div>
       </div>
     </div>
   </section>
 </template>
+
+<style>
+@keyframes move {
+  to {
+    /* Move horizontally so that right edge is aligned against the viewport */
+    transform: translateX(calc(-100% + 100vw));
+    left: 0px;
+  }
+}
+
+#sectionPin {
+  height: 250vh;
+  view-timeline-name: --section-pin-tl;
+  view-timeline-axis: block;
+}
+
+.pin-wrap {
+  width: 180vmax;
+  will-change: transform;
+  animation: linear move forwards;
+  animation-timeline: --section-pin-tl;
+  animation-range: contain 0% contain 100%;
+}
+</style>
